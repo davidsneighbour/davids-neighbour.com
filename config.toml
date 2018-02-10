@@ -2,7 +2,6 @@ baseURL = "https://davids-neighbour.com/"
 languageCode = "en-us"
 defaultContentLanguage =      "en"
 title = "David's Neighbour"
-version = "1.0.11"
 
 relativeURLs =                false
 canonifyURLs =                false
@@ -19,3 +18,8 @@ stepAnalysis =                true
 verbose =                     true
 verboseLog =                  true
 watch =                       true
+
+
+
+[params]
+version = "1.0.22"

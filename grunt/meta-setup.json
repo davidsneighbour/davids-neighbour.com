@@ -1,0 +1,42 @@
+{
+  "dist": "./dist",
+  "banner": [
+    "/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %>-",
+    "<%= grunt.template.today('yyyy-mm-dd') %> */"
+  ],
+  "wpblock": [
+    "/**! \n",
+    " * Theme Name: <%= pkg.name %> \n",
+    " * Theme URI: <%= pkg.url %> \n",
+    " * Description: WordPress theme for <%= pkg.url %> \n",
+    " * Author: <%= pkg.author %> \n",
+    " * Author URI: <%= pkg.homepage %> \n",
+    " * Version: <%= pkg.version %> \n",
+    " * Tags: one-column, two-column, left-sidebar, right-sidebar, grid-layout, blog\n",
+    " * License: GNU General Public License v2 or later \n",
+    " * License URI: http://www.gnu.org/licenses/gpl-2.0.html \n",
+    " * Domain Path: /languages \n",
+    " * Text Domain: <%= pkg.name %> \n",
+    " */ \n"
+  ],
+  "app": "./app",
+  "bower": "./bower_components",
+  "assets": "./assets",
+  "temp": "./tmp",
+  "theme": "./assets/wordpress",
+  "themepath": "./app/content/themes/<%= pkg.name %>",
+  "cssversionfile": "./tmp/versioncss",
+  "jsversionfile": "./tmp/versionjs",
+  "fontsversionfile": "./tmp/versionfonts",
+  "jsfiles": [
+    "node_modules/jquery/dist/jquery.js",
+    "node_modules/popper.js/dist/umd/popper.js",
+    "node_modules/bootstrap/dist/js/bootstrap.js",
+    "src/js/fontawesome/fontawesome-all.min.js"
+  ],
+  "cleanfiles": [
+    "<%= setup.bower %>",
+    "./node_modules",
+    "./sass-cache"
+  ]
+}
