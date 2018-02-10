@@ -1,3 +1,20 @@
 baseURL = "https://davids-neighbour.com/"
 languageCode = "en-us"
+defaultContentLanguage =      "en"
 title = "David's Neighbour"
+
+relativeURLs =                false
+canonifyURLs =                false
+
+enableRobotsTXT =             true
+disableHugoGeneratorInject =  true
+summaryLength =               70
+log =                         true
+logFile = log.txt
+rssLimit =                    5
+paginate =                    10
+paginatePath =                "page"
+stepAnalysis =                true
+verbose =                     true
+verboseLog =                  true
+watch =                       true
