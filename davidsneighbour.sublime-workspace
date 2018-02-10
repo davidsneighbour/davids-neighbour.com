@@ -1,0 +1,356 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 190.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"terminus",
+				"Terminus: Toggle Panel"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 497.0
+	},
+	"console":
+	{
+		"height": 446.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/patrick/Projects/Me/davids-neighbour.com",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts/2019",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/footer",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/posts",
+		"/home/patrick/Projects/Me/davids-neighbour.com/notes"
+	],
+	"file_history":
+	[
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts/bla.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/summary.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/list.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/content.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/article/schema.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/single.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/baseof.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/index.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/posts/single.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/posts/baseof.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/archetypes/default.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/archetypes/post.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/robots.txt",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head/favicon.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head-meta.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/config.toml",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts/test.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/taxonomy.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/baseof.html.bak",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/list.algolia.json",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/_index.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/netlify.toml",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/tools/debugprint.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/postcss.config.js",
+		"/home/patrick/Projects/Me/davids-neighbour.com/.gitignore",
+		"/home/patrick/Projects/Me/davids-neighbour.com/notes/todo.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/README.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/search.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/static/search.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/footer/javascripts.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/.env",
+		"/home/patrick/Projects/Me/davids-neighbour.com/package.json",
+		"/home/patrick/Projects/Me/davids-neighbour.com/i18n/en.toml",
+		"/home/patrick/Projects/Me/davids-neighbour.com/sample.env",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/terms.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/assets/sass/theme.scss",
+		"/home/patrick/Downloads/toons.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head/stylesheet.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/assets/sass/settings/_settings.scss",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/shortcodes/icon.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/.npmrc",
+		"/home/patrick/Projects/Me/davids-neighbour.com/assets/script.js",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/404.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/body-bottom.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/assets/js/script.js",
+		"/home/patrick/Projects/Me/davids-neighbour.com/.yarnrc",
+		"/home/patrick/Projects/Me/davids-neighbour.com/.browserslistrc",
+		"/home/patrick/Projects/Me/davids-neighbour.com/.ruby-version",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/initial-contact.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/faq.md",
+		"/home/patrick/Desktop/toons.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/notes/communication.md",
+		"/home/patrick/Projects/BooKa/app/.gitignore",
+		"/media/patrick/David's Neighbour/ignores.txt",
+		"/var/log/syslog",
+		"/home/patrick/Projects/BooKa/app/.git/MERGE_MSG",
+		"/home/patrick/.dotfiles/bash/bash",
+		"/home/patrick/.dotfiles/todo/notes.txt",
+		"/home/patrick/.dotfiles/bash/complete",
+		"/home/patrick/.config/transmission/settings.json",
+		"/home/patrick/.dotfiles/backup-strategy.md",
+		"/home/patrick/apt.list.txt",
+		"/home/patrick/.config/rofi/config",
+		"/home/patrick/.config/rofi/dnb.rasi",
+		"/home/patrick/.dotfiles/first-steps.md",
+		"/home/patrick/.dotfiles/todo/.bash_history",
+		"/home/patrick/.dotfiles/.bash_history_5",
+		"/home/patrick/Backup/patrick2/.yarnrc",
+		"/home/patrick/Backup/patrick2/.histfile",
+		"/home/patrick/.config/rofi/config.rasi",
+		"/home/patrick/.dotfiles/.gitignore",
+		"/home/patrick/.dotfiles/todo/.bash_history3",
+		"/home/patrick/.dotfiles/todo/.bash_history7",
+		"/home/patrick/.dotfiles/todo/.bash_history6",
+		"/home/patrick/.dotfiles/todo/.bash_history4",
+		"/home/patrick/.dotfiles/todo/.bash_history5",
+		"/home/patrick/.dotfiles/dotfiles.sublime-project",
+		"/home/patrick/.dotfiles/todo/.bash_history2",
+		"/home/patrick/.dotfiles/README.md",
+		"/home/patrick/.dotfiles/bootstrap.sh",
+		"/home/patrick/.dotfiles/todo/DOTFILES/dotfiles-master (9)/README.md",
+		"/home/patrick/.dotfiles/rootfiles/.dmrc",
+		"/home/patrick/.dotfiles/rootfiles/.gtkrc-2.0",
+		"/home/patrick/.config/neofetch/config.conf",
+		"/home/patrick/Projects/Me/samui-samui.de/content/_index.md",
+		"/home/patrick/Projects/Me/samui-samui.de/layouts/_default/taxonomy.html",
+		"/home/patrick/Projects/Me/samui-samui.de/content/tags/prayut/_index.md",
+		"/home/patrick/Projects/Me/samui-samui.de/content/categories/prayut/_index.md",
+		"/home/patrick/Projects/Me/samui-samui.de/assets/sass/components/_global.scss",
+		"/home/patrick/Projects/Me/samui-samui.de/content/post/2019/01/neu-wahlen/index.md",
+		"/home/patrick/Projects/APS/asia-pacific-superyachts.com/app/content/debug.log",
+		"/home/patrick/Downloads/Guido Mastrofini/bb-theme/style.css",
+		"/tmp/fz3temp-2/style.css",
+		"/home/patrick/Projects/Me/kollitsch.de/assets/sass/theme.scss",
+		"/home/patrick/Projects/Me/kollitsch.de/assets/sass/settings/_settings.scss",
+		"/home/patrick/Projects/Me/kollitsch.de/config.toml",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/_default/taxonomy.html",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/_default/list.html",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/sharing-icons.html",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/meta-terms.html",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/_default/baseof.html",
+		"/home/patrick/Projects/Me/kollitsch.de/assets/sass/settings/_fonts.scss",
+		"/home/patrick/Projects/Me/kollitsch.de/assets/sass/settings/_colors.scss",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/js.html",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/css.html",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/head-meta.html",
+		"/home/patrick/Projects/Me/kollitsch.de/.gitignore",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/_default/summary.html",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/_default/single.html",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/pagination.html",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/404.html",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/robots.txt",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/_default/content.html",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/recent.html",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/head-custom.html",
+		"/home/patrick/Projects/Me/kollitsch.de/TODO",
+		"/home/patrick/Projects/Me/kollitsch.de/archetypes/default.md",
+		"/home/patrick/Projects/Me/kollitsch.de/content/posts/2019/2019-01-15-nils-frahm-and-a-winged-victory-for-the-sullen.md",
+		"/home/patrick/Projects/Me/kollitsch.de/content/posts/2019/2019-01-01-patrick-kollitsch.md",
+		"/home/patrick/Projects/Me/kollitsch.de/.git/config",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/footer/tagcloud.html",
+		"/home/patrick/Projects/Me/kollitsch.de/assets/hugo-theme-bootstrap4-blog-master/README.md",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/_default/home.html",
+		"/home/patrick/Projects/Me/kollitsch.de/assets/hugo-theme-bootstrap4-blog-master/exampleSite/config.toml",
+		"/home/patrick/Projects/Me/kollitsch.de/content/auditory-and-visuals/2019/2019-01-15-nils-frahm-and-a-winged-victory-for-the",
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/footer/js.html",
+		"/home/patrick/Projects/Me/kollitsch.de/assets/js/script.js"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"/home/patrick/Projects/Me/davids-neighbour.com/layouts",
+			"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head",
+			"/home/patrick/Projects/Me/davids-neighbour.com"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"footer",
+			"debugprint",
+			"UniqueID",
+			"css",
+			"fontawesome",
+			"bootstrap/"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"../modules/bootstrap/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 57.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "davidsneighbour.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Projects/Me/kollitsch.de/kollitsch.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 304.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

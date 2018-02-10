@@ -3,10 +3,15 @@
 /.sass-cache
 /bower_components
 /tmp
+/resources
 
 # logfiles
 /log.txt
+/yarn-error.log
 
-# search engine
-/searchsite/env
-/searchsite/.env
+# static files
+/static/js/*
+/static/css/*
+
+.env
+notes

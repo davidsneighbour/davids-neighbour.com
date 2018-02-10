@@ -1,16 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" class="no-js">
   <head>
     {{ partial "head.html" . }}
+    {{ block "schema-dot-org" . }}{{ end }}
   </head>
-  <body id="davids-neighbour.com">
+  <body id="davids-neighbour-com">
     {{ partial "body-top.html" . }}
     <div id="content" class="container">
       <div id="contentcolumn" class="row">
-        <div class="col-12">
-          {{ block "main" . }}{{ end }}
+        <div class="col-12">       
+           {{ block "main" . }}{{ end }}
         </div>
       </div>
     </div>
+    {{ partial "body-bottom.html" . }}
   </body>
 </html>

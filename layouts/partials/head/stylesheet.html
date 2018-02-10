@@ -1,0 +1,13 @@
+{{/* options */}}
+{{- $optionsPostCSS := (dict "use" "autoprefixer") -}}
+{{- $optionsToCSS := (dict "targetPath" "style.css" "precision" "6" "outputStyle" "compressed" "enableSourceMap" false "includePaths" (slice "modules")) -}}
+
+{{/* load stylesheet and process */}}
+{{- $sassTemplate := resources.Get "sass/theme.scss" -}}
+{{- $style := $sassTemplate | resources.ExecuteAsTemplate "css/theme.scss" . | resources.ToCSS $optionsToCSS | resources.PostCSS $optionsPostCSS | resources.Minify -}}
+
+{{/* fingerprinting */}}
+{{- $secureCSS := $style | resources.Fingerprint "sha512" -}}
+
+{{/* and output */}}
+<link rel="stylesheet" href="{{ $secureCSS.Permalink }}" integrity="{{ $secureCSS.Data.Integrity }}">
