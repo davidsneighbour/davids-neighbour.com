@@ -1,0 +1,12 @@
+/public
+/node_modules
+/.sass-cache
+/bower_components
+/tmp
+
+# logfiles
+/log.txt
+
+# search engine
+/searchsite/env
+/searchsite/.env

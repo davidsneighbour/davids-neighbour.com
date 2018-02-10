@@ -1,0 +1,18 @@
+<footer id="authorinfo">
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      {{ with .Site.GetPage "page" "sitewide/authorfooter.md" }}
+        <div id="authorfooter">
+          <h3>{{ .Title }}</h3>
+          {{ .Content }}
+        </div>
+      {{ end }}
+      <div class="textwidget">
+        <span class="copy">&copy; 2004-{{ now.Format "2006" }}</span>
+        <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>

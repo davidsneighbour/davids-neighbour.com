@@ -1,0 +1,11 @@
+{{/*
+layout for home page
+*/}}
+{{ define "main" }}
+  <div class="row">
+    <div class="col-12 col-md-8 col-lg-6 offset-md-2 offset-lg-3 text-center">
+    <img src="logo-black.svg" class="img-fluid mb-3 mt-5">
+      {{ .Page.Content }}
+    </div>
+  </div>
+{{ end }}

@@ -1,0 +1,13 @@
+<footer id="debugging">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {{ partial "tools/debugprint.html" .Params }}
+        {{ partial "tools/debugprint.html" .Site }}
+        {{/*{{ partial "tools/debugprint.html" .GitInfo }}*/}}
+        {{ partial "tools/debugprint.html" .Resources }}
+        {{ partial "tools/debugprint.html" .File }}
+      </div>
+    </div>
+  </div>
+</footer>

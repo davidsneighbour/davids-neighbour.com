@@ -1,0 +1,2 @@
+{{ $path := printf "assets/js/script-%s.js" $.Site.Params.version }}
+<script src="{{ $path | absURL | safeURL }}" async defer></script>

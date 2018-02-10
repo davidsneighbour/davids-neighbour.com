@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}" class="no-js">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body id="davids-neighbour.com">
+    {{ partial "body-top.html" . }}
+    <div id="content" class="container">
+      <div id="contentcolumn" class="row">
+        <div class="col-12">
+          {{ block "main" . }}{{ end }}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
