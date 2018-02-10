@@ -1,10 +1,10 @@
 {
   "name": "davids-neighbour.com",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Website and content for davids-neighbour.com",
   "main": "index.js",
   "scripts": {
-    "css": "node-sass --include-path node_modules --output-style compressed --precision 6 src/scss/theme.scss tmp/theme.css"
+    "css": "node-sass --quiet --include-path node_modules --output-style compressed --precision 6 src/scss/theme.scss tmp/theme.css"
   },
   "repository": {
     "type": "git",
