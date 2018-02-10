@@ -1,6 +1,6 @@
 {
   "name": "davids-neighbour.com",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Website and content for davids-neighbour.com",
   "main": "index.js",
   "scripts": {
