@@ -2,6 +2,7 @@ baseURL = "https://davids-neighbour.com/"
 languageCode = "en-us"
 defaultContentLanguage =      "en"
 title = "David's Neighbour"
+version = "1.0.10"
 
 relativeURLs =                false
 canonifyURLs =                false
