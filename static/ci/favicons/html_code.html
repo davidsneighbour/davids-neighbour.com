@@ -1,9 +1,3 @@
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<base href="{{ .Site.BaseURL }}">
-<link rel="canonical" href="{{ .Permalink }}">
-<title>{{ block "title" . }}{{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}{{ end }}</title>
-{{ $path := printf "/css/theme-%s.css" $.Site.Params.version }}
-<link rel="stylesheet" href="{{ $path | absURL }}">
 <link rel="apple-touch-icon" sizes="180x180" href="/ci/favicons/apple-touch-icon.png?v=5AeQRMp84P">
 <link rel="icon" type="image/png" sizes="32x32" href="/ci/favicons/favicon-32x32.png?v=5AeQRMp84P">
 <link rel="icon" type="image/png" sizes="194x194" href="/ci/favicons/favicon-194x194.png?v=5AeQRMp84P">
@@ -18,8 +12,3 @@
 <meta name="msapplication-TileImage" content="/ci/favicons/mstile-144x144.png?v=5AeQRMp84P">
 <meta name="msapplication-config" content="/ci/favicons/browserconfig.xml?v=5AeQRMp84P">
 <meta name="theme-color" content="#ffffff">
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-4LPZ');</script>
