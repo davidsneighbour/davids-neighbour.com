@@ -14,7 +14,28 @@ module.exports = function (grunt) {
 
         pkg: grunt.file.readJSON('package.json'),
         env: process.env,
-        setup: grunt.file.readJSON('grunt/meta-setup.json')
+
+        headercss: [
+          "/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %>-",
+          "<%= grunt.template.today('yyyy-mm-dd') %> */"
+        ].join(''),
+
+        bower: "./bower_components",
+        temp: "./tmp",
+        cssversionfile: "./tmp/versioncss",
+        jsversionfile: "./tmp/versionjs",
+        fontsversionfile: "./tmp/versionfonts",
+        jsfiles: [
+          "node_modules/jquery/dist/jquery.js",
+          "node_modules/popper.js/dist/umd/popper.js",
+          "node_modules/bootstrap/dist/js/bootstrap.js",
+          "src/js/fontawesome/fontawesome-all.min.js"
+        ],
+        cleanfiles: [
+          "<%= setup.bower %>",
+          "./node_modules",
+          "./sass-cache"
+        ]
 
     };
 
@@ -25,10 +46,63 @@ module.exports = function (grunt) {
         init: false
 
     }));
-
-    grunt.loadTasks('grunt/tasks');
+    
     grunt.initConfig(config);
 
-    grunt.config.set('headercss', config.setup.wpblock.join(''));
+    // subtask to write version files
+    grunt.registerMultiTask('writefile', 'write files.', function () {
+
+        grunt.file.write(this.data.dst, this.data.content);
+        grunt.log.writeln('written "' + this.target + '"');
+
+    });
+
+    // Default Task
+    grunt.registerTask('default', [
+
+        // preparing clean
+        'clean:preparation',
+
+        // doing stuff once at work flow start
+        'create-versionfiles',
+
+        // bump version
+        'bump',
+        'replace',
+
+        // processing the dynamic parts once
+        'process-javascripts',
+
+        'exec:compileSass',
+        'clean:staticcss',
+        'copy:stylesheet'
+        //,  'exec:gitprocesschanges'
+
+    ]);
+
+    // Default Task
+    grunt.registerTask('process-javascripts', [
+
+        'clean:staticjs',
+        //'modernizr',
+        'concat:javascripts',
+        'uglify:javascript',
+        'copy:script'
+
+    ]);
+
+    // creating version files for all css, js, font processes
+    grunt.registerTask('create-versionfiles', [
+
+        'writefile:versioncssfile',
+        //'writefile:versionfilecss',
+
+        'writefile:versionjsfile',
+        //'writefile:versionfilejs',
+
+        //'writefile:emptystyle',
+        'writefile:tmpheader'
+
+    ]);
 
 };

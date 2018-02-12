@@ -15,7 +15,7 @@ module.exports = {
       // "git commit -m 'build: build system v<%= pkg.version %>' "
     ].join(' && '),
     stylefmt: {
-        command: 'stylefmt -R <%= setup.assets %>/theme/'
+        command: 'stylefmt -R <%= assets %>/theme/'
     },
     compileSass: 'npm run-script css'
 };

@@ -10,7 +10,7 @@ module.exports = {
     },
     javascripts: {
         nonull: true,
-        src: '<%= setup.jsfiles %>',
-        dest: '<%= setup.temp %>/script.js'
+        src: '<%= jsfiles %>',
+        dest: '<%= temp %>/script.js'
     }
 };

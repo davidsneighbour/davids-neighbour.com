@@ -1,9 +1,0 @@
-#!/bin/bash
-
-sudo find . -type f -exec chmod 764 {} +
-sudo find . -type d -exec chmod 775 {} +
-sudo chmod 660 wp-config*.php
-
-#sudo find . -type f -exec chmod 644 {} +
-#sudo find . -type d -exec chmod 755 {} +
-#sudo chmod 600 wp-config*.php

@@ -33,6 +33,6 @@ module.exports = {
         ]
     },
     dist: {
-        src: '<%= setup.temp %>/*.css'
+        src: '<%= temp %>/*.css'
     }
 };

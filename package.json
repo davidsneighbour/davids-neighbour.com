@@ -1,6 +1,6 @@
 {
   "name": "davids-neighbour.com",
-  "version": "1.0.22",
+  "version": "1.0.30",
   "description": "Website and content for davids-neighbour.com",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
   "license": "proprietary",
   "homepage": "https://bitbucket.org/pkollitsch/davids-neighbour.com#readme",
-  "devDependencies": {
+  "Dependencies": {
     "autoprefixer": "^7.1.6",
     "bootstrap": "^4.0.0",
     "cssnano": "^3.10.0",

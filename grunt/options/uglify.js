@@ -6,7 +6,7 @@
 module.exports = {
     javascript: {
         files: {
-            '<%= setup.temp %>/script.min.js': ['<%= setup.temp %>/script.js']
+            '<%= temp %>/script.min.js': ['<%= temp %>/script.js']
         }
     }
 };

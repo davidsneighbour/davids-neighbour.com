@@ -8,24 +8,16 @@ module.exports = {
     // initial cleanup of assets
     // @usedin default
     preparation: [
-        '<%= setup.temp %>'
+        '<%= temp %>'
     ],
     // cleanup of created stylesheets
     // @usedin process-stylesheets
-    static: [
-        'static/css/*.css',
+    staticjs: [
         'static/js/*.js'
     ],
-    // cleanup of created javascripts
-    // @usedin process-javascripts
-    javascripts: [
-        '<%= setup.theme %>/script*.js'
-    ],
 
-    // complete cleanup of all non-repository files
-    // @usedin only per direct call
-    global: [
-        '<%= setup.cleanfiles %>'
+    staticcss: [
+        'static/css/*.css'
     ]
 
 };

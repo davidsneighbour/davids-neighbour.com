@@ -45,7 +45,7 @@ module.exports = {
             'zero-units': false
 
         },
-        src: ['<%= setup.temp %>/theme.css']
+        src: ['<%= temp %>/theme.css']
 
     }
 

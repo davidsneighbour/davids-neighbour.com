@@ -7,7 +7,7 @@ module.exports = {
   script: {
     files: [{
       src: [
-        '<%= setup.temp %>/script.min.js'
+        '<%= temp %>/script.min.js'
       ],
       dest: 'static/js/script-<%= pkg.version %>.js'
     }]
@@ -15,7 +15,7 @@ module.exports = {
   stylesheet: {
     files: [{
       src: [
-        '<%= setup.temp %>/theme.min.css'
+        '<%= temp %>/theme.css'
       ],
       dest: 'static/css/theme-<%= pkg.version %>.css'
     }]
