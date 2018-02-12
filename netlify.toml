@@ -3,7 +3,7 @@
   command = "hugo"
 
 [context.production]
-  command = "hugo"
+  command = "grunt && hugo"
   [context.production.environment]
     HUGO_VERSION = "0.36"
     HUGO_ENV = "production"
