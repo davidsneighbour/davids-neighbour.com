@@ -91,6 +91,14 @@ module.exports = function (grunt) {
 
     ]);
 
+    // Default Task
+    grunt.registerTask('build', [
+
+        'default',
+        'minifyHtml'
+
+    ]);
+
     // creating version files for all css, js, font processes
     grunt.registerTask('create-versionfiles', [
 
