@@ -1,0 +1,59 @@
+# cache everything under js for 1 year
+/js/*
+  Cache-Control: public, max-age=31536000
+  
+# cache everything under js for 1 year
+/css/*
+  Cache-Control: public, max-age=31536000
+  
+# cache everything under js for 1 year
+/ci/*
+  Cache-Control: public, max-age=31536000
+  
+# cache everything under js for 1 year
+/fonts/*
+  Cache-Control: public, max-age=31536000
+
+# cache everything under images for 1 year
+/images/*
+  Cache-Control: public, max-age=31536000
+
+# IE, Yeah.
+# https://msdn.microsoft.com/en-us/library/ie/bg182625.aspx#docmode
+# https://blogs.msdn.microsoft.com/ie/2014/04/02/stay-up-to-date-with-enterprise-mode-for-internet-explorer-11/
+/*.html
+  X-UA-Compatible: IE=edge
+
+# some protective headers for every item
+# https://cure53.de/xfo-clickjacking.pdf
+# https://tools.ietf.org/html/rfc7034
+# https://blogs.msdn.microsoft.com/ieinternals/2010/03/30/combating-clickjacking-with-x-frame-options/
+# https://www.owasp.org/index.php/Clickjacking
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+
+# Content Security Policy (CSP)
+# http://cspisawesome.com/
+# https://content-security-policy.com/
+# https://www.html5rocks.com/en/tutorials/security/content-security-policy/
+# https://w3c.github.io/webappsec-csp/
+
+# https://www.slideshare.net/hasegawayosuke/owasp-hasegawa
+# https://blogs.msdn.microsoft.com/ie/2008/07/02/ie8-security-part-v-comprehensive-protection/
+# https://msdn.microsoft.com/en-us/library/ie/gg622941.aspx
+# https://mimesniff.spec.whatwg.org/
+/*
+  X-Content-Type-Options: nosniff
+
+# Reflected Cross-Site Scripting (XSS) attacks
+# https://hackademix.net/2009/11/21/ies-xss-filter-creates-xss-vulnerabilities
+# https://blogs.msdn.microsoft.com/ie/2008/07/02/ie8-security-part-iv-the-xss-filter/
+# https://blogs.msdn.microsoft.com/ieinternals/2011/01/31/controlling-the-xss-filter/
+# https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29
+/*
+  X-XSS-Protection: 1; mode=block
+
+# Send the CORS header for images when browsers request it.
+# https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image
+# https://blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html
