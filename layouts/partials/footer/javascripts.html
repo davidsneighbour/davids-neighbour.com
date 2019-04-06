@@ -1,0 +1,16 @@
+{{/* available scripts */}}
+
+{{ $localscript := resources.Get "js/script.js" }}
+{{ $jquery := resources.Get "modules/jquery/dist/jquery.js" }}
+{{ $bootstrap := resources.Get "modules/bootstrap/dist/js/bootstrap.bundle.js" }}
+
+{{/* concat and minify */}}
+
+{{ $js := slice $jquery $bootstrap $localscript | resources.Concat "script.js" | resources.Minify }}
+
+{{/* fingerprint */}}
+
+{{ $secureJS := $js | resources.Fingerprint "sha512" }}
+
+{{/* output compiled script */}}
+<script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" async defer></script>
