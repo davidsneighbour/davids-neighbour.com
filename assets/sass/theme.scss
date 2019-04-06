@@ -1,7 +1,4 @@
-// Fontawesome
-//@import "plugins/fa-svg-with-js";
-
-// Bootstrap initialization
+// bootstrap initialization
 @import "../modules/bootstrap/scss/functions";
 @import "../modules/bootstrap/scss/mixins";
 
@@ -9,7 +6,10 @@
 @import "settings/colors";
 @import "settings/settings";
 @import "settings/fonts";
+@import "../modules/@fortawesome/fontawesome-pro/scss/brands.scss";
+@import "../modules/@fortawesome/fontawesome-pro/scss/regular.scss";
 
+// bootstrap styles
 @import "../modules/bootstrap/scss/variables";
 @import "../modules/bootstrap/scss/root";
 @import "../modules/bootstrap/scss/reboot";
@@ -46,7 +46,8 @@
 @import "../modules/bootstrap/scss/utilities";
 @import "../modules/bootstrap/scss/print";
 
-// Plugins
+// plugins
+@import "../modules/@fortawesome/fontawesome-pro/scss/fontawesome.scss";
 
-// Components
+// components
 @import "components/global";

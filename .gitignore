@@ -4,7 +4,7 @@
 /bower_components
 /tmp
 /assets/modules
-/ressources
+/resources
 
 # logfiles
 /log.txt
