@@ -7,10 +7,6 @@
 # logfiles
 /log.txt
 
-# search engine
-/searchsite/env
-/searchsite/.env
-
 # static files
 /static/js/*
 /static/css/*
