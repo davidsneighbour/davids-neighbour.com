@@ -1,9 +1,9 @@
 {{- $optionsPostCSS := (dict "use" "autoprefixer") -}}
-{{ $optionsToCSS := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "bootstrap")) }}
+{{- $optionsToCSS := (dict "targetPath" "style.css" "precision" "6" "enableSourceMap" false "includePaths" (slice "modules")) -}}
 
-{{ $sassTemplate := resources.Get "sass/theme.scss" }}
-{{ $style := $sassTemplate | resources.ExecuteAsTemplate "css/theme.scss" . | resources.ToCSS $optionsToCSS | resources.PostCSS $optionsPostCSS | resources.Minify }}
+{{- $sassTemplate := resources.Get "sass/theme.scss" -}}
+{{- $style := $sassTemplate | resources.ExecuteAsTemplate "css/theme.scss" . | resources.ToCSS $optionsToCSS | resources.PostCSS $optionsPostCSS | resources.Minify -}}
 
-{{ $secureCSS := $style | resources.Fingerprint "sha512" }}
+{{- $secureCSS := $style | resources.Fingerprint "sha512" -}}
 
 <link rel="stylesheet" href="{{ $secureCSS.Permalink }}" integrity="{{ $secureCSS.Data.Integrity }}">
