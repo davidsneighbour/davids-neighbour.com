@@ -21,9 +21,7 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.15.0",
-    "uglify-js": "^3.5.3"
-  },
-  "devDependencies": {
+    "uglify-js": "^3.5.3",
     "@fortawesome/fontawesome-pro": "^5.8.1"
   }
 }
