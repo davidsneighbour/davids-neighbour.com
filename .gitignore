@@ -6,6 +6,7 @@
 
 # logfiles
 /log.txt
+/yarn-error.log
 
 # static files
 /static/js/*

@@ -6,10 +6,7 @@
   "scripts": {
     "css": "node-sass --quiet --include-path node_modules --output-style compressed --precision 6 src/scss/theme.scss tmp/theme.css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org/pkollitsch/davids-neighbour.com.git"
-  },
+  "repository": "git+ssh://git@bitbucket.org/pkollitsch/davids-neighbour.com.git",
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
   "license": "proprietary",
   "homepage": "https://bitbucket.org/pkollitsch/davids-neighbour.com#readme",
@@ -17,5 +14,13 @@
     "commitizen": {
       "path": "./node_modules/cz-customizable"
     }
+  },
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^9.5.0",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.15.0",
+    "uglify-js": "^3.5.3"
   }
 }
