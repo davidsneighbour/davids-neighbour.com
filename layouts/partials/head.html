@@ -2,7 +2,6 @@
 <base href="{{ .Site.BaseURL }}">
 <link rel="canonical" href="{{ .Permalink }}">
 <title>{{ block "title" . }}{{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}{{ end }}</title>
-{{ $path := printf "/css/theme-%s.css" $.Site.Params.version }}
 <link rel="stylesheet" href="{{ $path | absURL }}">
 <link rel="apple-touch-icon" sizes="180x180" href="/ci/favicons/apple-touch-icon.png?v=5AeQRMp84P">
 <link rel="icon" type="image/png" sizes="32x32" href="/ci/favicons/favicon-32x32.png?v=5AeQRMp84P">
