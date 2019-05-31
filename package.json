@@ -20,6 +20,7 @@
   "dependencies": {
     "atomic-algolia": "^0.3.17",
     "autoprefixer": "^9.5.0",
+    "cz-customizable": "^6.2.0",
     "postcss": "^7.0.14",
     "postcss-cli": "^6.1.2",
     "uglify-js": "^3.5.3"
