@@ -1,9 +1,9 @@
 [build]
   publish = "public"
-  command = "yarn install && hugo"
+  command = "npm install && yarn install && hugo"
 
 [context.production]
-  command = "yarn install && hugo"
+  command = "npm install && yarn install && hugo"
   [context.production.environment]
     HUGO_VERSION = "0.55.6"
     HUGO_ENV = "production"
