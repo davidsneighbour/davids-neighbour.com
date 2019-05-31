@@ -136,6 +136,17 @@ description = "Onlinemarketing Made in Paradise"
 # design elements
 sitecolor = "#d02d19"
 
+# Social networks
+email = "name@domain.com"
+github = "github_username"
+twitter = "twitter_username"
+linkedin = "linkedin_username"
+facebook = "facebook_username"
+google = "googleplus_id_number"
+instagram = "instagram_username"
+youtube = "youtube_username"
+dribbble = "dribbble_username"
+
 [params.social.facebook]
 profileid = "517050641" # patrick.kollitsch
 pageid = "6967849771" # samuisamui
