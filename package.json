@@ -6,7 +6,7 @@
   "scripts": {
     "css": "node-sass --quiet --include-path node_modules --output-style compressed --precision 6 src/scss/theme.scss tmp/theme.css",
     "algolia": "atomic-algolia",
-    "release": "npm version patch && git push origin"
+    "release": "npm version patch -m \"chore(release): v%s\" && git push origin"
   },
   "repository": "git+ssh://git@bitbucket.org/pkollitsch/davids-neighbour.com.git",
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
