@@ -1,3 +1,11 @@
+---
+title: "FAQ"
+date: 2019-05-31T15:55:48+07:00
+type: static
+layout: search
+robotsdisallow: true
+---
+
 # Frequently asked questions
 
 ## Why don't you publish your prices on your site?

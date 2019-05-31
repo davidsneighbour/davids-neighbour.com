@@ -1,4 +1,10 @@
-
+---
+title: "Communication"
+date: 2019-05-31T15:55:48+07:00
+type: static
+layout: search
+robotsdisallow: true
+---
 
 1. I tend to not answer calls. This does not mean that you can start trying and trying again, panickingly looking on your mobile display and loosing sleep over it. If we are in a contractual relationship, I will call back. At an appropriate time. Our relationship has not edges where immediate and absolutely urgent conversations have to happen. I work on projects that need concentration. That does not mean that I don't value your patronage, what I don't value is being ripped out of a complicated though process while programming something important.
 
