@@ -4,7 +4,8 @@
   "description": "Website and content for davids-neighbour.com",
   "main": "index.js",
   "scripts": {
-    "css": "node-sass --quiet --include-path node_modules --output-style compressed --precision 6 src/scss/theme.scss tmp/theme.css"
+    "css": "node-sass --quiet --include-path node_modules --output-style compressed --precision 6 src/scss/theme.scss tmp/theme.css",
+    "algolia": "atomic-algolia"
   },
   "repository": "git+ssh://git@bitbucket.org/pkollitsch/davids-neighbour.com.git",
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
@@ -17,6 +18,7 @@
   },
   "private": true,
   "dependencies": {
+    "atomic-algolia": "^0.3.17",
     "autoprefixer": "^9.5.0",
     "postcss": "^7.0.14",
     "postcss-cli": "^6.1.2",

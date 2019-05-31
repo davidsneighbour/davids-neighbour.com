@@ -3,7 +3,7 @@ module.exports = {
 		autoprefixer: {
 			browsers: [
 				">= 1%",
-				"last 1 major version",
+				"last 2 major versions",
 				"not dead",
 				"Chrome >= 45",
 				"Firefox >= 38",

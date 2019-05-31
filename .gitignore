@@ -12,3 +12,6 @@
 # static files
 /static/js/*
 /static/css/*
+
+.env
+notes
