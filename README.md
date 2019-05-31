@@ -11,5 +11,5 @@ This is the [Hugo](https://gohugo.io) setup and content for davids-neighbour.com
 
 # release
 
-- setup signed tags with `npm version patch`
+- setup signed tags with `npm config set sign-git-tag true`
 - create release with `npm run release`
