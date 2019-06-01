@@ -7,6 +7,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "layouts/_default/index.html",
+			"settings":
+			{
+				"buffer_size": 263,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -74,18 +83,42 @@
 	"expanded_folders":
 	[
 		"/home/patrick/Projects/Me/davids-neighbour.com",
-		"/home/patrick/Projects/Me/davids-neighbour.com/content",
-		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts",
-		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts/2019",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/footer",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/posts",
-		"/home/patrick/Projects/Me/davids-neighbour.com/notes"
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/tools",
+		"/home/patrick/Projects/Me/davids-neighbour.com/static",
+		"/home/patrick/Projects/Me/davids-neighbour.com/static/ci",
+		"/home/patrick/Projects/Me/davids-neighbour.com/static/images"
 	],
 	"file_history":
 	[
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/tools/logo-large.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/static/ci/logo-black.svg",
+		"/home/patrick/Downloads/followers_caffeinum_page_8.csv",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/404.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/meta-terms.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/pagination.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/sharing-icons.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/sidebar.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/sitemap.xml",
+		"/home/patrick/Projects/Me/davids-neighbour.com/notes/gohugo-amp-develop/exampleSite/.html-minifier-config.json",
+		"/home/patrick/Projects/Me/davids-neighbour.com/config.toml",
+		"/home/patrick/Projects/Me/davids-neighbour.com/archetypes/post.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/shortcodes/amp-img.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/notes/hugo-lamp-master/.editorconfig",
+		"/home/patrick/Projects/Me/davids-neighbour.com/.editorconfig",
+		"/home/patrick/Projects/Me/davids-neighbour.com/notes/communication.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/notes/initial-contact.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/search.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/notes/faq.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/notes/todo.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/README.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/package.json",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts/2019/print-content-of-post-at-any-location.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts/test.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/robots.txt",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts/bla.md",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/summary.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/list.html",
@@ -97,13 +130,8 @@
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/posts/single.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/posts/baseof.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/archetypes/default.md",
-		"/home/patrick/Projects/Me/davids-neighbour.com/archetypes/post.md",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/robots.txt",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head/favicon.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head-meta.html",
-		"/home/patrick/Projects/Me/davids-neighbour.com/config.toml",
-		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts/test.md",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/taxonomy.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/baseof.html.bak",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/list.algolia.json",
@@ -112,13 +140,9 @@
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/tools/debugprint.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/postcss.config.js",
 		"/home/patrick/Projects/Me/davids-neighbour.com/.gitignore",
-		"/home/patrick/Projects/Me/davids-neighbour.com/notes/todo.md",
-		"/home/patrick/Projects/Me/davids-neighbour.com/README.md",
-		"/home/patrick/Projects/Me/davids-neighbour.com/content/search.md",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/static/search.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/footer/javascripts.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/.env",
-		"/home/patrick/Projects/Me/davids-neighbour.com/package.json",
 		"/home/patrick/Projects/Me/davids-neighbour.com/i18n/en.toml",
 		"/home/patrick/Projects/Me/davids-neighbour.com/sample.env",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/terms.html",
@@ -129,7 +153,6 @@
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/shortcodes/icon.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/.npmrc",
 		"/home/patrick/Projects/Me/davids-neighbour.com/assets/script.js",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/404.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/body-bottom.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/assets/js/script.js",
 		"/home/patrick/Projects/Me/davids-neighbour.com/.yarnrc",
@@ -138,7 +161,6 @@
 		"/home/patrick/Projects/Me/davids-neighbour.com/content/initial-contact.md",
 		"/home/patrick/Projects/Me/davids-neighbour.com/content/faq.md",
 		"/home/patrick/Desktop/toons.md",
-		"/home/patrick/Projects/Me/davids-neighbour.com/notes/communication.md",
 		"/home/patrick/Projects/BooKa/app/.gitignore",
 		"/media/patrick/David's Neighbour/ignores.txt",
 		"/var/log/syslog",
@@ -198,22 +220,7 @@
 		"/home/patrick/Projects/Me/kollitsch.de/layouts/_default/single.html",
 		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/pagination.html",
 		"/home/patrick/Projects/Me/kollitsch.de/layouts/404.html",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/robots.txt",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/_default/content.html",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/recent.html",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/head-custom.html",
-		"/home/patrick/Projects/Me/kollitsch.de/TODO",
-		"/home/patrick/Projects/Me/kollitsch.de/archetypes/default.md",
-		"/home/patrick/Projects/Me/kollitsch.de/content/posts/2019/2019-01-15-nils-frahm-and-a-winged-victory-for-the-sullen.md",
-		"/home/patrick/Projects/Me/kollitsch.de/content/posts/2019/2019-01-01-patrick-kollitsch.md",
-		"/home/patrick/Projects/Me/kollitsch.de/.git/config",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/footer/tagcloud.html",
-		"/home/patrick/Projects/Me/kollitsch.de/assets/hugo-theme-bootstrap4-blog-master/README.md",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/_default/home.html",
-		"/home/patrick/Projects/Me/kollitsch.de/assets/hugo-theme-bootstrap4-blog-master/exampleSite/config.toml",
-		"/home/patrick/Projects/Me/kollitsch.de/content/auditory-and-visuals/2019/2019-01-15-nils-frahm-and-a-winged-victory-for-the",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/footer/js.html",
-		"/home/patrick/Projects/Me/kollitsch.de/assets/js/script.js"
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/robots.txt"
 	],
 	"find":
 	{
@@ -234,6 +241,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"  ",
+			"\n   ",
 			"footer",
 			"debugprint",
 			"UniqueID",
@@ -247,6 +256,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			" ",
 			"../modules/bootstrap/"
 		],
 		"reverse": false,
@@ -258,8 +268,41 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "layouts/_default/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 263,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								213,
+								213
+							]
+						],
+						"settings":
+						{
+							"SL.16.region_keys":
+							[
+							],
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -306,7 +349,7 @@
 	"project": "davidsneighbour.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 71.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -326,7 +369,7 @@
 		[
 			[
 				"",
-				"~/Projects/Me/kollitsch.de/kollitsch.sublime-project"
+				"~/Projects/Me/samui-samui.de/samui-samui.sublime-project"
 			]
 		],
 		"width": 380.0
