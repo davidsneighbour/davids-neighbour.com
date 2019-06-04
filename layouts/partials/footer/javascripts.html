@@ -14,3 +14,5 @@
 
 {{/* output compiled script */}}
 <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" async defer></script>
+{{ partialCached "structured-data/organisation" . }}
+{{ partialCached "structured-data/person" . }}
