@@ -1,6 +1,6 @@
 {{ define "title" }}{{ .Title | markdownify }} | {{ .Site.Title }}{{ end }}
 
-{{ define "schema-dot-org" }}
+{{ define "schema" }}
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -52,6 +52,7 @@
 </script>
 
 {{ end }}
+
 
 {{ define "main" }}
 {{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}

@@ -7,15 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "layouts/_default/index.html",
-			"settings":
-			{
-				"buffer_size": 263,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -83,16 +74,32 @@
 	"expanded_folders":
 	[
 		"/home/patrick/Projects/Me/davids-neighbour.com",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/tools",
-		"/home/patrick/Projects/Me/davids-neighbour.com/static",
-		"/home/patrick/Projects/Me/davids-neighbour.com/static/ci",
-		"/home/patrick/Projects/Me/davids-neighbour.com/static/images"
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/posts",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/shortcodes"
 	],
 	"file_history":
 	[
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/baseof.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/posts/single.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head/head-bottom.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/posts/baseof.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/single.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/list.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/assets/sass/theme.scss",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/success.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/contact.md",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/shortcodes/contact-form.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/index.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/structured-data/organisation.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/structured-data/notes.txt",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/structured-data/person.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/footer/javascripts.html",
+		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/structured-data/sitesearch.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/tools/logo-large.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/static/ci/logo-black.svg",
 		"/home/patrick/Downloads/followers_caffeinum_page_8.csv",
@@ -118,17 +125,10 @@
 		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts/2019/print-content-of-post-at-any-location.md",
 		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts/test.md",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/robots.txt",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts/bla.md",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/summary.html",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/list.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/content.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/article/schema.html",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/single.html",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/baseof.html",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/index.html",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/posts/single.html",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/posts/baseof.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/archetypes/default.md",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head/favicon.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head-meta.html",
@@ -141,12 +141,10 @@
 		"/home/patrick/Projects/Me/davids-neighbour.com/postcss.config.js",
 		"/home/patrick/Projects/Me/davids-neighbour.com/.gitignore",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/static/search.html",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/footer/javascripts.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/.env",
 		"/home/patrick/Projects/Me/davids-neighbour.com/i18n/en.toml",
 		"/home/patrick/Projects/Me/davids-neighbour.com/sample.env",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/terms.html",
-		"/home/patrick/Projects/Me/davids-neighbour.com/assets/sass/theme.scss",
 		"/home/patrick/Downloads/toons.md",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head/stylesheet.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/assets/sass/settings/_settings.scss",
@@ -212,15 +210,7 @@
 		"/home/patrick/Projects/Me/kollitsch.de/layouts/_default/baseof.html",
 		"/home/patrick/Projects/Me/kollitsch.de/assets/sass/settings/_fonts.scss",
 		"/home/patrick/Projects/Me/kollitsch.de/assets/sass/settings/_colors.scss",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/js.html",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/css.html",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/head-meta.html",
-		"/home/patrick/Projects/Me/kollitsch.de/.gitignore",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/_default/summary.html",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/_default/single.html",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/pagination.html",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/404.html",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/robots.txt"
+		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/js.html"
 	],
 	"find":
 	{
@@ -241,6 +231,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"schema-dot-org",
 			"  ",
 			"\n   ",
 			"footer",
@@ -268,41 +259,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "layouts/_default/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 263,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								213,
-								213
-							]
-						],
-						"settings":
-						{
-							"SL.16.region_keys":
-							[
-							],
-							"auto_complete": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -349,7 +307,7 @@
 	"project": "davidsneighbour.sublime-project",
 	"replace":
 	{
-		"height": 71.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":

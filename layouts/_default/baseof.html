@@ -2,7 +2,8 @@
 <html lang="{{ .Site.LanguageCode }}" class="no-js">
   <head>
     {{ partial "head.html" . }}
-    {{ block "schema-dot-org" . }}{{ end }}
+    {{ block "schema" . }}{{ end }}
+    {{ partialCached "head/head-bottom" . }}
   </head>
   <body id="davids-neighbour-com">
     {{ partial "body-top.html" . }}
