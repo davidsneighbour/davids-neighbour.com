@@ -75,14 +75,11 @@
 	[
 		"/home/patrick/Projects/Me/davids-neighbour.com",
 		"/home/patrick/Projects/Me/davids-neighbour.com/content",
-		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/posts",
-		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/shortcodes"
+		"/home/patrick/Projects/Me/davids-neighbour.com/content/posts"
 	],
 	"file_history":
 	[
+		"/home/patrick/Projects/Me/davids-neighbour.com/assets/modules/bootstrap/package-lock.json",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/partials/head.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/_default/baseof.html",
 		"/home/patrick/Projects/Me/davids-neighbour.com/layouts/posts/single.html",
@@ -209,8 +206,7 @@
 		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/meta-terms.html",
 		"/home/patrick/Projects/Me/kollitsch.de/layouts/_default/baseof.html",
 		"/home/patrick/Projects/Me/kollitsch.de/assets/sass/settings/_fonts.scss",
-		"/home/patrick/Projects/Me/kollitsch.de/assets/sass/settings/_colors.scss",
-		"/home/patrick/Projects/Me/kollitsch.de/layouts/partials/js.html"
+		"/home/patrick/Projects/Me/kollitsch.de/assets/sass/settings/_colors.scss"
 	],
 	"find":
 	{
