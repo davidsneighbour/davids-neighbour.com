@@ -18,6 +18,14 @@
 /images/*
   Cache-Control: public, max-age=31536000
 
+
+/style.*.css
+  Cache-Control: public, max-age=31536000
+/script.*.js
+  Cache-Control: public, max-age=31536000
+
+
+
 # IE, Yeah.
 # https://msdn.microsoft.com/en-us/library/ie/bg182625.aspx#docmode
 # https://blogs.msdn.microsoft.com/ie/2014/04/02/stay-up-to-date-with-enterprise-mode-for-internet-explorer-11/
