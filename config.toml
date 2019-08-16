@@ -20,7 +20,7 @@ rssLimit = 10
 
 footnoteReturnLinkContents = "^"
 
-theme = ["hugo-debugprint", "dnb-hugo-netlification", "dnb-hugo-shortcodes"]
+theme = ["hugo-debugprint", "dnb-hugo-netlification", "dnb-hugo-shortcodes", "dnb-hugo-simple"]
 
 # see http://gohugo.io/templates/output-formats/
 [outputs]
