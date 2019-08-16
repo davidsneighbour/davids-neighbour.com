@@ -20,6 +20,8 @@ rssLimit = 10
 
 footnoteReturnLinkContents = "^"
 
+theme = ["hugo-debugprint", "dnb-hugo-netlification", "dnb-hugo-shortcodes"]
+
 # see http://gohugo.io/templates/output-formats/
 [outputs]
 home = [ "HTML", "RSS", "Algolia", "AMP" ]
