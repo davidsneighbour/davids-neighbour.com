@@ -20,7 +20,7 @@
   "private": true,
   "dependencies": {
     "atomic-algolia": "^0.3.17",
-    "autoprefixer": "^9.5.0",
+    "autoprefixer": "^9.6.1",
     "cz-customizable": "^6.2.0",
     "lodash": "^4.17.15",
     "postcss": "^7.0.14",
