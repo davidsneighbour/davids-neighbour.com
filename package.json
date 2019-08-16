@@ -17,10 +17,24 @@
       "path": "./node_modules/cz-customizable"
     }
   },
+  "browserslist": [
+    ">= 1%",
+    "last 2 major version",
+    "not dead",
+    "Chrome >= 45",
+    "Firefox >= 38",
+    "Edge >= 12",
+    "Explorer >= 10",
+    "iOS >= 9",
+    "Safari >= 9",
+    "Android >= 4.4",
+    "Opera >= 30"
+  ],
   "private": true,
   "dependencies": {
     "atomic-algolia": "^0.3.17",
     "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
     "cz-customizable": "^6.2.0",
     "lodash": "^4.17.15",
     "postcss": "^7.0.14",
