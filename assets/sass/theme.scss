@@ -1,0 +1,53 @@
+// bootstrap initialization
+@import "../modules/bootstrap/scss/functions";
+@import "../modules/bootstrap/scss/mixins";
+
+// DNB theme setup
+@import "settings/colors";
+@import "settings/settings";
+@import "settings/fonts";
+//@import "../modules/@fortawesome/fontawesome-pro/scss/brands.scss";
+//@import "../modules/@fortawesome/fontawesome-pro/scss/light.scss";
+
+// bootstrap styles
+@import "../modules/bootstrap/scss/variables";
+@import "../modules/bootstrap/scss/root";
+@import "../modules/bootstrap/scss/reboot";
+@import "../modules/bootstrap/scss/type";
+@import "../modules/bootstrap/scss/images";
+@import "../modules/bootstrap/scss/code";
+@import "../modules/bootstrap/scss/grid";
+@import "../modules/bootstrap/scss/tables";
+@import "../modules/bootstrap/scss/forms";
+@import "../modules/bootstrap/scss/buttons";
+@import "../modules/bootstrap/scss/transitions";
+@import "../modules/bootstrap/scss/dropdown";
+@import "../modules/bootstrap/scss/button-group";
+@import "../modules/bootstrap/scss/input-group";
+//@import "../modules/bootstrap/scss/custom-forms";
+@import "../modules/bootstrap/scss/nav";
+@import "../modules/bootstrap/scss/navbar";
+@import "../modules/bootstrap/scss/card";
+@import "../modules/bootstrap/scss/breadcrumb";
+@import "../modules/bootstrap/scss/pagination";
+//@import "../modules/bootstrap/scss/badge";
+//@import "../modules/bootstrap/scss/jumbotron";
+//@import "../modules/bootstrap/scss/alert";
+//@import "../modules/bootstrap/scss/progress";
+@import "../modules/bootstrap/scss/media";
+//@import "../modules/bootstrap/scss/list-group";
+//@import "../modules/bootstrap/scss/close";
+//@import ""../modules/bootstrap/scss/toasts";
+//@import "../modules/bootstrap/scss/modal";
+//@import "../modules/bootstrap/scss/tooltip";
+//@import "../modules/bootstrap/scss/popover";
+//@import "../modules/bootstrap/scss/carousel";
+//@import "../modules/bootstrap/scss/spinners";
+@import "../modules/bootstrap/scss/utilities";
+@import "../modules/bootstrap/scss/print";
+
+// plugins
+//@import "../modules/@fortawesome/fontawesome-pro/scss/fontawesome.scss";
+
+// components
+@import "components/global";

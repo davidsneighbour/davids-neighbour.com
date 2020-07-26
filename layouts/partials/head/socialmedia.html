@@ -1,0 +1,48 @@
+<!-- open graph -->
+<meta property="og:title" content="{{ if ne .URL "/" }} {{ .Title }} - {{ end }} {{ .Site.Title }}" />
+<meta property="og:description" content="{{ .Params.description }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="fb:app_id" content="{{ .Site.Params.fb_appid}}" />
+<meta property="og:locale" content="{{ .Site.LanguageCode }}">
+
+{{ if .IsPage }}
+<!-- If it is part of a series, link to related articles -->
+{{ $permalink := .Permalink }}
+{{ $siteSeries := .Site.Taxonomies.series }}
+{{ with .Params.series }}
+{{ range $name := . }}
+{{ $series := index $siteSeries $name }}
+{{ range $page := first 6 $series.Pages }}
+{{ if ne $page.Permalink $permalink }}
+<meta property="og:see_also" content="{{ $page.Permalink }}" />
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+<meta property="og:type" content="article" />
+<meta property="article:modified_time" content="{{ .Date }}" />
+<meta property="article:section" content="{{ .Section }}" />
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}" />
+{{ with .Params.og_images }}{{ range first 6 . }}
+<meta property="og:image" content="{{ . }}" />
+{{ end }}{{ end }}
+<meta property="og:image" content="{{ .Params.og_image }}" />
+<meta property="og:image:url" content="{{ .Params.og_image }}" />
+{{ range .Params.tags }}
+<meta property="article:tag" content="{{ . }}" />
+{{ end }}
+{{ else }}
+<meta property="og:type" content="blog" />
+<meta property="og:image" content="{{ .Site.Params.og_image }}" />
+<meta property="og:image:url" content="{{ .Site.Params.og_image }}" />
+{{ end }}
+
+<!-- twitter -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image:src" content="{{ .Params.og_image }}"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="{{ .Title }}"/>
+<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}"/>
+<meta name="twitter:domain" content="{{ .Site.Title }}"/>
+<meta name="twitter:creator" content="{{ .Site.Params.authortwitter }}"/>

@@ -1,0 +1,113 @@
+{{/*
+If you want to build custom navigation, you can do so using the .Paginator object, which includes the following properties:
+
+PageNumber
+The current page’s number in the pager sequence
+URL: The relative URL to the current pager
+
+Pages: The pages in the current pager
+
+NumberOfElements
+The number of elements on this page
+HasPrev
+Whether there are page(s) before the current
+Prev
+The pager for the previous page
+HasNext
+Whether there are page(s) after the current
+Next
+The pager for the next page
+First
+The pager for the first page
+Last
+The pager for the last page
+Pagers
+A list of pagers that can be used to build a pagination menu
+PageSize
+Size of each pager
+TotalPages
+The number of pages in the paginator
+TotalNumberOfElements
+The number of elements on all pages in this paginator
+
+*/}}
+{{/*
+  {{ partial "pagination-posts.html" . }}
+#{{ range $paginator.Pages }}#
+   #{{ .Title }}
+#{{ end }}
+*/}}
+
+{{ $pag := $.Paginator }}
+{{ if gt $pag.TotalPages 1 }}
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    {{ with $pag.First }}
+    <li class="page-item">
+        <a class="page-link" href="{{ .URL }}" aria-label="First"><span aria-hidden="true"><i class="fas fa-chevron-double-left"></i></span></a>
+    </li>
+    {{ end }}
+    <li class="page-item"
+    {{ if not $pag.HasPrev }}class="disabled"{{ end }}>
+    <a class="page-link" href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" aria-label="Previous"><span aria-hidden="true"><i class="fas fa-chevron-left"></i></span></a>
+    </li>
+    {{ $.Scratch.Set "__paginator.ellipsed" false }}
+    {{ range $pag.Pagers }}
+    {{ $right := sub .TotalPages .PageNumber }}
+    {{ $showNumber := or (le .PageNumber 3) (eq $right 0) }}
+    {{ $showNumber := or $showNumber (and (gt .PageNumber (sub $pag.PageNumber 2)) (lt .PageNumber (add $pag.PageNumber 2)))  }}
+    {{ if $showNumber }}
+        {{ $.Scratch.Set "__paginator.ellipsed" false }}
+        {{ $.Scratch.Set "__paginator.shouldEllipse" false }}
+    {{ else }}
+        {{ $.Scratch.Set "__paginator.shouldEllipse" (not ($.Scratch.Get "__paginator.ellipsed") ) }}
+        {{ $.Scratch.Set "__paginator.ellipsed" true }}
+    {{ end }}
+    {{ if $showNumber }}
+    <li class="page-item"
+    {{ if eq . $pag }}class="active"{{ end }}><a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a></li>
+    {{ else if ($.Scratch.Get "__paginator.shouldEllipse") }}
+    <li class="page-item disabled"><a href="#" class="page-link"><span aria-hidden="true"><i class="fas fa-ellipsis-h"></i></span></a></li>
+    {{ end }}
+    {{ end }}
+    <li class="page-item"
+    {{ if not $pag.HasNext }}class="disabled"{{ end }}>
+      <a class="page-link" href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" aria-label="Next">
+        <span aria-hidden="true">
+          <i class="fas fa-chevron-right"></i>
+        </span>
+      </a>
+    </li>
+    {{ with $pag.Last }}
+      <li class="page-item">
+          <a class="page-link" href="{{ .URL }}" aria-label="Last">
+            <span aria-hidden="true">
+              <i class="fas fa-chevron-double-right"></i>
+            </span>
+          </a>
+      </li>
+    {{ end }}
+
+    </ul>
+    </nav>
+
+{{ end }}
+
+
+{{/*
+    <li>
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+*/}}

@@ -1,0 +1,33 @@
+{{/*
+static sharing buttons for social media
+*/}}
+<div class="row social-media-buttons mb-3">
+  <div class="col">
+    <a class="btn btn-facebook btn-block"
+       href="https://www.facebook.com/sharer/sharer.php?u={{.Permalink}}"
+       target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i>
+      <span class="screen-reader-text">&nbsp;Share on Facebook</span>
+    </a>
+  </div>
+  <div class="col">
+    <a class="btn btn-google btn-block"
+       href="https://plus.google.com/share?url={{.Permalink}}"
+       target="_blank"><i class="fab fa-google-plus" aria-hidden="true"></i>
+      <span class="screen-reader-text">&nbsp;Share on Google+</span>
+    </a>
+  </div>
+  <div class="col">
+    <a class="btn btn-linkedin btn-block"
+       href="https://www.linkedin.com/shareArticle?mini=true&url={{.Permalink}}"
+       target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i>
+      <span class="screen-reader-text">&nbsp;Share on LinkedIn</span>
+    </a>
+  </div>
+  <div class="col">
+    <a class="btn btn-twitter btn-block"
+       href="https://twitter.com/intent/tweet?url={{.Permalink}}&via=davidsneighbour&hashtags=samui,thailand"
+       target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i>
+      <span class="screen-reader-text">&nbsp;Share on Twitter</span>
+    </a>
+  </div>
+</div>

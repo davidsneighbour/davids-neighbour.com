@@ -1,0 +1,9 @@
+{{/* layout for home page */}}
+{{ define "main" }}
+  <div class="row align-middle">
+    <div class="col-12 col-md-8 col-lg-6 offset-md-2 offset-lg-3 text-center">
+    	{{ partial "tools/logo-large.html" . }}
+    	{{ .Page.Content }}
+    </div>
+  </div>
+{{ end }}

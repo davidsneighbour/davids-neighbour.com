@@ -1,0 +1,14 @@
+<div class="row">
+  {{if .PrevInSection}}
+    <div class="col-6">
+      <i class="fas fa-chevron-left"></i>
+      <a href="{{.PrevInSection.Permalink}}">{{.PrevInSection.Title}}</a>
+    </div>
+  {{end}}
+  {{ if .NextInSection}}
+    <div class="col-6 text-right">
+      <a href="{{.NextInSection.Permalink}}">{{.NextInSection.Title}}</a>
+      <i class="fas fa-chevron-right"></i>
+    </div>
+  {{end}}
+</div>
