@@ -1,12 +1,13 @@
 {
   "name": "davids-neighbour.com",
-  "version": "1.0.36",
+  "version": "1.0.37",
   "description": "Website and content for davids-neighbour.com",
   "main": "index.js",
   "scripts": {
-    "css": "node-sass --quiet --include-path node_modules --output-style compressed --precision 6 src/scss/theme.scss tmp/theme.css",
-    "algolia": "atomic-algolia",
-    "release": "npm version patch -m \"chore(release): v%s\" && git push origin"
+    "nightwatch": "nightwatch -c tests/nightwatch.conf.js",
+    "release": "standard-version --release-as patch -a -t \"\"",
+    "release-next": "standard-version --release-as minor -a -t \"\"",
+    "release-major": "standard-version --release-as major -a -t \"\""
   },
   "repository": "git+ssh://git@bitbucket.org/pkollitsch/davids-neighbour.com.git",
   "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
@@ -42,12 +43,6 @@
     "uglify-js": "^3.8.0",
     "standard-version": "8.0.2"
   },
-  "scripts": {
-    "nightwatch": "nightwatch -c tests/nightwatch.conf.js",
-    "release": "standard-version --release-as patch -a -t \"\"",
-    "release-next": "standard-version --release-as minor -a -t \"\"",
-    "release-major": "standard-version --release-as major -a -t \"\""
-  },  
   "standard-version": {
     "skip": {
       "changelog": true
