@@ -3,8 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: [
-    path.resolve('src', 'index.js'),
-    path.resolve('src', 'styles', 'app.css'),
+    path.resolve('assets', 'js', 'script.js'),
+    path.resolve('assets', 'sass', 'theme.scss'),
   ],
   output: {
     path: path.resolve('static', 'assets'),
@@ -30,6 +30,31 @@ module.exports = {
           'postcss-loader',
         ],
       },
+      {
+        test: /\.(scss)$/,
+        use: [{
+          loader: 'style-loader',
+        }, {
+          loader: 'css-loader',
+        }, {
+          loader: 'postcss-loader',
+        }, {
+          loader: 'sass-loader'
+        }]
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|ttf|woff|otf|eot)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[contenthash].[ext]',
+              outputPath: 'static/img',
+              esModule: false
+            }
+          }
+        ]
+      }
     ],
   },
 };

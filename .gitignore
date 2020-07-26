@@ -1,6 +1,7 @@
 # local files
 notes
 package-lock.json
+static/assets
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,hugo,phpstorm
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,hugo,phpstorm

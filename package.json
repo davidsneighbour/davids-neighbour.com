@@ -39,7 +39,7 @@
     "cssnano": "4.1.10",
     "cz-customizable": "6.2.0",
     "lodash": "4.17.19",
-    "popper.js": "^1.16.1",
+    "popper.js": "1.16.1",
     "postcss": "7.0.27",
     "postcss-cli": "7.1.1",
     "standard-version": "8.0.2",
@@ -59,12 +59,16 @@
   "devDependencies": {
     "@babel/core": "7.10.5",
     "@babel/preset-env": "7.10.4",
-    "autoprefixer": "9.7.4",
+    "autoprefixer": "9.8.5",
     "babel-loader": "8.1.0",
     "core-js": "3.6.5",
     "css-loader": "4.0.0",
+    "file-loader": "6.0.0",
     "mini-css-extract-plugin": "0.9.0",
     "postcss-loader": "3.0.0",
+    "sass": "1.26.10",
+    "sass-loader": "9.0.2",
+    "style-loader": "1.2.1",
     "webpack": "4.44.0",
     "webpack-cli": "3.3.12"
   }
