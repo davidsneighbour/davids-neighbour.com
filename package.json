@@ -1,39 +1,74 @@
 {
-  "name": "davids-neighbour.com",
-  "version": "2.0.4",
+  "name": "davids-neighbour-com",
+  "slug": "davids-neighbour-com",
+  "url": "https://davids-neighbour.com",
+  "version": "2020.0.0",
   "description": "Website and content for davids-neighbour.com",
-  "private": true,
-  "scripts": {
-    "start": "webpack --mode=development --watch",
-    "build": "webpack --mode=production",
-    "nightwatch": "nightwatch -c tests/nightwatch.conf.js",
-    "release": "standard-version --release-as patch -a -t \"\" && git push --follow-tags origin master",
-    "release-next": "standard-version --release-as minor -a -t \"\" && git push --follow-tags origin master",
-    "release-major": "standard-version --release-as major -a -t \"\" && git push --follow-tags origin master"
+  "author": {
+    "name": "Patrick Kollitsch",
+    "email": "patrick@davids-neighbour.com",
+    "web": "https://davids-neighbour.com"
   },
-  "repository": "git+ssh://git@bitbucket.org/pkollitsch/davids-neighbour.com.git",
-  "author": "Patrick Kollitsch <patrick@davids-neighbour.com>",
-  "license": "proprietary",
-  "homepage": "https://bitbucket.org/pkollitsch/davids-neighbour.com#readme",
+  "contributors": [
+    {
+      "name": "Patrick Kollitsch",
+      "email": "patrick@davids-neighbour.com",
+      "web": "https://davids-neighbour.com"
+    }
+  ],
+  "homepage": "https://davids-neighbour.com",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidsneighbour/davids-neighbour.com.git"
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-customizable"
     }
   },
+  "scripts": {
+    "start": "webpack --mode=development --watch",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "algolia": "hugo --quiet && atomic-algolia && rm -rf public",
+    "css": "node-sass -q --include-path node_modules --output-style compressed --precision 6 assets/sass/theme.scss -o public/theme/assets/css/ ",
+    "build-changelog": "./bin/create-changelog.sh > CHANGELOG.md",
+    "postcss": "postcss public/theme/assets/css/theme.css -r",
+    "preversion": "if [ \"$(git rev-parse --abbrev-ref HEAD)\" = main ] ; then echo Preversion checks passed. ; else echo Error: Not on branch release. ; exit 1 ; fi",
+    "release": "standard-version --release-as patch -a -t \"\" && ./bin/release-hook-postrelease.sh",
+    "release-next": "standard-version --release-as minor -a -t \"\" && ./bin/release-hook-postrelease.sh",
+    "release-major": "standard-version --release-as major -a -t \"\" && ./bin/release-hook-postrelease.sh",
+    "serve": "hugo server --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose",
+    "hugo": "hugo --i18n-warnings --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --enableGitInfo --log true --logFile hugo.log --verbose"
+  },
   "browserslist": [
     ">= 1%",
     "last 2 major version",
-    "not dead",
-    "Chrome >= 45",
-    "Firefox >= 38",
-    "Edge >= 12",
-    "Explorer >= 10",
-    "iOS >= 9",
-    "Safari >= 9",
-    "Android >= 4.4",
-    "Opera >= 30"
+    "not dead"
   ],
-  "dependencies": {
+  "standard-version": {
+    "scripts": {
+      "prerelease": "./bin/release-hook-prerelease.sh",
+      "postbump": "./bin/release-hook-postbump.sh",
+      "postcommit": "./bin/release-hook-postcommit.sh",
+      "posttag": "./bin/release-hook-posttag.sh"
+    },
+    "skip": {
+      "changelog": true
+    },
+    "bumpFiles": [
+      {
+        "filename": ".version",
+        "type": "plain-text"
+      },
+      {
+        "filename": "package.json",
+        "type": "json"
+      }
+    ]
+  },
+  "devDependencies": {
     "atomic-algolia": "0.3.17",
     "bootstrap": "5.0.0-alpha1",
     "cssnano": "4.1.10",
@@ -43,20 +78,7 @@
     "postcss": "7.0.27",
     "postcss-cli": "7.1.1",
     "standard-version": "8.0.2",
-    "uglify-js": "3.8.0"
-  },
-  "standard-version": {
-    "skip": {
-      "changelog": true
-    },
-    "bumpFiles": [
-      {
-        "filename": "package.json",
-        "type": "json"
-      }
-    ]
-  },
-  "devDependencies": {
+    "uglify-js": "3.8.0",
     "@babel/core": "7.10.5",
     "@babel/preset-env": "7.10.4",
     "autoprefixer": "9.8.5",

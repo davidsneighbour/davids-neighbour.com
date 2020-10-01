@@ -9,7 +9,6 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/themes/dnb-hugo-netlification" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/themes/dnb-hugo-shortcodes" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/themes/dnb-hugo-simple" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/themes/hugo-debugprint" vcs="Git" />
   </component>
 </project>

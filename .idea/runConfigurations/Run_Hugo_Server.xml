@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run Hugo Server" type="HUGO_RUN_CONFIGURATION" factoryName="Hugo configuration factory">
+    <option name="hugo.plugin.arguments" value="--disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose" />
+    <option name="hugo.plugin.run.server" value="run" />
+    <option name="hugo.plugin.custom.project.dir" value="" />
+    <method v="2" />
+  </configuration>
+</component>

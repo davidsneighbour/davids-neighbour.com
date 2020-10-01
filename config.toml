@@ -17,6 +17,7 @@ disableHugoGeneratorInject = true # Do not inject generator meta tag on homepage
 watch = true # watch filesystem for changes and recreate as needed
 
 rssLimit = 10
+pygmentsUseClasses=true
 
 footnoteReturnLinkContents = "^"
 
