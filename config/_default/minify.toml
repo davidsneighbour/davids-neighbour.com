@@ -1,0 +1,34 @@
+################################################################################
+# see https://gohugo.io/getting-started/configuration/#configure-minify
+################################################################################
+disableCSS = false
+disableHTML = false
+disableJS = false
+disableJSON = false
+disableSVG = false
+disableXML = true
+minifyOutput = false
+
+[tdewolff]
+
+[tdewolff.css]
+    decimals = -1
+    keepCSS2 = true
+
+[tdewolff.html]
+    keepConditionalComments = true
+    keepDefaultAttrVals = true
+    keepDocumentTags = true
+    keepEndTags = true
+    keepQuotes = false
+    keepWhitespace = false
+
+[tdewolff.js]
+
+[tdewolff.json]
+
+[tdewolff.svg]
+    decimals = -1
+
+[tdewolff.xml]
+    keepWhitespace = false

@@ -23,15 +23,34 @@ theme = ["hugo-debugprint", "dnb-hugo-netlification", "dnb-hugo-shortcodes"]
 # see http://gohugo.io/templates/output-formats/
 ################################################################################
 [outputs]
-home = [ "HTML", "RSS", "Algolia", "AMP" ]
+home = [ "HTML", "RSS", "Algolia", "AMP", "REDIR", "HEADERS" ]
 page = [ "HTML", "AMP" ]
 post = [ "HTML", "AMP" ]
+
+[outputFormats]
 
 [outputFormats.Algolia]
 baseName = "algolia"
 isPlainText = true
 mediaType = "application/json"
 notAlternative = true
+
+[outputFormats.REDIR]
+mediatype = "text/netlify"
+baseName = "_redirects"
+isPlainText = true
+notAlternative = true
+
+[outputFormats.HEADERS]
+mediatype = "text/netlify"
+baseName = "_headers"
+isPlainText = true
+notAlternative = true
+
+[mediaTypes]
+[mediaTypes."text/netlify"]
+suffixes = [""]
+delimiter = ""
 
 [sitemap]
 ChangeFreq = "daily"
