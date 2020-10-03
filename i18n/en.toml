@@ -1,3 +1,6 @@
+[postedIn]
+other = "Posted in "
+
 [wordCount]
 other = "{{ .WordCount }} words"
 

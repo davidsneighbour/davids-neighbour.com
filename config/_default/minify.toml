@@ -12,23 +12,23 @@ minifyOutput = false
 [tdewolff]
 
 [tdewolff.css]
-    decimals = -1
-    keepCSS2 = true
+decimals = -1
+keepCSS2 = true
 
 [tdewolff.html]
-    keepConditionalComments = true
-    keepDefaultAttrVals = true
-    keepDocumentTags = true
-    keepEndTags = true
-    keepQuotes = false
-    keepWhitespace = false
+keepConditionalComments = true
+keepDefaultAttrVals = true
+keepDocumentTags = true
+keepEndTags = true
+keepQuotes = false
+keepWhitespace = false
 
 [tdewolff.js]
 
 [tdewolff.json]
 
 [tdewolff.svg]
-    decimals = -1
+decimals = -1
 
 [tdewolff.xml]
-    keepWhitespace = false
+keepWhitespace = false

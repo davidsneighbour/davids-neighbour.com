@@ -71,6 +71,7 @@
   "devDependencies": {
     "@babel/core": "7.11.6",
     "@babel/preset-env": "7.11.5",
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "@popperjs/core": "2.5.3",
     "atomic-algolia": "0.3.19",
     "autoprefixer": "10.0.1",
@@ -86,6 +87,7 @@
     "postcss": "8.1.1",
     "postcss-cli": "8.0.0",
     "postcss-loader": "4.0.3",
+    "purgecss": "^3.0.0",
     "sass": "1.26.11",
     "sass-loader": "10.0.2",
     "standard-version": "9.0.0",
