@@ -1,0 +1,68 @@
+################################################################################
+# see https://gohugo.io/getting-started/configuration/
+################################################################################
+baseURL = "https://davids-neighbour.com/"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+# the length of text to show in a .Summary
+summaryLength = 70
+title = "David's Neighbour"
+copyright = "All rights reserved. Copyright &copy;2020 davids-neighbour.com"
+enableEmoji = false
+# enable/disable functions
+enableGitInfo = false # Enable GitInfo feature
+enableRobotsTXT = true # Build robots.txt file
+disableHugoGeneratorInject = true # Do not inject generator meta tag on homepage
+rssLimit = 10
+pygmentsUseClasses = true
+linenos = true
+footnoteReturnLinkContents = "^"
+theme = ["hugo-debugprint", "dnb-hugo-netlification", "dnb-hugo-shortcodes"]
+
+################################################################################
+# see http://gohugo.io/templates/output-formats/
+################################################################################
+[outputs]
+home = [ "HTML", "RSS", "Algolia", "AMP" ]
+page = [ "HTML", "AMP" ]
+post = [ "HTML", "AMP" ]
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[sitemap]
+ChangeFreq = "daily"
+Priority = "1"
+
+[author]
+name = "Patrick Kollitsch"
+homepage = "https://davids-neighbour.com/"
+
+################################################################################
+# see https://gohugo.io/content-management/urls/
+################################################################################
+[permalinks]
+post = "/:title/"
+page = "/:title/"
+
+[taxonomies]
+tag = "tags"
+
+[imaging]
+################################################################################
+# Default resample filter used for resizing. Default is Box,
+# a simple and fast averaging filter appropriate for downscaling.
+# See https://github.com/disintegration/imaging
+################################################################################
+resampleFilter = "lanczos"
+# Default JPEG quality setting. Default is 75.
+quality = 95
+# Anchor used when cropping pictures.
+# Default is "smart" which does Smart Cropping, using https://github.com/muesli/smartcrop
+# Smart Cropping is content aware and tries to find the best crop for each image.
+# Valid values are Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+anchor = "smart"
+
