@@ -1,3 +1,6 @@
+
+{{ $dateFormat := default "Mon Jan 2, 2006" (index .Site.Params "date_format") }}
+
 <div class="meta">
   <div class="row">
     <div class="col-md-9 is--taglist">
@@ -10,12 +13,14 @@
       {{ end }}
     </div>
     <span class="col-md-3 text-sm-left text-xs-left text-md-right">
-      <time class="post-date updated" datetime="{{ .Date }}">
+      <time class="post-date updated" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
         <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
-        {{ .Date.Format "2" }}.
-        {{ index $.Site.Data.months.months .Date.Month }}
-        {{ .Date.Format "2006" }}
+        {{ .Date.Format $dateFormat }}
       </time>
     </span>
+    {{ i18n "authoredBy" }} {{ .Params.author | default .Site.Params.author }}
+    {{ if or (.Params.categories) (.Params.tags) }} {{ i18n "postedIn" }}
+    {{ partial "meta-terms.html" . }}
+    {{ end }}
   </div>
 </div>

@@ -9,7 +9,15 @@ twitterName =  ""
 
 # content particles
 siteslug = "davids-neighbour-de"
+
+
+# opengraph internal
+# see https://gohugo.io/templates/internal/#configure-open-graph
 description = "Onlinemarketing Made in Paradise"
+images = ["site-feature-image.jpg"]
+title = "My cool site"
+
+
 
 # design elements
 sitecolor = "#d02d19"

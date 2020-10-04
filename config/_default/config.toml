@@ -67,9 +67,6 @@ homepage = "https://davids-neighbour.com/"
 post = "/:title/"
 page = "/:title/"
 
-[taxonomies]
-tag = "tags"
-
 [imaging]
 ################################################################################
 # Default resample filter used for resizing. Default is Box,

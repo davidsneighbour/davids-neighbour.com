@@ -1,6 +1,7 @@
 ---
 title: "Hugo and Phpstorm"
 date: 2020-10-01T19:05:42+07:00
+description: "PhpStorm and Hugo work perfectly together."
 ---
 
 

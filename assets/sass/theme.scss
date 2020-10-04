@@ -1,6 +1,7 @@
 // bootstrap initialization
 @import "../modules/bootstrap/scss/functions";
 @import "../modules/bootstrap/scss/mixins";
+@import "../modules/bootstrap/scss/variables";
 
 // DNB theme setup
 @import "settings/colors";
@@ -10,7 +11,6 @@
 //@import "../modules/@fortawesome/fontawesome-pro/scss/light.scss";
 
 // bootstrap styles
-@import "../modules/bootstrap/scss/variables";
 @import "../modules/bootstrap/scss/root";
 @import "../modules/bootstrap/scss/reboot";
 @import "../modules/bootstrap/scss/type";

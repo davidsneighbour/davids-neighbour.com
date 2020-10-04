@@ -1,4 +1,4 @@
-<footer>
+<footer class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2">
   <div class="meta">
     <div class="row">
 
@@ -20,3 +20,17 @@
     </div>
   </div>
 </footer>
+
+{{ if or (ne ($.Param "sharingicons") false) (.Site.DisqusShortname) }}
+<footer class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+
+  <hr>
+  {{ if (ne ($.Param "sharingicons") false) }}
+  {{ partial "sharing-icons.html" . }}
+  {{ end }}
+
+  {{ if and (.Site.DisqusShortname) (ne .Params.comments false) }}
+  {{ template "_internal/disqus.html" . }}
+  {{ end }}
+</footer>
+{{ end }}

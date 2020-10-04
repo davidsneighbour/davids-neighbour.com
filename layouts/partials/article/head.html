@@ -1,6 +1,9 @@
-<header class="title">
-  <h2 class="entry-title">
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+<header class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2 text-center">
+  <h2 class="blog-post-title" dir="auto">
+    <a href="{{ .Permalink }}">
+      {{ .Title | markdownify }}
+    </a>
   </h2>
   {{ partial "article/meta-top.html" . }}
+  <hr/>
 </header>
