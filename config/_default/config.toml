@@ -88,3 +88,27 @@ anchor = "smart"
 [build]
 useResourceCacheWhen = "never"
 writeStats = true
+
+[menu]
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 100
+
+[[menu.main]]
+identifier = "faq"
+name = "FAQ"
+#pre = "<i class='fa fa-heart'></i>"
+url = "/faq/"
+weight = 200
+
+[[menu.main]]
+name = "Journal"
+url = "/journal/"
+weight = 300
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 400
