@@ -1,4 +1,2 @@
-github.com/davidsneighbour/davids-neighbour.com-fonts v0.0.0-20201004141132-25953c904a35 h1:Dd1VasXMoLX7HjoX4W1jHtNfwy0NhzU8NQtZ8RMpiDE=
-github.com/davidsneighbour/davids-neighbour.com-fonts v0.0.0-20201004141132-25953c904a35/go.mod h1:680TDVnQnL4XhdkWlEEzqBt/9hk+WIg+E7A2onp8zhM=
-github.com/davidsneighbour/davids-neighbour.com-fonts v0.0.0-20201004142410-4df2495a80bb h1:b6U9rNQCEmkMlfGwSf6NNFCgwWk6EsBW5jq+ySeDcKc=
-github.com/davidsneighbour/davids-neighbour.com-fonts v0.0.0-20201004142410-4df2495a80bb/go.mod h1:680TDVnQnL4XhdkWlEEzqBt/9hk+WIg+E7A2onp8zhM=
+github.com/davidsneighbour/davids-neighbour.com-fonts v1.0.0 h1:mHvguGUjrDKki6yQp3NLrGfrqLyaqTJ6u5M2izfLSl0=
+github.com/davidsneighbour/davids-neighbour.com-fonts v1.0.0/go.mod h1:680TDVnQnL4XhdkWlEEzqBt/9hk+WIg+E7A2onp8zhM=
