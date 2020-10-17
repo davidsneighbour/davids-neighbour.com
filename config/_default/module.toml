@@ -5,3 +5,15 @@ disabled = false
 [[imports.mounts]]
 source = "assets"
 target = "assets"
+
+[[imports]]
+path = "github.com/davidsneighbour/dnb-hugo/packages/robots"
+
+[[imports]]
+path = "github.com/davidsneighbour/dnb-hugo/packages/shortcodes"
+
+[[imports]]
+path = "github.com/davidsneighbour/dnb-hugo/packages/netlification"
+
+[[imports]]
+path = "github.com/davidsneighbour/dnb-hugo-libs/bootstrap4"

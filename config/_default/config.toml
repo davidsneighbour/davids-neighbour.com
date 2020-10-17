@@ -17,7 +17,6 @@ rssLimit = 10
 pygmentsUseClasses = true
 linenos = true
 footnoteReturnLinkContents = "^"
-theme = ["hugo-debugprint", "dnb-hugo-netlification", "dnb-hugo-shortcodes"]
 
 ################################################################################
 # see http://gohugo.io/templates/output-formats/
