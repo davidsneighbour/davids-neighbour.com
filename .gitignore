@@ -3,13 +3,19 @@ notes
 package-lock.json
 static/assets
 
+# files in precompiled sites
+/public/webfonts/**/*.html
+/public/webfonts/**/*.txt
+/public/webfonts/**/*.css
+/public/webfonts/**/*.rtf
+/public/webfonts/**/specimen_files
 
 # Created by https://www.toptal.com/developers/gitignore/api/hugo,node,phpstorm,sublimetext
 # Edit at https://www.toptal.com/developers/gitignore?templates=hugo,node,phpstorm,sublimetext
 
 ### Hugo ###
 # Generated files by hugo
-/public/
+#/public/
 /resources/_gen/
 hugo_stats.json
 
