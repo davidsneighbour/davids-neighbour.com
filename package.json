@@ -2,7 +2,7 @@
   "name": "davids-neighbour-com",
   "slug": "davids-neighbour-com",
   "url": "https://davids-neighbour.com",
-  "version": "2020.0.0",
+  "version": "2020.0.1",
   "description": "Website and content for davids-neighbour.com",
   "author": {
     "name": "Patrick Kollitsch",
@@ -52,12 +52,6 @@
     "not dead"
   ],
   "standard-version": {
-    "scripts": {
-      "prerelease": "./bin/release-hook-prerelease.sh",
-      "postbump": "./bin/release-hook-postbump.sh",
-      "postcommit": "./bin/release-hook-postcommit.sh",
-      "posttag": "./bin/release-hook-posttag.sh"
-    },
     "skip": {
       "changelog": true
     },
