@@ -63,7 +63,7 @@ homepage = "https://davids-neighbour.com/"
 # see https://gohugo.io/content-management/urls/
 ################################################################################
 [permalinks]
-post = "/:title/"
+journal = "/journal/:title/"
 page = "/:title/"
 
 [imaging]
