@@ -3,8 +3,8 @@ const path = require('path');
 
 module.exports = {
   entry: [
-    path.resolve('assets', 'js', 'script.js'),
-    //path.resolve('assets', 'sass', 'theme.scss'),
+    path.resolve('assets', 'script.js'),
+    //path.resolve('assets', 'theme.scss'),
   ],
   output: {
     path: path.resolve('static', 'assets'),
@@ -23,7 +23,7 @@ module.exports = {
         ],
       },
       // {
-      //   test: /\.css$/,
+      //   test: /\.(css)$/,
       //   use: [
       //     MiniCssExtractPlugin.loader,
       //     'css-loader',
@@ -42,19 +42,19 @@ module.exports = {
       //     loader: 'sass-loader'
       //   }]
       // },
-      {
-        test: /\.(png|jpe?g|gif|svg|ttf|woff|otf|eot)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[contenthash].[ext]',
-              outputPath: 'static/img',
-              esModule: false
-            }
-          }
-        ]
-      }
+      // {
+      //   test: /\.(png|jpe?g|gif|svg|ttf|woff|otf|eot)$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: '[name].[contenthash].[ext]',
+      //         outputPath: 'static/img',
+      //         esModule: false
+      //       }
+      //     }
+      //   ]
+      // }
     ],
   },
 };

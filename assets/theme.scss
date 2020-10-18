@@ -1,0 +1,24 @@
+// Required
+@import "libs/bootstrap/scss/functions";
+@import "libs/bootstrap/scss/variables";
+@import "libs/bootstrap/scss/mixins";
+
+// Optional
+@import "libs/bootstrap/scss/root";
+@import "libs/bootstrap/scss/reboot";
+@import "libs/bootstrap/scss/type";
+@import "libs/bootstrap/scss/images";
+@import "libs/bootstrap/scss/containers";
+@import "libs/bootstrap/scss/grid";
+
+// add fonts
+@import "webfonts/verb/compressed/stylesheet.css";
+
+// DNB theme setup
+@import "sass/settings/colors";
+@import "sass/settings/settings";
+@import "sass/settings/fonts";
+
+// components
+@import "sass/components/global";
+@import "sass/components/syntax";
