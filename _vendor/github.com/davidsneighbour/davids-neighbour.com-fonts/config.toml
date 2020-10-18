@@ -1,0 +1,9 @@
+[module]
+
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "assets"
+target = "static"
