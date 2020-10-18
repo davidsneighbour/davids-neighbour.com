@@ -3,11 +3,11 @@ base = "/"
 publish = "public"
 
 [context.production]
-command = "hugo --gc --minify"
+#command = "hugo --gc --minify"
 
 [context.production.environment]
 HUGO_VERSION = "0.74.3"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "hugo --gc"
+#command = "hugo --gc"

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://davids-neighbour.com/contact/</loc>
+    <lastmod>2020-10-04T20:18:02+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+    <xhtml:link rel="alternate"
+                hreflang="x-default"
+                href="https://davids-neighbour.com/contact/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://davids-neighbour.com/journal/hugo-config-in-subdirectories/</loc>
+    <lastmod>2020-10-03T18:56:41+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+    <xhtml:link rel="alternate"
+                hreflang="x-default"
+                href="https://davids-neighbour.com/journal/hugo-config-in-subdirectories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://davids-neighbour.com/journal/</loc>
+    <lastmod>2020-10-03T18:56:41+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+    <xhtml:link rel="alternate"
+                hreflang="x-default"
+                href="https://davids-neighbour.com/journal/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://davids-neighbour.com/tags/tag/</loc>
+    <lastmod>2020-10-03T18:56:41+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+    <xhtml:link rel="alternate"
+                hreflang="x-default"
+                href="https://davids-neighbour.com/tags/tag/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://davids-neighbour.com/tags/</loc>
+    <lastmod>2020-10-03T18:56:41+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+    <xhtml:link rel="alternate"
+                hreflang="x-default"
+                href="https://davids-neighbour.com/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://davids-neighbour.com/journal/hugo-and-phpstorm/</loc>
+    <lastmod>2020-10-01T19:05:42+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+    <xhtml:link rel="alternate"
+                hreflang="x-default"
+                href="https://davids-neighbour.com/journal/hugo-and-phpstorm/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://davids-neighbour.com/journal/colophonium/</loc>
+    <lastmod>2020-10-01T17:57:29+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+    <xhtml:link rel="alternate"
+                hreflang="x-default"
+                href="https://davids-neighbour.com/journal/colophonium/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://davids-neighbour.com/faq/</loc>
+    <lastmod>2020-10-01T17:44:35+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+    <xhtml:link rel="alternate"
+                hreflang="x-default"
+                href="https://davids-neighbour.com/faq/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://davids-neighbour.com/</loc>
+    <lastmod>2019-05-31T15:55:48+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+    <xhtml:link rel="alternate"
+                hreflang="x-default"
+                href="https://davids-neighbour.com/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://davids-neighbour.com/series/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+    <xhtml:link rel="alternate"
+                hreflang="x-default"
+                href="https://davids-neighbour.com/series/"
+                />
+  </url>
+  
+</urlset>
