@@ -46,3 +46,6 @@ siteid = "samui2"
 [algolia]
 vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
 params = ["categories", "tags"]
+
+[dnb]
+javascript = "script-local.js"
