@@ -6,7 +6,10 @@
     </profile>
   </component>
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../../Hugo/dnb-hugo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Hugo/dnb-hugo-libs" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../davids-neighbour.com-fonts" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/themes/dnb-hugo-netlification" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/themes/dnb-hugo-shortcodes" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/themes/hugo-debugprint" vcs="Git" />
