@@ -2,6 +2,9 @@ github.com/date-fns/date-fns v2.16.1+incompatible h1:MhC76uGURHPWnZhfKDJs+ckojxx
 github.com/date-fns/date-fns v2.16.1+incompatible/go.mod h1:+ryiPUdf29FTxQJUxCwq0ip75zSWtk43q+htSAQLdFU=
 github.com/davidsneighbour/davids-neighbour.com-fonts v1.0.0 h1:mHvguGUjrDKki6yQp3NLrGfrqLyaqTJ6u5M2izfLSl0=
 github.com/davidsneighbour/davids-neighbour.com-fonts v1.0.0/go.mod h1:680TDVnQnL4XhdkWlEEzqBt/9hk+WIg+E7A2onp8zhM=
+github.com/davidsneighbour/dnb-hugo-libs v1.0.3 h1:Bmmp4Ib5IwLdBzIKu4R3iyZ+HfNiaBWPBNhX3Jmk6zk=
+github.com/davidsneighbour/dnb-hugo-libs/bootstrap-icons v0.0.0-20201018100215-1e69652528f8 h1:VdF911vYgs+nEDaQbNpQ3IUPnrQPAMHUuNIXyXoQL14=
+github.com/davidsneighbour/dnb-hugo-libs/bootstrap-icons v0.0.0-20201018100215-1e69652528f8/go.mod h1:yMHt68sj5RmI/UVbuqVlyjYmgXRrj+BL1bXoCpTrqK8=
 github.com/davidsneighbour/dnb-hugo-libs/bootstrap5 v0.0.0-20201016123226-6f897438c5ad h1:ebreSvH0d9M6QKMtp/DUXqBnCKEiy9NUke7zD5E/FVU=
 github.com/davidsneighbour/dnb-hugo-libs/bootstrap5 v0.0.0-20201016123226-6f897438c5ad/go.mod h1:Hj1D7+enhgW1rqbGKjFepSQOhwIfRCXHv93Xqg9+Szc=
 github.com/davidsneighbour/dnb-hugo/packages/netlification v0.0.0-20201013152246-79b55c3f925c h1:nfx8tNKbk/kI0R0qgKS5MhPhS871EFjNMlayPERZxgc=
@@ -11,3 +14,4 @@ github.com/davidsneighbour/dnb-hugo/packages/robots v0.0.0-20201013152246-79b55c
 github.com/davidsneighbour/dnb-hugo/packages/shortcodes v0.0.0-20201013152246-79b55c3f925c h1:QHt3e0lCMhRRMt86g4BzfOh61gtEFNQ1nbNpAZdeivc=
 github.com/davidsneighbour/dnb-hugo/packages/shortcodes v0.0.0-20201013152246-79b55c3f925c/go.mod h1:Iwlx/MKzL1/FMxMUqqivYOGU7C1oxaezBcZxdCY+KI4=
 github.com/twbs/bootstrap v5.0.0-alpha2+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
+github.com/twbs/icons v1.0.0/go.mod h1:GnRlymgVWp5iVJCMa0Me5b6tFyGpVc2bSxPMRGIJmyA=
