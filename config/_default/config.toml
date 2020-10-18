@@ -20,6 +20,7 @@ footnoteReturnLinkContents = "^"
 
 ################################################################################
 # see http://gohugo.io/templates/output-formats/
+# [outputs] and [outputFormats] require to be in config.toml
 ################################################################################
 [outputs]
 home = [ "HTML", "RSS", "Algolia", "AMP", "REDIR", "HEADERS" ]
@@ -60,54 +61,8 @@ name = "Patrick Kollitsch"
 homepage = "https://davids-neighbour.com/"
 
 ################################################################################
-# see https://gohugo.io/content-management/urls/
-################################################################################
-[permalinks]
-journal = "/journal/:title/"
-page = "/:title/"
-
-[imaging]
-################################################################################
-# Default resample filter used for resizing. Default is Box,
-# a simple and fast averaging filter appropriate for downscaling.
-# See https://github.com/disintegration/imaging
-################################################################################
-resampleFilter = "lanczos"
-# Default JPEG quality setting. Default is 75.
-quality = 95
-# Anchor used when cropping pictures.
-# Default is "smart" which does Smart Cropping, using https://github.com/muesli/smartcrop
-# Smart Cropping is content aware and tries to find the best crop for each image.
-# Valid values are Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-anchor = "smart"
-
-################################################################################
 # https://gohugo.io/getting-started/configuration/#configure-build
 ################################################################################
 [build]
 useResourceCacheWhen = "never"
 writeStats = true
-
-[menu]
-
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 100
-
-[[menu.main]]
-identifier = "faq"
-name = "FAQ"
-#pre = "<i class='fa fa-heart'></i>"
-url = "/faq/"
-weight = 200
-
-[[menu.main]]
-name = "Journal"
-url = "/journal/"
-weight = 300
-
-[[menu.main]]
-name = "Contact"
-url = "/contact/"
-weight = 400

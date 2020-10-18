@@ -1,0 +1,21 @@
+[[main]]
+name = "Home"
+url = "/"
+weight = 100
+
+[[main]]
+identifier = "faq"
+name = "FAQ"
+#pre = "<i class='fa fa-heart'></i>"
+url = "/faq/"
+weight = 200
+
+[[main]]
+name = "Journal"
+url = "/journal/"
+weight = 300
+
+[[main]]
+name = "Contact"
+url = "/contact/"
+weight = 400
