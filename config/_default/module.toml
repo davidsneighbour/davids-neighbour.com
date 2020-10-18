@@ -2,10 +2,6 @@
 path = "github.com/davidsneighbour/davids-neighbour.com-fonts"
 disabled = false
 
-[[imports.mounts]]
-source = "assets"
-target = "assets"
-
 [[imports]]
 path = "github.com/davidsneighbour/dnb-hugo/packages/robots"
 
