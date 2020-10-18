@@ -5,7 +5,7 @@ This is the [Hugo](https://gohugo.io) setup and content for davids-neighbour.com
 ## setup and update algolia search
 
 - copy `.env.sample` to `.env`
-- fill in the info from https://www.algolia.com/apps &gt; API keys
+- fill in the info from [https://www.algolia.com/apps](https://www.algolia.com/apps) &gt; API keys
 - run `npm install -g atomic-algolia` to install globally 
 - run `npm run algolia` whenever there are updates to the content
 
