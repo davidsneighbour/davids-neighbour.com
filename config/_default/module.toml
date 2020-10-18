@@ -15,8 +15,4 @@ path = "github.com/davidsneighbour/dnb-hugo/packages/netlification"
 path = "github.com/davidsneighbour/dnb-hugo-libs/bootstrap5"
 
 [[imports]]
-path="github.com/date-fns/date-fns"
-
-[[imports.mounts]]
-source="src"
-target="assets/date"
+path = "github.com/davidsneighbour/dnb-hugo-libs/bootstrap-icons"

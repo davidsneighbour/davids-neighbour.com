@@ -180,7 +180,8 @@
       "spelling": {
         "language": "en",
         "skipPatterns": [
-          "JavaScript"
+          "JavaScript",
+          "David's Neighbour"
         ],
         "wordDefinitionRegexp": "/[\\w']+/g",
         "suggestCorrections": true

@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<!--suppress ALL -->
+
 <html lang="{{ .Site.LanguageCode }}" class="no-js">
+
   <head>
   {{ partial "head.html" . }}
   </head>
+
   <body id="davids-neighbour-com">
+
   {{ partial "body/top.html" . }}
   {{ partialCached "body/top-cached.html" . }}
+
   <div id="content" class="container">
-    <div id="contentcolumn" class="row">
-      <div class="col-12">
-      {{ block "main" . }}{{ end }}
-      </div>
-    </div>
+  {{ block "main" . }}{{ end }}
   </div>
+
   {{ partial "body/bottom.html" . }}
   {{ partialCached "body/bottom-cached.html" . }}
+
   </body>
+
 </html>

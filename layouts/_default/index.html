@@ -1,21 +1,10 @@
-{{/* layout for home page */}}
 {{ define "main" }}
-<div class="row align-middle">
-    <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2 text-center">
+
+<div class="row align-items-center align-middle">
+    <div class="col text-center">
         {{ partial "tools/logo-large.html" . }}
-        <div class="row align-middle">
-            <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2 text-center">
-                {{ .Page.Content }}
-            </div>
-            <ul class="nav align-middle">
-                {{ $currentPage := . }}
-                {{ range .Site.Menus.main }}
-                <li class="nav-item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}">
-                <a class="nav-link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-                </li>
-                {{ end }}
-            </ul>
-        </div>
+        {{ .Page.Content }}
     </div>
 </div>
+
 {{ end }}
