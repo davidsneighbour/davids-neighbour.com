@@ -1,8 +1,4 @@
 [[imports]]
-path = "github.com/davidsneighbour/davids-neighbour.com-fonts"
-disabled = false
-
-[[imports]]
 path = "github.com/davidsneighbour/dnb-hugo/packages/robots"
 
 [[imports]]
