@@ -1,0 +1,24 @@
+######################## default configuration ####################
+baseURL = "http://demo.themefisher.com/logbook-hugo/"
+title = "LogBook | Hugo Personal Blog Template"
+theme = "logbook"
+# post pagination
+paginate = "5"
+# post excerpt
+summaryLength = "50"
+# google analytics
+googleAnalytics = "" # Ex: UA-123-45
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+# disable language
+disableLanguages = [] # desable language from here
+
+# output
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+############################# Plugins ##############################
