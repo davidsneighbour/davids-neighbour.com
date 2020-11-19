@@ -6,6 +6,5 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="dnb-hugo" />
     <orderEntry type="module" module-name="dnb-hugo-libs" />
-    <orderEntry type="module" module-name="davids-neighbour.com-fonts" />
   </component>
 </module>

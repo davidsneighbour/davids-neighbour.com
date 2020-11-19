@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/davids-neighbour.com.iml" filepath="$PROJECT_DIR$/.idea/davids-neighbour.com.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../davids-neighbour.com-fonts/.idea/davids-neighbour.com-fonts.iml" filepath="$PROJECT_DIR$/../davids-neighbour.com-fonts/.idea/davids-neighbour.com-fonts.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../Hugo/dnb-hugo/.idea/dnb-hugo.iml" filepath="$PROJECT_DIR$/../../Hugo/dnb-hugo/.idea/dnb-hugo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../Hugo/dnb-hugo-libs/.idea/dnb-hugo-libs.iml" filepath="$PROJECT_DIR$/../../Hugo/dnb-hugo-libs/.idea/dnb-hugo-libs.iml" />
     </modules>
