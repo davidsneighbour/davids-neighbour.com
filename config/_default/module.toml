@@ -1,11 +1,11 @@
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo/packages/robots"
+path = "github.com/davidsneighbour/dnb-hugo/robots"
 
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo/packages/shortcodes"
+path = "github.com/davidsneighbour/dnb-hugo/shortcodes"
 
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo/packages/netlification"
+path = "github.com/davidsneighbour/dnb-hugo/netlification"
 
 [[imports]]
 path = "github.com/davidsneighbour/dnb-hugo-libs/bootstrap5"

@@ -33,14 +33,14 @@ instagram = "instagram_username"
 youtube = "youtube_username"
 dribbble = "dribbble_username"
 
-[social.facebook]
-profileid = "517050641" # patrick.kollitsch
-pageid = "6967849771" # samuisamui
-appid = "2047624572136513" # samui-samui.de
-
-[social.twitter]
-profileid = "davidsneighbour"
-siteid = "samui2"
+#[social.facebook]
+#profileid = "517050641" # patrick.kollitsch
+#pageid = "6967849771" # samuisamui
+#appid = "2047624572136513" # samui-samui.de
+#
+#[social.twitter]
+#profileid = "davidsneighbour"
+#siteid = "samui2"
 
 # search setup
 [algolia]
@@ -49,3 +49,92 @@ params = ["categories", "tags"]
 
 [dnb]
 javascript = "script-local.js"
+
+
+
+
+# CSS Plugins
+[[plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+attributes = ""
+[[plugins.css]]
+link = "https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans&display=swap"
+attributes = ""
+[[plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+attributes = ""
+[[plugins.css]]
+link = "plugins/slick/slick.css"
+attributes = ""
+
+# JS Plugins
+[[plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+attributes = ""
+[[plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+attributes = "async"
+[[plugins.js]]
+link = "plugins/slick/slick.min.js"
+attributes = ""
+[[plugins.js]]
+link = "plugins/search/fuse.min.js"
+attributes = ""
+[[plugins.js]]
+link = "plugins/search/mark.js"
+attributes = ""
+[[plugins.js]]
+link = "plugins/search/search.js"
+attributes = ""
+
+
+#################### default parameters ################################
+[params]
+logo = "images/logo.png"
+# Meta data
+description = "This is meta description"
+author = "Themefisher"
+# email address
+email = "georgia.young@example.com"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+# search
+search = true
+# layout
+layout = "full" # layout value (full or list)
+# Sidebar
+sidebar = "right" # sidebar value (left,right or false)
+
+# Preloader
+[preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
+
+# Subscription
+[subscription]
+enable = true
+# mailchimp subsciption
+mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
+mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
+
+############################# social site ########################
+[[social]]
+name = "facebook"
+icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[social]]
+name = "twitter"
+icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[social]]
+name = "linkedin"
+icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[social]]
+name = "github"
+icon = "ti-github" # themify icon : https://themify.me/themify-icons
+link = "#"
+
