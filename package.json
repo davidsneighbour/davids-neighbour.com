@@ -54,7 +54,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "7.12.3",
+    "@babel/core": "7.12.8",
     "@babel/preset-env": "7.12.1",
     "@popperjs/core": "2.5.3",
     "atomic-algolia": "0.3.19",
