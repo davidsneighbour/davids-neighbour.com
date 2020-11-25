@@ -67,7 +67,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "7.12.3",
+    "@babel/core": "7.12.9",
     "@babel/preset-env": "7.12.1",
     "@popperjs/core": "^2.5.3",
     "@textlint-rule/textlint-rule-no-invalid-control-character": "1.2.0",
