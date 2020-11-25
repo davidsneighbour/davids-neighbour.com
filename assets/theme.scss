@@ -4,10 +4,17 @@
 @import "libs/bootstrap/scss/mixins";
 @import "libs/bootstrap/scss/utilities";
 
+// DNB theme setup
+// add fonts
+@import "webfonts/verb/compressed/stylesheet";
+@import "webfonts/verb/condensed/stylesheet";
+@import "webfonts/verb/excond/stylesheet";
+@import "webfonts/verb/regular/stylesheet";
+
 // DNB settings
 @import "sass/settings/colors";
-@import "sass/settings/fonts";
 @import "sass/settings/settings";
+//@import "sass/settings/fonts";
 
 // Layout & components
 @import "libs/bootstrap/scss/root";

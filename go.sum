@@ -1,6 +1,5 @@
 github.com/davidsneighbour/davids-neighbour.com-fonts v0.0.0-20201018105542-2a099c20e363 h1:qzEZWO9iA7e0M4riJ5lNeBi9bJSsuxlW5m13OnHF/lA=
 github.com/davidsneighbour/davids-neighbour.com-fonts v0.0.0-20201018105542-2a099c20e363/go.mod h1:680TDVnQnL4XhdkWlEEzqBt/9hk+WIg+E7A2onp8zhM=
-github.com/davidsneighbour/dnb-hugo v0.0.0-20201102122344-3cd9755137aa h1:gA4BNLAB+gFPKTsxm0UxUjrRrhpw5szZJpyYC6KSQIY=
 github.com/davidsneighbour/dnb-hugo-libs/bootstrap-icons v0.0.0-20201018100215-1e69652528f8 h1:VdF911vYgs+nEDaQbNpQ3IUPnrQPAMHUuNIXyXoQL14=
 github.com/davidsneighbour/dnb-hugo-libs/bootstrap-icons v0.0.0-20201018100215-1e69652528f8/go.mod h1:yMHt68sj5RmI/UVbuqVlyjYmgXRrj+BL1bXoCpTrqK8=
 github.com/davidsneighbour/dnb-hugo-libs/bootstrap-icons v0.0.0-20201018113427-d958dd1c1816 h1:FqFHxA6+eIheBjdoKRq8laRLvoF2lJeIL4qjCTnw1F8=
@@ -9,17 +8,11 @@ github.com/davidsneighbour/dnb-hugo-libs/bootstrap5 v0.0.0-20201018100215-1e6965
 github.com/davidsneighbour/dnb-hugo-libs/bootstrap5 v0.0.0-20201018100215-1e69652528f8/go.mod h1:Hj1D7+enhgW1rqbGKjFepSQOhwIfRCXHv93Xqg9+Szc=
 github.com/davidsneighbour/dnb-hugo-libs/bootstrap5 v0.0.0-20201018113427-d958dd1c1816 h1:bbdaF99haxLuXh7JoHrM6fjnmTMH5DYqXNp8VPJ2exk=
 github.com/davidsneighbour/dnb-hugo-libs/bootstrap5 v0.0.0-20201018113427-d958dd1c1816/go.mod h1:Hj1D7+enhgW1rqbGKjFepSQOhwIfRCXHv93Xqg9+Szc=
-github.com/davidsneighbour/dnb-hugo/netlification v1.0.10 h1:nEe2oxL4DEIcNiGA3e6u8YayAwVtneHPsiI+HZ+vJsY=
-github.com/davidsneighbour/dnb-hugo/netlification v1.0.10/go.mod h1:l25A7Y78MbMI44bRNxul1xX8AQzzLJiIprmYcP6soko=
 github.com/davidsneighbour/dnb-hugo/packages/netlification v0.0.0-20201018091723-5e48a466bd33 h1:7AkIWrSyJV2b7zq4WnFyzQvyNbEN7SqKMT+Sqsap0LY=
 github.com/davidsneighbour/dnb-hugo/packages/netlification v0.0.0-20201018091723-5e48a466bd33/go.mod h1:+HP3OEPe40Z3qwLDa/nRrt782iM4RSKbRg8uUxPhxV4=
 github.com/davidsneighbour/dnb-hugo/packages/robots v0.0.0-20201018091723-5e48a466bd33 h1:CEnuyrjEFCihG2mQW4TwJb7ucpKB9Yg+zFKBTWcagBU=
 github.com/davidsneighbour/dnb-hugo/packages/robots v0.0.0-20201018091723-5e48a466bd33/go.mod h1:tr3+fxwaaa02abeJUYLo80vYPFyrLDEN+5tMgFzYMQY=
 github.com/davidsneighbour/dnb-hugo/packages/shortcodes v0.0.0-20201018091723-5e48a466bd33 h1:OU5FAjtf667sneF6pcdS91rNjxZTYlXW0DPD8OtHkVs=
 github.com/davidsneighbour/dnb-hugo/packages/shortcodes v0.0.0-20201018091723-5e48a466bd33/go.mod h1:Iwlx/MKzL1/FMxMUqqivYOGU7C1oxaezBcZxdCY+KI4=
-github.com/davidsneighbour/dnb-hugo/robots v1.0.1 h1:UGx/6qdfLTtw/2NauQ0GaAiGn/OJHzrJA3RHusbjl/0=
-github.com/davidsneighbour/dnb-hugo/robots v1.0.1/go.mod h1:g57/Gh2K0tvpvhB404Wf9pJKB7o2hwyBLIRJdEjc8Ac=
-github.com/davidsneighbour/dnb-hugo/shortcodes v1.0.9 h1:0BcU+29TI+kf0zZfAsRx9qpxFAIkoo37+XpP8JdfChw=
-github.com/davidsneighbour/dnb-hugo/shortcodes v1.0.9/go.mod h1:odInrnmgliJ522wT0cumyU1YUf0FQvkqK/0Jri1K9ao=
 github.com/twbs/bootstrap v5.0.0-alpha2+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.0.0/go.mod h1:GnRlymgVWp5iVJCMa0Me5b6tFyGpVc2bSxPMRGIJmyA=
