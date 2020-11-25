@@ -1,18 +1,19 @@
 [[imports]]
-path = "github.com/davidsneighbour/davids-neighbour.com-fonts"
+path = "github.com/davidsneighbour/dnb-hugo/packages/robots"
 disabled = false
 
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo/packages/robots"
-
-[[imports]]
 path = "github.com/davidsneighbour/dnb-hugo/packages/shortcodes"
+disabled = false
 
 [[imports]]
 path = "github.com/davidsneighbour/dnb-hugo/packages/netlification"
+disabled = false
 
 [[imports]]
 path = "github.com/davidsneighbour/dnb-hugo-libs/bootstrap5"
+disabled = false
 
 [[imports]]
 path = "github.com/davidsneighbour/dnb-hugo-libs/bootstrap-icons"
+disabled = false
