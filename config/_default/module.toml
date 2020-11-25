@@ -1,13 +1,13 @@
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo/packages/robots"
+path = "github.com/davidsneighbour/dnb-hugo/robots"
 disabled = false
 
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo/packages/shortcodes"
+path = "github.com/davidsneighbour/dnb-hugo/shortcodes"
 disabled = false
 
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo/packages/netlification"
+path = "github.com/davidsneighbour/dnb-hugo/netlification"
 disabled = false
 
 [[imports]]
