@@ -44,7 +44,10 @@
     "hugo-update": "hugo mod get -u ./... && hugo mod tidy",
     "textlint": "textlint",
     "textlint-fix": "textlint --fix",
-    "lint-md": "remark ."
+    "lint-md": "remark .",
+    "stylelint": "stylelint assets/scss/",
+    "stylelint2": "stylelint",
+    "stylelint-fix": "stylelint assets/scss/ --fix"
   },
   "browserslist": [
     ">= 1%",
@@ -79,6 +82,14 @@
     "cz-customizable-ghooks": "2.0.0",
     "postcss": "8.1.1",
     "postcss-cli": "8.1.0",
-    "standard-version": "9.0.0"
+    "standard-version": "9.0.0",
+    "stylelint": "13.8.0",
+    "stylelint-config-dnb": "git://github.com/davidsneighbour/stylelint-config-dnb.git"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-dnb",
+    "ignoreFiles": [
+      "assets/scss/templates/*"
+    ]
   }
 }
