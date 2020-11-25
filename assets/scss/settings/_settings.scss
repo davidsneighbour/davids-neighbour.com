@@ -1,7 +1,8 @@
 $font-size-base:          1.4rem;
-$font-family-sans-serif:  'verbcondlight';
+$font-family-sans-serif:  verb;
 $font-family-base:        $font-family-sans-serif;
-$headings-font-family:    'verbcompblack';
+$headings-font-family:    verbcompressed;
+$font-weight-base:        200;
 
 $h1-font-size:            $font-size-base * 2;
 $h2-font-size:            $font-size-base * 1.75;
