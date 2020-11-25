@@ -3,11 +3,8 @@ base = "/"
 publish = "public"
 
 [context.production]
-command = "hugo --gc --minify"
+command = "bin/netlify-build.sh"
 
 [context.production.environment]
 HUGO_VERSION = "0.78.1"
 HUGO_ENV = "production"
-
-[context.deploy-preview]
-command = "hugo --gc"

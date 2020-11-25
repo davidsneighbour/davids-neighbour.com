@@ -47,7 +47,8 @@
     "lint-md": "remark .",
     "stylelint": "stylelint assets/scss/",
     "stylelint2": "stylelint",
-    "stylelint-fix": "stylelint assets/scss/ --fix"
+    "stylelint-fix": "stylelint assets/scss/ --fix",
+    "netlify-build": "./bin/netlify-build.sh"
   },
   "browserslist": [
     ">= 1%",
