@@ -12,9 +12,9 @@
 @import "webfonts/verb/regular/stylesheet";
 
 // DNB settings
-@import "sass/settings/colors";
-@import "sass/settings/settings";
-//@import "sass/settings/fonts";
+@import "scss/settings/colors";
+@import "scss/settings/settings";
+//@import "scss/settings/fonts";
 
 // Layout & components
 @import "libs/bootstrap/scss/root";
@@ -54,5 +54,5 @@
 // BOOTSTRAP 5 END
 
 // components
-@import "sass/components/global";
-@import "sass/components/syntax";
+@import "scss/components/global";
+@import "scss/components/syntax";
