@@ -1,13 +1,12 @@
 'use strict';
 
 // @see https://github.com/leonardoanalista/cz-customizable
-
 module.exports = {
 
   types: [{
-      value: 'content',
-      name: 'content: A new post or other content'
-    },
+    value: 'content',
+    name: 'content: A new post or other content'
+  },
     {
       value: 'feat',
       name: 'feat: A new feature'
@@ -49,8 +48,8 @@ module.exports = {
   scopes: [],
   scopeOverrides: {
     content: [{
-        name: 'new'
-      },
+      name: 'new'
+    },
       {
         name: 'correction'
       },
@@ -63,7 +62,7 @@ module.exports = {
   // override the messages, defaults are as follows
   messages: {
     type: 'Select the type of change that you\'re committing:',
-    scope: '\nDenote the SCOPE of this change (optional):',
+    scope: 'Denote the SCOPE of this change (optional):',
     customScope: 'Denote the SCOPE of this change:',
     subject: 'Write a SHORT, IMPERATIVE tense description of the change:\n',
     body: 'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
