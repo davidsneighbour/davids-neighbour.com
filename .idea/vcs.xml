@@ -6,9 +6,6 @@
     </profile>
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/../../Hugo/dnb-hugo" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../../Hugo/dnb-hugo-libs" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../stylelint-config-dnb" vcs="Git" />
   </component>
 </project>

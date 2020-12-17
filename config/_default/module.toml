@@ -1,39 +1,39 @@
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo/favicon"
+path = "github.com/dnb-hugo/components/favicon"
 disabled = false
 
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo/functions"
+path = "github.com/dnb-hugo/components/functions"
 disabled = false
 
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo/netlification"
+path = "github.com/dnb-hugo/components/netlification"
 disabled = false
 
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo/renderhooks"
+path = "github.com/dnb-hugo/components/renderhooks"
 disabled = false
 
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo/robots"
+path = "github.com/dnb-hugo/components/robots"
 disabled = false
 
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo/shortcodes"
+path = "github.com/dnb-hugo/shortcodes"
 disabled = false
 
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo/sitemap"
+path = "github.com/dnb-hugo/components/sitemap"
 disabled = false
 
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo-libs/bootstrap5"
+path = "github.com/dnb-hugo/libraries/bootstrap5"
 disabled = false
 
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo-libs/bootstrap-icons"
+path = "github.com/dnb-hugo/libraries/bootstrap-icons"
 disabled = false
 
 [[imports]]
-path = "github.com/davidsneighbour/dnb-hugo-libs/popper.js"
+path = "github.com/dnb-hugo/libraries/popper.js"
 disabled = false
