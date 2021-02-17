@@ -73,7 +73,7 @@
   "devDependencies": {
     "@babel/core": "7.12.10",
     "@babel/preset-env": "7.12.11",
-    "@popperjs/core": "2.6.0",
+    "@popperjs/core": "2.7.0",
     "atomic-algolia": "0.3.19",
     "autoprefixer": "10.2.3",
     "commitizen": "4.2.3",
