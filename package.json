@@ -81,7 +81,7 @@
     "cz-conventional-changelog": "3.3.0",
     "cz-customizable": "6.3.0",
     "cz-customizable-ghooks": "2.0.0",
-    "postcss": "8.2.4",
+    "postcss": "8.2.9",
     "postcss-cli": "8.3.1",
     "standard-version": "9.1.0",
     "stylelint": "13.9.0",
