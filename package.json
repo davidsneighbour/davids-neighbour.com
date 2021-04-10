@@ -1,96 +1,99 @@
 {
-  "name": "davids-neighbour-com",
-  "slug": "davids-neighbour-com",
-  "url": "https://davids-neighbour.com",
-  "version": "2020.0.10",
-  "description": "Website and content for davids-neighbour.com",
-  "author": {
-    "name": "Patrick Kollitsch",
-    "email": "patrick@davids-neighbour.com",
-    "web": "https://davids-neighbour.com"
-  },
-  "contributors": [
-    {
-      "name": "Patrick Kollitsch",
-      "email": "patrick@davids-neighbour.com",
-      "web": "https://davids-neighbour.com"
-    }
-  ],
-  "homepage": "https://davids-neighbour.com",
-  "license": "UNLICENSED",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/davidsneighbour/davids-neighbour.com.git"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-customizable"
-    }
-  },
-  "scripts": {
-    "start": "webpack --mode=development --watch",
-    "build": "cross-env NODE_ENV=production webpack --progress",
-    "algolia": "hugo --quiet && atomic-algolia && rm -rf public",
-    "css": "node-sass -q --include-path node_modules --output-style compressed --precision 6 assets/sass/theme.scss -o public/theme/assets/css/ ",
-    "build-changelog": "./bin/create-changelog.sh > CHANGELOG.md",
-    "postcss": "postcss public/theme/assets/css/theme.css -r",
-    "preversion": "if [ \"$(git rev-parse --abbrev-ref HEAD)\" = main ] ; then echo Preversion checks passed. ; else echo Error: Not on branch release. ; exit 1 ; fi",
-    "release": "standard-version --release-as patch -a -t \"\" && git push --follow-tags origin main",
-    "release-next": "standard-version --release-as minor -a -t \"\" && git push --follow-tags origin main",
-    "release-major": "standard-version --release-as major -a -t \"\" && git push --follow-tags origin main",
-    "serve": "hugo server --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose",
-    "hugo": "hugo --i18n-warnings --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --enableGitInfo --log true --logFile hugo.log --verbose",
-    "hugo-update": "hugo mod get -u ./... && hugo mod tidy",
-    "textlint": "textlint",
-    "textlint-fix": "textlint --fix",
-    "lint-md": "remark .",
-    "stylelint": "stylelint assets/scss/",
-    "stylelint2": "stylelint",
-    "stylelint-fix": "stylelint assets/scss/ --fix",
-    "netlify-build": "./bin/netlify-build.sh"
-  },
-  "browserslist": [
-    ">= 1%",
-    "last 2 major version",
-    "not dead"
-  ],
-  "standard-version": {
-    "skip": {
-      "changelog": true
+    "name": "davids-neighbour-com",
+    "description": "Website and content for davids-neighbour.com",
+    "version": "2020.0.10",
+    "author": {
+        "name": "Patrick Kollitsch",
+        "email": "patrick@davids-neighbour.com",
+        "web": "https://davids-neighbour.com"
     },
-    "bumpFiles": [
-      {
-        "filename": ".version",
-        "type": "plain-text"
-      },
-      {
-        "filename": "package.json",
-        "type": "json"
-      }
-    ]
-  },
-  "devDependencies": {
-    "@babel/core": "7.12.10",
-    "@babel/preset-env": "7.12.11",
-    "@popperjs/core": "2.6.0",
-    "atomic-algolia": "0.3.19",
-    "autoprefixer": "10.1.0",
-    "commitizen": "4.2.2",
-    "cssnano": "4.1.10",
-    "cz-conventional-changelog": "3.3.0",
-    "cz-customizable": "6.3.0",
-    "cz-customizable-ghooks": "2.0.0",
-    "postcss": "8.2.1",
-    "postcss-cli": "8.3.1",
-    "standard-version": "9.0.0",
-    "stylelint": "13.8.0",
-    "stylelint-config-dnb": "git://github.com/davidsneighbour/stylelint-config-dnb.git"
-  },
-  "stylelint": {
-    "extends": "stylelint-config-dnb",
-    "ignoreFiles": [
-      "assets/scss/templates/*"
-    ]
-  }
+    "browserslist": [
+        ">= 1%",
+        "last 2 major version",
+        "not dead"
+    ],
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-customizable"
+        }
+    },
+    "contributors": [
+        {
+            "name": "Patrick Kollitsch",
+            "email": "patrick@davids-neighbour.com",
+            "web": "https://davids-neighbour.com"
+        }
+    ],
+    "devDependencies": {
+        "@babel/core": "7.13.15",
+        "@babel/preset-env": "7.13.15",
+        "@popperjs/core": "2.9.2",
+        "@rogerpence/edit-package-json": "^1.1.1",
+        "atomic-algolia": "0.3.19",
+        "autoprefixer": "10.2.5",
+        "commitizen": "4.2.3",
+        "cssnano": "4.1.11",
+        "cz-conventional-changelog": "3.3.0",
+        "cz-customizable": "6.3.0",
+        "cz-customizable-ghooks": "2.0.0",
+        "postcss": "8.2.9",
+        "postcss-cli": "8.3.1",
+        "standard-version": "9.2.0",
+        "stylelint": "13.12.0",
+        "stylelint-config-dnb": "git://github.com/davidsneighbour/stylelint-config-dnb.git"
+    },
+    "homepage": "https://davids-neighbour.com",
+    "license": "UNLICENSED",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/davidsneighbour/davids-neighbour.com.git"
+    },
+    "scripts": {
+        "algolia": "hugo --quiet && atomic-algolia && rm -rf public",
+        "build": "cross-env NODE_ENV=production webpack --progress",
+        "build-changelog": "./bin/create-changelog.sh > CHANGELOG.md",
+        "check-env": "node -e 'console.log(process.env)' | grep npm",
+        "css": "node-sass -q --include-path node_modules --output-style compressed --precision 6 assets/sass/theme.scss -o public/theme/assets/css/ ",
+        "hugo": "hugo --i18n-warnings --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --enableGitInfo --log true --logFile hugo.log --verbose",
+        "hugo-update": "hugo mod get -u ./... && hugo mod tidy",
+        "lint-md": "remark .",
+        "netlify-build": "./bin/netlify-build.sh",
+        "postcss": "postcss public/theme/assets/css/theme.css -r",
+        "preversion": "if [ \"$(git rev-parse --abbrev-ref HEAD)\" = main ] ; then echo Preversion checks passed. ; else echo Error: Not on branch release. ; exit 1 ; fi",
+        "release": "standard-version --release-as patch -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
+        "release-major": "standard-version --release-as major -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
+        "release-next": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
+        "serve": "hugo server --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose",
+        "start": "webpack --mode=development --watch",
+        "stylelint": "stylelint assets/scss/",
+        "stylelint-fix": "stylelint assets/scss/ --fix",
+        "stylelint2": "stylelint",
+        "textlint": "textlint",
+        "textlint-fix": "textlint --fix",
+        "vars": "env | grep npm_package_"
+    },
+    "slug": "davids-neighbour-com",
+    "standard-version": {
+        "skip": {
+            "changelog": true
+        },
+        "bumpFiles": [
+            {
+                "filename": ".version",
+                "type": "plain-text"
+            },
+            {
+                "filename": "package.json",
+                "type": "json"
+            }
+        ]
+    },
+    "stylelint": {
+        "extends": "stylelint-config-dnb",
+        "ignoreFiles": [
+            "assets/scss/templates/*"
+        ]
+    },
+    "url": "https://davids-neighbour.com"
 }
