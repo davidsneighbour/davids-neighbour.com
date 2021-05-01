@@ -25,7 +25,7 @@ pre-commit gc
 
 ### Releasing
 
-## Icons
+## HeroIcons
 
 - [Github Repository](https://github.com/tailwindlabs/heroicons)
 - [Website with icon overview](https://heroicons.com/)
