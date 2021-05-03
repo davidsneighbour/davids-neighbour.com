@@ -39,7 +39,7 @@
         "postcss": "8.2.13",
         "postcss-cli": "8.3.1",
         "standard-version": "9.2.0",
-        "stylelint": "13.13.0",
+        "stylelint": "13.13.1",
         "stylelint-config-dnb": "git://github.com/davidsneighbour/stylelint-config-dnb.git"
     },
     "homepage": "https://davids-neighbour.com",
