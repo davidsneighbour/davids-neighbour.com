@@ -1,5 +1,5 @@
 [[imports]]
-path = "github.com/dnb-hugo/components/favicon"
+path = "github.com/dnb-hugo/blocks/bootstrap"
 disabled = false
 
 [[imports]]
@@ -11,6 +11,10 @@ path = "github.com/dnb-hugo/components/netlification"
 disabled = false
 
 [[imports]]
+path = "github.com/dnb-hugo/components/pwa"
+disabled = false
+
+[[imports]]
 path = "github.com/dnb-hugo/components/renderhooks"
 disabled = false
 
@@ -19,7 +23,19 @@ path = "github.com/dnb-hugo/components/robots"
 disabled = false
 
 [[imports]]
-path = "github.com/dnb-hugo/shortcodes"
+path = "github.com/dnb-hugo/debugprint"
+disabled = false
+
+[[imports]]
+path = "github.com/dnb-hugo/hooks"
+disabled = false
+
+[[imports]]
+path = "github.com/dnb-hugo/shortcodes/collection"
+disabled = false
+
+[[imports]]
+path = "github.com/dnb-hugo/shortcodes/youtube"
 disabled = false
 
 [[imports]]
