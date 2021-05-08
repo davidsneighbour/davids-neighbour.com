@@ -2,6 +2,7 @@
 notes
 package-lock.json
 static/assets
+replacements
 
 # files in precompiled sites
 /public/webfonts/**/*.html
