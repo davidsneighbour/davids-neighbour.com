@@ -8,7 +8,7 @@
     "web": "https://davids-neighbour.com"
   },
   "devDependencies": {
-    "@babel/core": "7.14.0",
+    "@babel/core": "7.14.2",
     "@babel/preset-env": "7.14.1",
     "@dnb-hugo/browserslist-config": "2.2.5",
     "@dnb-hugo/commitlint-config": "2.0.14",
