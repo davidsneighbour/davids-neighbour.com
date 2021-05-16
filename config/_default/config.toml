@@ -17,15 +17,16 @@ rssLimit = 10
 pygmentsUseClasses = true
 linenos = true
 footnoteReturnLinkContents = "^"
+disableKinds = ["page", "section", "RSS", "taxonomy", "taxonomyTerm", "404"]
 
 ################################################################################
 # see http://gohugo.io/templates/output-formats/
 # [outputs] and [outputFormats] require to be in config.toml
 ################################################################################
 [outputs]
-home = [ "HTML", "RSS", "Algolia", "AMP", "REDIR", "HEADERS" ]
-page = [ "HTML", "AMP" ]
-post = [ "HTML", "AMP" ]
+home = [ "HTML", "RSS", "Algolia", "REDIR", "HEADERS" ]
+page = [ "HTML" ]
+post = [ "HTML" ]
 
 [outputFormats]
 

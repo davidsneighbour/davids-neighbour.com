@@ -1,0 +1,208 @@
+# configuration for the onboarding questionnaire for new customers
+
+[config]
+formlink=""
+class=""
+# form field layout
+# 1 for labels above field
+# 2 for inline label
+fieldlayout=1
+# only required for inline labels
+labelclass="col-sm-3 col-" # content is followed by `form-label` for positioning
+fieldclass="col-sm-9"
+
+[[fields]]
+id="email"
+type="email"
+label="Email"
+layout="col-md-6"
+placeholder=""
+value=""
+
+[[fields]]
+id="password"
+type="password"
+label="Password"
+layout="col-md-6"
+placeholder=""
+value=""
+
+
+#From: [ABC design company]	To: [ABC web design client]
+#
+#This survey allows us to obtain information that will help build and service your website. Please answer the questions to the best of your knowledge. If you have any questions or need help with the survey, please contact us and we will guide you through any of the questions as needed.
+#
+#1. Company Name
+#
+#Name of contact person
+#
+#Phone
+#
+#Fax
+#
+#Email
+#
+#Address
+#2. Do you wish to have your contact information listed on the website?
+#
+#3. If the answer is yes some of it, please check the information that you want on your web page.
+#
+#Yes, all of it
+#Physical address
+#
+#Yes, some of it
+#Email address
+#Phone number
+#Fax number
+#
+#4. When is the desired date for your website to go live?
+#5. What is your budget for your website?
+#6. Please describe your business in detail.
+#
+#7. What is the intended purpose of your website? Please give as much information as possible.
+#
+#8. Information on your target audience
+#Age Range
+#
+#Gender
+#
+#Income Bracket
+#
+#Needs
+#9. Do you have current content that you would like placed on your new website?
+#Yes
+#No
+#
+#10. If yes, please be sure to provide the content to us prior to the development of your website.
+#
+#11. What would your dream website look like? Please describe in detail.
+#
+#12. What is the projected outcome for your website (for example, attract 100 new customers per month, sell $10,000 of merchandise per month, bring 25 new people to your brick and mortar location monthly)?
+#
+#In order to provide you with the website that you are looking for, we need to collect information about your business and your business's needs. Please answer all the questions as accurately as possible so that we may help you design a website that you and your customers will look forward to using.
+#
+#1. Full name of company:
+#2. Contact Information:
+#Name
+#
+#Job Title
+#
+#Phone
+#
+#Fax
+#
+#Email
+#
+#Address
+#3. What services and/or products does your business provide?
+#4. Please provide the full address of your website (for example, http://www.mywebsitename.com)
+#5. What names do you wish to appear on the website? Please provide accurate spelling and punctuation.
+#
+#6. Do you already have a business logo?
+#Yes
+#No
+#If so, please provide a copy of it as an attachment.
+#
+#7. Where would you like the logo to be displayed on your website?
+#
+#8. What is the purpose of your website? Check all that apply
+#
+#To sell items
+#To interact with customers
+#
+#To inform customers about your business
+#Other
+#9. If other, please explain.
+#
+#10. Do you have any particular colors that you wish displayed on your web site? If so, which ones?
+#
+#11. Which pages do you wish included on your website? Please check all that apply.
+#
+#About Us page
+#Press releases/current events page
+#
+#Services page
+#Form to submit for services or purchases
+#
+#Contact Us page
+#Other
+#Blog for articles
+#12. If other, please provide the name of the pages and the reason or premise for the pages.
+#
+#13. Do you want the web page to be designed with search engine optimization in mind?
+#Yes
+#No
+#
+#14. Do you wish to have links that drop down, or should all links be clickable from the main menu bar of the website?
+#
+#Drop down
+#Menu bar and clickable
+#
+#15. Do you wish to include a sitemap?
+#Yes
+#No
+#
+#16. What is the ultimate goal of your website?
+#
+#Please fill out the provided questionnaire so that we may better understand the type of website that you are looking for. The more information you are able to provide about your services and the services that your website will offer, the smoother the development process will be. Please answer all questions as completely as possible then submit the completed form to us directly.
+#
+#1. Company Name
+#2. Contact information for in the event of questions or issues regarding your website.
+#Name
+#
+#Job Title
+#
+#Phone
+#
+#Fax
+#
+#Email
+#
+#Address
+#3. Name and web address of your company.
+#4. Is the website intended for business or personal use?
+#Business
+#Personal (Please go to question 7)
+#
+#5. Does your company operate a brick and mortar location or is it solely on the internet?
+#
+#Brick and mortar
+#Internet only
+#
+#6. Does your business have a logo or a motto that you wish to have displayed on the website?
+#Yes
+#No
+#If yes, please provide the logo and motto as an attachment to this questionnaire.
+#
+#7. Will you need website content in the form of a blog post?
+#Yes
+#No
+#
+#8. How often will you post to your blog?
+#
+#1-3 times per week
+#3-5 times per week
+#6+ times per week
+#
+#9. Will you be posting the blogs or will you hire out your blog post?
+#I will post myself
+#I will hire a writer
+#
+#10. If you are hiring a writer for blog posts, would you prefer to create a website log-in specifically for the writer to add posts?
+#Yes
+#No
+#
+#11. Do you need a storefront or a regular web page of information for your home page?
+#
+#Storefront
+#Homepage of information
+#
+#12. Would you like photographs to be placed on your website?
+#Yes
+#No
+#13. Will you provide the photographs or would you like us to find images?
+#
+#We provide photographs
+#You provide photographs
+#
+#14. If you will be providing photographs, please send them to the contact email address that we have provided and we will be happy to add them to your website.
