@@ -1,6 +1,0 @@
-{{ $js0 := resources.Get "js/bootstrap.bundle.min.js" }}
-{{ $js12 := resources.Get "script.js" }}
-{{ $jsLocal := resources.Get (printf "%s" ($.Param "dnb.javascript")) }}
-{{ $js := slice $js0 $js12 $jsLocal | resources.Concat "script.js" | resources.Minify | resources.Fingerprint "sha384" }}
-
-{{ return $js }}
