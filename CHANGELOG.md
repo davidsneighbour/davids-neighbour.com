@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2020.0.13](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2020.0.12...v2020.0.13) (2021-05-16)
+
 ### 2020.0.12 (2021-05-08)
 
 
