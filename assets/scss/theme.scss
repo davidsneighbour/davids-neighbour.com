@@ -3,13 +3,13 @@
  ******************************************************************************/
 
 // DNB settings
-@import 'settings/fonts';
-@import 'settings/colors';
-@import 'settings/settings';
+@import 'scss/settings/fonts';
+@import 'scss/settings/colors';
+@import 'scss/settings/settings';
 
 // Bootstrap 5
-@import 'bootstrap';
+@import 'scss/bootstrap';
 
 // components
-@import 'components/global';
-@import 'components/syntax';
+@import 'scss/components/global';
+@import 'scss/components/syntax';
