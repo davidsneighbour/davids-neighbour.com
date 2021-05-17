@@ -2,8 +2,6 @@ github.com/dnb-hugo/blocks/bootstrap v1.0.14 h1:e0fGi1YEI+uLLJK1d75Jcl7J760sUIeg
 github.com/dnb-hugo/blocks/bootstrap v1.0.14/go.mod h1:wHbDTseGIeMLKrw99U19x5MO1u1n07yvIm+3CYGx8QM=
 github.com/dnb-hugo/components/functions v1.0.30 h1:S4XJqvSQa9VLUPgMQnJcmE8pKcX8U+7FPVcLTk5BePI=
 github.com/dnb-hugo/components/functions v1.0.30/go.mod h1:tMbnIU5Q/s6RGEsb0dhWPQRYu3W91mZPjNaMMzHcPuA=
-github.com/dnb-hugo/components/netlification v1.1.13 h1:qmdjgiYDfZVy33Z41pXR7brm/Nmoe+LJKN1wCIVjSzM=
-github.com/dnb-hugo/components/netlification v1.1.13/go.mod h1:noA3GBiXqWMK792VVkIRqpCcn1qlycn04O0htdIjnKo=
 github.com/dnb-hugo/components/opensearch v1.0.2 h1:1oeFn8WCnGELcp9NhMi/91OwQYvGV17MDJy1WSWiL7M=
 github.com/dnb-hugo/components/opensearch v1.0.2/go.mod h1:njg6EUuNlbY4SbhPqXy+3E6Gebn/EwWo/UKws1Ea1mQ=
 github.com/dnb-hugo/components/pwa v1.1.10 h1:YtcGoJVKshhUNrRBIf3a9ovp0AkF5I0fRj9NX6kTmqk=
