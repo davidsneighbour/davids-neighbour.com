@@ -13,6 +13,9 @@ pre-commit gc
 
 ## NPM scripts
 
+```shell
+```
+
 ### Development server
 
 ### Build scripts
