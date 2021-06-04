@@ -21,7 +21,7 @@
     "@rogerpence/edit-package-json": "1.1.1",
     "atomic-algolia": "0.3.19",
     "autoprefixer": "10.2.6",
-    "cssnano": "5.0.4",
+    "cssnano": "5.0.5",
     "postcss": "8.3.0",
     "postcss-cli": "8.3.1"
   },
