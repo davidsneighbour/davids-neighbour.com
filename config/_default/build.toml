@@ -1,6 +1,5 @@
 ################################################################################
-# see https://gohugo.io/content-management/urls/
+# https://gohugo.io/getting-started/configuration/#configure-build
 ################################################################################
-journal = "/journal/:title/"
-page = "/:title/"
-notes = "/notes/:year/:month/:filename/"
+useResourceCacheWhen = "never"
+writeStats = true

@@ -1,11 +1,11 @@
 [[imports]]
-path = "github.com/dnb-hugo/blocks/bootstrap"
+path = "github.com/dnb-org/blocks/bootstrap"
 disable = false
 ignoreConfig = false
 ignoreImports = false
 
 #[[imports]]
-#path = "github.com/dnb-hugo/components/netlification"
+#path = "github.com/dnb-org/components/netlification"
 #disable = false
 #ignoreConfig = false
 #ignoreImports = false

@@ -1,0 +1,45 @@
+{{- if eq true (site.Params.build | default true) -}}
+  {{- $config := index site.Data.dnb "blocks-bootstrap" "config" -}}
+  {{- .Scratch.Set "hasSidebar" false -}}
+  {{- if (and
+    (isset $config "layout")
+    (isset $config.layout "sidebar_enabled")
+    (eq $config.layout.sidebar_enabled true)
+  ) -}}
+    {{- .Scratch.Set "hasSidebar" true -}}
+  {{- end -}}
+  {{- .Scratch.Set "enableTemplateWarnings" true -}}
+  {{- if (and (isset ($.Param "dnb") "enableTemplateWarnings") (eq ($.Param "dnb.enableTemplateWarnings") false )) -}}
+    {{- .Scratch.Set "enableTemplateWarnings" false -}}
+  {{- end -}}
+  {{- partial "func/hook" ( dict "hook" "setup" "context" . ) -}}
+  <!doctype html>
+  <html lang="{{- site.LanguageCode | default "en-US" -}}" class="no-js">
+  <head>
+    {{- partial "func/hook" ( dict "hook" "head-init" "context" . ) -}}
+    <meta charset="{{- $config.head.charset | default "utf-8" -}}">
+    <meta name="viewport" content="{{- $config.head.viewport | default "width=device-width, initial-scale=1, shrink-to-fit=no" -}}">
+    <title>{{- block "title" . -}}{{- with .Title -}}{{- . -}} | {{- end -}}{{- .Site.Title -}}{{- end -}}</title>
+    {{- partial "func/hook" ( dict "hook" "head-start" "context" . ) -}}
+    {{- partial "head" . -}}
+    {{- partial "func/hook" ( dict "hook" "head-end" "context" . ) -}}
+  </head>
+
+  <body id="{{- .Site.Params.Siteslug | default "bootstrap" -}}">
+  {{- partial "func/hook" ( dict "hook" "body-start" "context" . ) -}}
+  {{- partial "func/hook" ( dict "hook" "container-start" "context" . ) -}}
+  <main id="content">
+    <div class="row">
+      <div id="main">
+        {{- partial "func/hook" ( dict "hook" "content-start" "context" . ) -}}
+        {{ block "main" . }}{{ end }}
+        {{- partial "func/hook" ( dict "hook" "content-end" "context" . ) -}}
+      </div>
+    </div>
+  </main>
+  {{- partial "func/hook" ( dict "hook" "container-end" "context" . ) -}}
+  {{- partial "func/hook" ( dict "hook" "body-end" "context" . ) -}}
+  </body>
+  </html>
+  {{- partial "func/hook" ( dict "hook" "teardown" "context" . ) -}}
+{{- end -}}

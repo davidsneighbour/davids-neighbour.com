@@ -15,9 +15,10 @@ siteslug = "davids-neighbour-de"
 # see https://gohugo.io/templates/internal/#configure-open-graph
 description = "Onlinemarketing Made in Paradise"
 images = ["site-feature-image.jpg"]
-title = "My cool site"
+title = "David's Neighbour"
 
-
+containerMaxWidth = "700px"
+dateFormat = "Jan 2, 2006"
 
 # design elements
 sitecolor = "#d02d19"
