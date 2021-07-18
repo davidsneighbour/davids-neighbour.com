@@ -1,5 +1,5 @@
 {
-  "name": "davids-neighbour-com",
+  "name": "@davidsneighbour/davids-neighbour-com",
   "description": "Website and content for davids-neighbour.com",
   "version": "2020.0.19",
   "author": {
@@ -8,21 +8,8 @@
     "web": "https://davids-neighbour.com"
   },
   "devDependencies": {
-    "@babel/core": "7.14.6",
-    "@babel/preset-env": "7.14.7",
-    "@dnb-org/browserslist-config": "3.0.13",
-    "@dnb-org/commitlint-config": "3.0.13",
-    "@dnb-org/eslint-config": "3.0.13",
-    "@dnb-org/remark-config": "3.0.13",
-    "@dnb-org/standard-version-config": "3.0.13",
-    "@dnb-org/stylelint-config": "3.0.13",
-    "@dnb-org/textlint-config": "3.0.13",
-    "@popperjs/core": "2.9.2",
-    "@rogerpence/edit-package-json": "1.1.1",
+    "@dnb-org/all": "3.1.0",
     "atomic-algolia": "0.3.19",
-    "autoprefixer": "10.2.6",
-    "cssnano": "5.0.6",
-    "postcss": "8.3.5",
     "postcss-cli": "8.3.1"
   },
   "homepage": "https://davids-neighbour.com",
@@ -56,8 +43,6 @@
     "test:cypress": "cypress open",
     "test:server": "hugo server --port=8888 --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log -v",
     "update": "npm-check-updates -u && npm install"
-
-
   },
   "url": "https://davids-neighbour.com"
 }
