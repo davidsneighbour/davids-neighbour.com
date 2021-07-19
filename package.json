@@ -7,16 +7,18 @@
     "email": "patrick@davids-neighbour.com",
     "web": "https://davids-neighbour.com"
   },
-  "devDependencies": {
+  "dependencies": {
     "@dnb-org/all": "3.1.0",
+    "@tailwindcss/typography": "^0.4.1",
     "atomic-algolia": "0.3.19",
+    "autoprefixer": "^10.3.1",
+    "cssnano": "^5.0.6",
+    "postcss": "^8.3.5",
     "postcss-cli": "8.3.1",
-
-    "@tailwindcss/typography": "^0.3.0",
-    "autoprefixer": "^10.0.4",
-    "postcss": "^8.1.10",
+    "postcss-import": "^14.0.2",
+    "postcss-nesting": "^7.0.1",
     "postcss-purgecss": "^2.0.3",
-    "tailwindcss": "^2.0.1"
+    "tailwindcss": "^2.2.4"
   },
   "homepage": "https://davids-neighbour.com",
   "license": "UNLICENSED",

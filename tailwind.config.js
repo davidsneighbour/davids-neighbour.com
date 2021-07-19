@@ -1,33 +1,43 @@
-const theme = require('tailwindcss/defaultTheme');
-const typography = require('@tailwindcss/typography');
-
-//const colorBrand = 'var(--color-pretty)';
-
-// Utils
-const round = (num) => num.toFixed(7).replace(/(\.[0-9]+?)0+$/, '$1').replace(/\.0$/, '');
-const rem = (px) => `${round(px / 16)}rem`;
-const em = (px, base) => `${round(px / base)}em`;
-const px = (px) => `${px}px`;
+const typography = require("@tailwindcss/typography");
 
 module.exports = {
-	important: true, // See https://tailwindcss.com/docs/configuration#important
-	purge: {
-		enabled: process.env.HUGO_ENVIRONMENT === 'production',
-    content: [
-      './hugo_stats.json',
-      './layouts/**/*.html',
-		],
-		extractors: [
+  // See https://tailwindcss.com/docs/configuration#important
+  important: false,
+  purge: {
+    enabled: process.env.HUGO_ENVIRONMENT === "production",
+    content: ["./hugo_stats.json", "./layouts/**/*.html"],
+    extractors: [
       {
         extractor: (content) => {
-					let els = JSON.parse(content).htmlElements;
-					return els.tags.concat(els.classes, els.ids);
-				},
-        extensions: ['json']
+          // noinspection JSUnresolvedVariable
+          const els = JSON.parse(content).htmlElements;
+          return els.tags.concat(els.classes, els.ids);
+        },
+        extensions: ["json"],
       },
     ],
-		mode: 'all',
-		
-	},
-	plugins: [ typography ]
+    // in case of missing styles read this part of the documentation
+    // https://tailwindcss.com/docs/optimizing-for-production#removing-all-unused-styles
+    mode: "all",
+    preserveHtmlElements: false,
+    safelist: ["text-center"],
+    // https://purgecss.com/configuration#options
+    options: {
+      // https://tailwindcss.com/docs/optimizing-for-production#removing-unused-keyframes
+      keyframes: true,
+      fontFace: true,
+      variables: true,
+      rejected: false,
+    },
+  },
+  // https://tailwindcss.com/docs/dark-mode
+  darkMode: false,
+  plugins: [typography],
+  theme: {
+    extend: {},
+  },
+  // https://tailwindcss.com/docs/hover-focus-and-other-states#default-variants-reference
+  variants: {
+    extend: {},
+  },
 };
