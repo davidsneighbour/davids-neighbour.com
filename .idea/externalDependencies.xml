@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalDependencies">
+    <plugin id="Git4Idea" />
+    <plugin id="HtmlTools" />
+    <plugin id="W3Validators" />
+    <plugin id="com.1v0.dev.hugo-intellij-plugin" />
+    <plugin id="com.intellij.css" />
+    <plugin id="com.intellij.tailwindcss" />
+    <plugin id="commit-template-idea-plugin" />
+    <plugin id="lv.midiana.misc.idea-plugins.deep-js-completion" />
+    <plugin id="me.mbolotov.cypress" />
+    <plugin id="org.editorconfig.editorconfigjetbrains" />
+    <plugin id="org.jetbrains.plugins.go-template" />
+    <plugin id="org.toml.lang" />
+  </component>
+</project>
