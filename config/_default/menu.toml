@@ -1,21 +1,23 @@
 [[main]]
+identifier = "home"
 name = "Home"
 url = "/"
 weight = 100
 
 [[main]]
-identifier = "faq"
-name = "FAQ"
-#pre = "<i class='fa fa-heart'></i>"
-url = "/faq/"
-weight = 200
+identifier = "news"
+name = "News"
+url = "/news/"
+weight = 310
 
 [[main]]
-name = "Journal"
-url = "/journal/"
-weight = 300
+identifier = "notes"
+name = "Notes"
+url = "/notes/"
+weight = 310
 
 [[main]]
+identifier = "contact"
 name = "Contact"
 url = "/contact/"
 weight = 400
