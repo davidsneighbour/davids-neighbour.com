@@ -9,9 +9,14 @@ This is the [Hugo](https://gohugo.io) setup and content for davids-neighbour.com
 - run `npm install -g atomic-algolia` to install globally 
 - run `npm run algolia` whenever there are updates to the content
 
-## release
+## Publishing
 
 - setup signed tags with `npm config set sign-git-tag true`
 - create patch release with `npm run release`
 - create minor release with `npm run release-next`
 - create major release with `npm run release-major`
+
+## Preparing Development Environment
+
+- ...
+
