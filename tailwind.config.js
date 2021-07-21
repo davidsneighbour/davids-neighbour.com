@@ -1,8 +1,11 @@
-const typography = require("@tailwindcss/typography");
+// https://github.com/tailwindlabs/tailwindcss-forms
+const forms = require("@tailwindcss/forms");
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   // See https://tailwindcss.com/docs/configuration#important
   important: false,
+  // prefix: "dnb-",
   purge: {
     enabled: process.env.HUGO_ENVIRONMENT === "production",
     content: ["./hugo_stats.json", "./layouts/**/*.html"],
@@ -31,10 +34,39 @@ module.exports = {
     },
   },
   // https://tailwindcss.com/docs/dark-mode
-  darkMode: false,
-  plugins: [typography],
+  darkMode: false, // or 'media' or 'class'
+  plugins: [forms],
   theme: {
     extend: {},
+    container: {
+      center: true,
+    },
+    // https://tailwindcss.com/docs/customizing-colors
+    colors: {
+      primary: colors.indigo,
+      secondary: colors.yellow,
+      neutral: colors.gray,
+      transparent: "transparent",
+      current: "currentColor",
+      black: colors.black,
+      white: colors.white,
+      gray: colors.coolGray,
+      indigo: colors.indigo,
+      red: colors.rose,
+      yellow: colors.amber,
+    },
+    // https://tailwindcss.com/docs/breakpoints
+    screens: {
+      print: { raw: "print" },
+      sm: "640px", // => @media (min-width: 640px) { ... }
+      md: "768px", // => @media (min-width: 768px) { ... }
+      lg: "1024px", // => @media (min-width: 1024px) { ... }
+      xl: "1280px", // => @media (min-width: 1280px) { ... }
+      "2xl": "1536px", // => @media (min-width: 1536px) { ... }
+    },
+    fontFamily: {
+      body: ["verb"],
+    },
   },
   // https://tailwindcss.com/docs/hover-focus-and-other-states#default-variants-reference
   variants: {
