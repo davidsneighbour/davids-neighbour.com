@@ -53,6 +53,7 @@ module.exports = {
       gray: colors.coolGray,
       indigo: colors.indigo,
       red: colors.rose,
+      pink: colors.pink,
       yellow: colors.amber,
     },
     // https://tailwindcss.com/docs/breakpoints
