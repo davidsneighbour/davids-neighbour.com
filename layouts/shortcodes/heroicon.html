@@ -1,0 +1,21 @@
+{{- /*
+
+@example
+
+{{ partial "heroicon" "cash" }}
+{{ partialCached "heroicon" "cash" "cash" }}
+
+{{< heroicon "cash" >}}
+{{< heroicon icon="cash" >}}
+
+*/ -}}
+
+{{- $value := "" -}}
+
+{{- if .IsNamedParams -}}
+  {{- $value = .Get "icon" -}}
+{{- else -}}
+  {{- $value = .Get 0 -}}
+{{- end -}}
+
+{{- partialCached "heroicon.html" $value $value -}}
