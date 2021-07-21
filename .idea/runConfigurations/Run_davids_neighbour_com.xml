@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run davids-neighbour.com" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/package.json" />
+    <command value="run" />
+    <scripts>
+      <script value="hugo:serve" />
+    </scripts>
+    <node-interpreter value="project" />
+    <package-manager value="$USER_HOME$/.npm-global/lib/node_modules/npm" />
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>
