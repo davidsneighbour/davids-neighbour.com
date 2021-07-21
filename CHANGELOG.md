@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2021.3.1](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.0...v2021.3.1) (2021-07-21)
+
+
+### Features
+
+* **heroicon:** adding heroicon shortcode and partial ([e2f0713](https://github.com/davidsneighbour/davids-neighbour.com/commit/e2f071354dcdeccd33016e8fb7f717b1ed1dca97))
+
+
+### Chore
+
+* **ide:** update required plugins for IntelliJ ([2fc81fd](https://github.com/davidsneighbour/davids-neighbour.com/commit/2fc81fd351f116babeb734646d1aa3c0842d8848))
+* **ide:** update run configuration ([355e413](https://github.com/davidsneighbour/davids-neighbour.com/commit/355e4135b450c6396fce9115c446b0ccfeed140d))
+
+
+### Theme
+
+* **layouts:** fix contact form layout ([96d27e0](https://github.com/davidsneighbour/davids-neighbour.com/commit/96d27e0a07b79e8f4ebd1662d2ad875d504d2926))
+* **tailwind:** add pink to color setup ([b4d6efe](https://github.com/davidsneighbour/davids-neighbour.com/commit/b4d6efe06a1ed922c5e888782c63580bb378f78c))
+
 ## [2021.3.0](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.2.1...v2021.3.0) (2021-07-21)
 
 ### [2021.2.1](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2020.0.19...v2021.2.1) (2021-07-21)
