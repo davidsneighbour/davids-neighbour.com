@@ -1,1 +1,23 @@
-<h1>Section</h1>
+{{- define "main" -}}
+
+  <!-- _default/contact.html -->
+  <div class="row align-items-center align-middle">
+    <div class="col">
+      <h1>{{ .Title }}</h1>
+      <form class="flow-root min-w-full">
+        <fieldset class="-m-2 flex flex-wrap w-100">
+        <label class="m-2">Name
+          <input type="text" name="Name" id="name" class="min-w-full">
+        </label>
+        <label class="m-2">Email
+          <input type="email" name="Email" id="email" class="min-w-full">
+        </label>
+        <label class="m-2">Message
+          <textarea name="Message" id="message" class="min-w-full"></textarea>
+        </label>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+{{- end -}}

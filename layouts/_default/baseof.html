@@ -17,11 +17,18 @@
     <link href="{{- $styles.RelPermalink -}}" rel="stylesheet" />
   </head>
   <body>
+    <header class="bg-gray-900">
+      <div class="flex justify-center text-white py-1">This is the header</div>
+    </header>
     <main class="container mx-auto px-4 py-24 bg-gray-100">
       {{- block "main" . -}}{{- end -}}
     </main>
     <footer class="bg-gray-900">
-      <div class="flex justify-center text-white py-1">This is the footer</div>
+      <div class="container grid grid-cols-3 gap-4">
+            <div class="text-white">Column 1</div>
+            <div class="text-white">Column 2</div>
+            <div class="text-white">Column 3</div>
+      </div>
     </footer>
   </body>
 </html>
