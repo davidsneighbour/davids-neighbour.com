@@ -1,42 +1,14 @@
-@import 'components/all.css';
-
 @tailwind base;
+
+/*noinspection CssInvalidImport*/
+@import 'base/_index.css';
+
 @tailwind components;
+
+/*noinspection CssInvalidImport*/
+@import 'components/_index.css';
+
 @tailwind utilities;
 
-@layer base {
-  h1 {
-    @apply text-6xl font-bold mt-12 mb-2
-  }
-  @font-face {
-    font-weight: 400;
-    font-family: Proxima Nova;
-    src: url(/fonts/proxima-nova/400-regular.woff) format('woff');
-  }
-  @font-face {
-    font-weight: 500;
-    font-family: Proxima Nova;
-    src: url(/fonts/proxima-nova/500-medium.woff) format('woff');
-  }
-}
-
-/* https://tailwindcss.com/docs/adding-new-utilities#generating-responsive-variants */
-@layer utilities {
-  @variants responsive {
-    .scroll-snap-none {
-      scroll-snap-type: none;
-    }
-
-    .scroll-snap-x {
-      scroll-snap-type: x;
-    }
-
-    .scroll-snap-y {
-      scroll-snap-type: y;
-    }
-  }
-}
-
-@screen md {
-
-}
+/*noinspection CssInvalidImport*/
+@import 'utilities/_index.css';
