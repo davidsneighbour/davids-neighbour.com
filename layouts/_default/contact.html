@@ -4,18 +4,22 @@
   <div class="row align-items-center align-middle">
     <div class="col">
       <h1>{{ .Title }}</h1>
-      <form class="flow-root min-w-full">
-        <fieldset class="-m-2 flex flex-wrap w-100">
-        <label class="m-2">Name
+      {{ .Content }}
+      <form class="">
+        <fieldset class="">
+        <label class="block font-bold mb-3">Name
           <input type="text" name="Name" id="name" class="min-w-full">
         </label>
-        <label class="m-2">Email
+        <label class="block font-bold mb-3">Email
           <input type="email" name="Email" id="email" class="min-w-full">
         </label>
-        <label class="m-2">Message
+        <label class="block font-bold mb-3">Message
           <textarea name="Message" id="message" class="min-w-full"></textarea>
         </label>
         </fieldset>
+        <label class="block mb-3">
+          <button type="submit" class="w-50 bg-pink-600 px-5 py-3 rounded-md text-white bg-emerald-500">Submit</button>
+        </label>
       </form>
     </div>
   </div>
