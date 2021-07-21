@@ -2,6 +2,44 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2021.2.1](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2020.0.19...v2021.2.1) (2021-07-21)
+
+
+### Features
+
+* add tailwind, remove bootstrap ([05cd706](https://github.com/davidsneighbour/davids-neighbour.com/commit/05cd706b4eacc0ab25623892be297b0e1d14bb5f))
+
+
+### Chore
+
+* **build:** configure tailwind and postcss ([946f7f4](https://github.com/davidsneighbour/davids-neighbour.com/commit/946f7f4882c198789b4da9efe7f8def58afccba7))
+* **config:** fix main menu items ([a50c738](https://github.com/davidsneighbour/davids-neighbour.com/commit/a50c73876527939d2120ab84c5cb1d0ae7d7fec0))
+* **config:** setup tailwind theme formats ([3c15e06](https://github.com/davidsneighbour/davids-neighbour.com/commit/3c15e0665c00a0a1d0785bef6a724063755b6f39))
+* **config:** update module configuration ([a1274fa](https://github.com/davidsneighbour/davids-neighbour.com/commit/a1274fa32edecd2e7532bfe80631bd41b5833da8))
+* **deps-dev:** bump @babel/preset-env from 7.14.2 to 7.14.4 ([#184](https://github.com/davidsneighbour/davids-neighbour.com/issues/184)) ([1cafecc](https://github.com/davidsneighbour/davids-neighbour.com/commit/1cafeccf598c2f400bc9caa68c34a68f6dd04f1b))
+* **deps-dev:** bump cssnano from 5.0.4 to 5.0.5 ([#183](https://github.com/davidsneighbour/davids-neighbour.com/issues/183)) ([ff9baf9](https://github.com/davidsneighbour/davids-neighbour.com/commit/ff9baf956bcfd1571ae4aaa9f086a660d8e45474))
+* **deps:** update dependencies ([2248d78](https://github.com/davidsneighbour/davids-neighbour.com/commit/2248d7853d3690536d43435fcb9f07106409e08c))
+* **deps:** update dependencies ([c95ae36](https://github.com/davidsneighbour/davids-neighbour.com/commit/c95ae3625e8f980f60373a55a7bcc9d84de596dd))
+* **ide:** add IntelliJ configuration ([88f301c](https://github.com/davidsneighbour/davids-neighbour.com/commit/88f301cff175df379b3ace510d123594f7cd621f))
+* **lint:** configure stylelint for tailwind ([a2c3d3c](https://github.com/davidsneighbour/davids-neighbour.com/commit/a2c3d3cbe2f3aa2be5a45e21425fb3c5aacc8023))
+* move from dnb-hugo to dnb-org ([f968fe7](https://github.com/davidsneighbour/davids-neighbour.com/commit/f968fe71b97b11a867aeaaa1fdecf29bf6a6276d))
+* **npm:** setup package file ([ed61b87](https://github.com/davidsneighbour/davids-neighbour.com/commit/ed61b87e20d114ca9ee56214d646a8381b671102))
+* **npm:** update dependencies and package configuration ([5bbc110](https://github.com/davidsneighbour/davids-neighbour.com/commit/5bbc1106943f95bd39b9b4194cf6e0b8826b7b1d))
+* **npm:** update npm scripts ([ac6ab8d](https://github.com/davidsneighbour/davids-neighbour.com/commit/ac6ab8df25173fc0119af4f9a51b9b4cf1732c97))
+* **setup:** remove unused files and update eslint configuration ([97556f7](https://github.com/davidsneighbour/davids-neighbour.com/commit/97556f73bf579a7f28c132050f55306cfec77576))
+* update dependabot configuration ([0100156](https://github.com/davidsneighbour/davids-neighbour.com/commit/01001561a5493996d3bf888a85a229939b2d50f2))
+
+
+### Documentation
+
+* **readme:** update README.md ([97cf4a2](https://github.com/davidsneighbour/davids-neighbour.com/commit/97cf4a221660a6ff3d6b50073f95692f33d4dc1b))
+
+
+### Theme
+
+* fix up stylesheet file layouts ([4ae201b](https://github.com/davidsneighbour/davids-neighbour.com/commit/4ae201be3f8c9d0c6078b2c68c3da3197a824165))
+* **layouts:** prepare layouts ([2978316](https://github.com/davidsneighbour/davids-neighbour.com/commit/2978316d44b2450cd8e9619ab617f028489513fc))
+
 ### [2020.0.13](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2020.0.12...v2020.0.13) (2021-05-16)
 
 ### 2020.0.12 (2021-05-08)
