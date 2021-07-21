@@ -1,7 +1,7 @@
 {
   "name": "@davidsneighbour/davids-neighbour-com",
   "description": "Website and content for davids-neighbour.com",
-  "version": "2020.0.19",
+  "version": "2021.2.0",
   "author": {
     "name": "Patrick Kollitsch",
     "email": "patrick@davids-neighbour.com",
@@ -9,16 +9,16 @@
   },
   "dependencies": {
     "@dnb-org/all": "3.1.0",
-    "@tailwindcss/typography": "^0.4.1",
-    "atomic-algolia": "0.3.19",
-    "autoprefixer": "^10.3.1",
-    "cssnano": "^5.0.6",
-    "postcss": "^8.3.5",
+    "@tailwindcss/forms": "0.3.3",
+    "autoprefixer": "10.3.1",
+    "cssnano": "5.0.6",
+    "heroicons": "1.0.2",
+    "postcss": "8.3.5",
     "postcss-cli": "8.3.1",
-    "postcss-import": "^14.0.2",
-    "postcss-nesting": "^7.0.1",
-    "postcss-purgecss": "^2.0.3",
-    "tailwindcss": "^2.2.4"
+    "postcss-import": "14.0.2",
+    "postcss-nesting": "8.0.1",
+    "postcss-purgecss": "2.0.3",
+    "tailwindcss": "2.2.4"
   },
   "homepage": "https://davids-neighbour.com",
   "license": "UNLICENSED",
