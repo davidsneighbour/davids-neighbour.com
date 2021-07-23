@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2021.3.2](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.1...v2021.3.2) (2021-07-23)
+
+
+### Features
+
+* **js:** add alpinejs and js packaging ([441e375](https://github.com/davidsneighbour/davids-neighbour.com/commit/441e3750eba8182e1b0459003b2a15215b674314))
+* **modules:** adding hooks and functions module ([5a885a9](https://github.com/davidsneighbour/davids-neighbour.com/commit/5a885a9cbe362fd7b702cd9e0684e70c5a74ef9e))
+
+
+### Chore
+
+* **config:** add netlification module and disable unused dev formats ([9ab13ce](https://github.com/davidsneighbour/davids-neighbour.com/commit/9ab13cee4a20d5d97adf6683705ea5af7cd5db76))
+* delete obsolete js library ([832541d](https://github.com/davidsneighbour/davids-neighbour.com/commit/832541dcfa757efc793f7e3799b040e9fbe1b07c))
+* **deps:** update dependencies ([21fce52](https://github.com/davidsneighbour/davids-neighbour.com/commit/21fce52b0fb64e8588a78e06e49d2f209137000a))
+* **deps:** update dependencies ([b616554](https://github.com/davidsneighbour/davids-neighbour.com/commit/b616554068704a319c20bcda22b6829d32f86d95))
+* **ide:** update IntelliJ configuration ([dbdb121](https://github.com/davidsneighbour/davids-neighbour.com/commit/dbdb121152c8295725a35e82b7d5f659fd6155c6))
+
 ### [2021.3.1](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.0...v2021.3.1) (2021-07-21)
 
 
