@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../components/.idea/components.iml" filepath="$PROJECT_DIR$/../components/.idea/components.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/davids-neighbour.com.iml" filepath="$PROJECT_DIR$/.idea/davids-neighbour.com.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../debug/.idea/debugprint.iml" filepath="$PROJECT_DIR$/../debug/.idea/debugprint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hooks/.idea/hooks.iml" filepath="$PROJECT_DIR$/../hooks/.idea/hooks.iml" />
     </modules>
   </component>
 </project>
