@@ -20,4 +20,7 @@ target = "assets/icons/heroicons/solid"
 path = "github.com/dnb-org/components/functions"
 
 [[imports]]
+path = "github.com/dnb-org/components/netlification"
+
+[[imports]]
 path = "github.com/dnb-org/hooks"
