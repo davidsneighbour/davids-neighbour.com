@@ -11,13 +11,13 @@
     "@dnb-org/all": "3.1.0",
     "@tailwindcss/forms": "0.3.3",
     "autoprefixer": "10.3.1",
-    "cssnano": "5.0.6",
-    "postcss": "8.3.5",
+    "cssnano": "5.0.7",
+    "postcss": "8.3.6",
     "postcss-cli": "8.3.1",
     "postcss-import": "14.0.2",
     "postcss-nesting": "8.0.1",
     "postcss-purgecss": "2.0.3",
-    "tailwindcss": "2.2.4"
+    "tailwindcss": "2.2.6"
   },
   "homepage": "https://davids-neighbour.com",
   "license": "UNLICENSED",
