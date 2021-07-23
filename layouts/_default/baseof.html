@@ -15,6 +15,8 @@
       {{- $styles = $styles | minify | fingerprint | resources.PostProcess -}}
     {{- end -}}
     <link href="{{- $styles.RelPermalink -}}" rel="stylesheet" />
+    {{- $transpiled := resources.Get "js/theme.js" | babel  -}}
+      <script href="{{ $transpiled.Permalink }}"></script>
   </head>
   <body>
     <header class="bg-gray-900">
