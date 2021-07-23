@@ -2,17 +2,22 @@
 extended = false
 min = "0.75.0"
 
-[[module.imports]]
+[[imports]]
 path = "github.com/tailwindlabs/heroicons"
 disable = false
 ignoreConfig = true
 ignoreImports = true
 
-[[module.imports.mounts]]
+[[imports.mounts]]
 source = "optimized/outline"
 target = "assets/icons/heroicons/outline"
 
-[[module.imports.mounts]]
+[[imports.mounts]]
 source = "optimized/solid"
 target = "assets/icons/heroicons/solid"
 
+[[imports]]
+path = "github.com/dnb-org/components/functions"
+
+[[imports]]
+path = "github.com/dnb-org/hooks"
