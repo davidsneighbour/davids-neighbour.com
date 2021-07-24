@@ -50,3 +50,20 @@ params = ["categories", "tags"]
 
 [dnb]
 javascript = "script-local.js"
+
+
+[dnb.header]
+[dnb.header.logo]
+src = "/ci/logo-black-singleline.svg"
+title = ""
+classes = ""
+
+[dnb.footer]
+# the %s is the current year, leave out if unneeded
+# everything else is parsed as markdown
+copyright = "&copy; Copyright 2005-%s by [David's Neighbour Part., Ltd.](/) - All rights reserved."
+
+[dnb.footer.menu]
+title1 = "Getting Started"
+title2 = "Core Concepts"
+title3 = "Customization"

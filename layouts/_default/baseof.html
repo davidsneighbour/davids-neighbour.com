@@ -14,23 +14,15 @@
     {{- if  hugo.IsProduction  -}}
       {{- $styles = $styles | minify | fingerprint | resources.PostProcess -}}
     {{- end -}}
-    <link href="{{- $styles.RelPermalink -}}" rel="stylesheet" />
+    <link href="{{- $styles.Permalink -}}" rel="stylesheet" />
     {{- $transpiled := resources.Get "js/theme.js" | babel  -}}
-      <script href="{{ $transpiled.Permalink }}"></script>
+    <script href="{{ $transpiled.Permalink }}"></script>
   </head>
   <body>
-    <header class="bg-gray-900">
-      <div class="flex justify-center text-white py-1">This is the header</div>
-    </header>
-    <main class="container mx-auto px-4 py-24 bg-gray-100">
+    {{ partial "nav.html" . }}
+    <main class="container mx-auto px-4 py-4">
       {{- block "main" . -}}{{- end -}}
     </main>
-    <footer class="bg-gray-900">
-      <div class="container grid grid-cols-3 gap-4">
-            <div class="text-white">Column 1</div>
-            <div class="text-white">Column 2</div>
-            <div class="text-white">Column 3</div>
-      </div>
-    </footer>
+    {{ partial "footer.html" . }}
   </body>
 </html>

@@ -1,6 +1,5 @@
 
 /* https://tailwindcss.com/docs/adding-new-utilities#generating-responsive-variants */
-@layer utilities {
   @variants responsive {
     .scroll-snap-none {
       scroll-snap-type: none;
@@ -14,4 +13,3 @@
       scroll-snap-type: y;
     }
   }
-}

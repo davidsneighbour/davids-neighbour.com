@@ -6,7 +6,7 @@ This is the [Hugo](https://gohugo.io) setup and content for davids-neighbour.com
 
 - copy `.env.sample` to `.env`
 - fill in the info from [https://www.algolia.com/apps](https://www.algolia.com/apps) &gt; API keys
-- run `npm install -g atomic-algolia` to install globally 
+- run `npm install -g atomic-algolia` to install globally
 - run `npm run algolia` whenever there are updates to the content
 
 ## Publishing
@@ -19,4 +19,3 @@ This is the [Hugo](https://gohugo.io) setup and content for davids-neighbour.com
 ## Preparing Development Environment
 
 - ...
-

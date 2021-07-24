@@ -21,3 +21,87 @@ identifier = "contact"
 name = "Contact"
 url = "/contact/"
 weight = 400
+
+[[footer1]]
+name = "Installation"
+url = ""
+
+[[footer1]]
+name = "Release Notes"
+url = ""
+
+[[footer1]]
+name = "Release Notes"
+url = ""
+
+[[footer1]]
+name = "Upgrade Guide"
+url = ""
+
+[[footer1]]
+name = "Using with Preprocessors"
+url = ""
+
+[[footer1]]
+name = "Optimizing for Production"
+url = ""
+
+[[footer1]]
+name = "Browser Support"
+url = ""
+
+[[footer1]]
+name = "IntelliSense"
+url = ""
+
+[[footer2]]
+name = "Utility-First"
+url = ""
+
+[[footer2]]
+name = "Responsive Design"
+url = ""
+
+[[footer2]]
+name = "Hover, Focus, & Other States"
+url = ""
+
+[[footer2]]
+name = "Dark Mode"
+url = ""
+
+[[footer2]]
+name = "Adding Base Styles"
+url = ""
+
+[[footer2]]
+name = "Extracting Components"
+url = ""
+
+[[footer2]]
+name = "Adding New Utilities"
+url = ""
+
+[[footer3]]
+name = "Configuration"
+url = ""
+
+[[footer3]]
+name = "Theme Configuration"
+url = ""
+
+[[footer3]]
+name = "Customizing Colors"
+url = ""
+
+[[footer3]]
+name = "Customizing Spacing"
+url = ""
+
+[[footer3]]
+name = "Configuring Variants"
+url = ""
+
+[[footer3]]
+name = "Plugins"
+url = ""

@@ -9,3 +9,5 @@ github.com/dnb-org/components/social v0.0.9/go.mod h1:dQrMaiXfgEWMAHDTM4omMy74j1
 github.com/dnb-org/debug v1.3.0/go.mod h1:0z/MDK1qgyqHmMM8mSrexsoPSTpJgIsNu3r6nw5zHAU=
 github.com/dnb-org/hooks v1.0.11 h1:NgVhfkY2F+A6SQnW47jEUg5VR6UGVqW8yTynN/eOviU=
 github.com/dnb-org/hooks v1.0.11/go.mod h1:Tz39YfJoDKJEuorz+93zcXtpotNHmWRzyFiB4x9hLls=
+github.com/tailwindlabs/heroicons v1.0.2 h1:qIpV5r0QqK8Xp5C1/zmk3zbWxJAinr74P2VwsYk4WF0=
+github.com/tailwindlabs/heroicons v1.0.2/go.mod h1:2SHGOdw86jviBkoeQINcTfkzAAao9dciip4RsMS9xIg=

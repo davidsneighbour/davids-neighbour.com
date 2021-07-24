@@ -67,10 +67,9 @@ module.exports = {
     },
     fontFamily: {
       body: ["verb"],
+      sans: ["verb"],
     },
-  },
-  // https://tailwindcss.com/docs/hover-focus-and-other-states#default-variants-reference
-  variants: {
-    extend: {},
+    // https://tailwindcss.com/docs/hover-focus-and-other-states#default-variants-reference
+    variants: {},
   },
 };
