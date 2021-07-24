@@ -70,3 +70,22 @@ repos:
           - id: yamlfmt
 fail_fast: false
 minimum_pre_commit_version: 1.15.0
+
+# https://github.com/Lucas-C/pre-commit-hooks
+# https://github.com/detailyang/pre-commit-shell
+# https://github.com/lovesegfault/beautysh
+# https://github.com/awebdeveloper/pre-commit-stylelint
+# https://github.com/jorisroovers/gitlint
+# https://github.com/alessandrojcm/commitlint-pre-commit-hook
+# https://github.com/milin/giticket
+# https://github.com/shellcheck-py/shellcheck-py
+# https://github.com/igorshubovych/markdownlint-cli
+# https://github.com/markdownlint/markdownlint
+# https://github.com/commitizen-tools/commitizen
+# https://github.com/macisamuele/language-formatters-pre-commit-hooks
+# https://github.com/pappasam/toml-sort
+# https://github.com/executablebooks/mdformat
+# https://github.com/editorconfig-checker/editorconfig-checker.python
+# https://github.com/zricethezav/gitleaks
+# https://github.com/redwarp/optimize-png-hooks
+# https://github.com/kontrolilo/kontrolilo
