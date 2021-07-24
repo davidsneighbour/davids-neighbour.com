@@ -1,19 +1,8 @@
-{{- /*
-
-@example
-
-{{ partial "heroicon" "cash" }}
-{{ partialCached "heroicon" "cash" "cash" }}
-
-{{< heroicon "cash" >}}
-{{< heroicon icon="cash" >}}
-
-*/ -}}
-
-{{- $iconname := . -}}
-{{- $icon := (printf "icons/heroicons/solid/%s.svg" $iconname) -}}
-{{- with resources.Get $icon -}}
-  <span class="heroicon heroicon-{{- $iconname -}}">
-    {{- .Content | safeHTML -}}
-  </span>
+{{- /* @example {{ partial "heroicon" "cash" }} {{ partialCached "heroicon"
+"cash" "cash" }} {{< heroicon "cash" >}} {{< heroicon icon="cash" >}} */ -}} {{-
+$iconname := . -}} {{- $icon := (printf "icons/heroicons/solid/%s.svg"
+$iconname) -}} {{- with resources.Get $icon -}}
+<span class="heroicon heroicon-{{- $iconname -}}">
+  {{- .Content | safeHTML -}}
+</span>
 {{- end -}}

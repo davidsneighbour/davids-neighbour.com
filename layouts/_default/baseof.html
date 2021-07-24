@@ -1,21 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      {{- .Title -}}
-    </title>
-    <meta name="description" content="{{- .Description -}}">
-    {{- $options := dict "inlineImports" true -}}
-    {{- $styles := resources.Get "css/styles.css" -}}
-    {{- $styles = $styles | resources.PostCSS $options -}}
-    {{- if  hugo.IsProduction  -}}
-      {{- $styles = $styles | minify | fingerprint | resources.PostProcess -}}
-    {{- end -}}
+    <title>{{- .Title -}}</title>
+    <meta name="description" content="{{- .Description -}}" />
+    {{- $options := dict "inlineImports" true -}} {{- $styles := resources.Get
+    "css/styles.css" -}} {{- $styles = $styles | resources.PostCSS $options -}}
+    {{- if hugo.IsProduction -}} {{- $styles = $styles | minify | fingerprint |
+    resources.PostProcess -}} {{- end -}}
     <link href="{{- $styles.Permalink -}}" rel="stylesheet" />
-    {{- $transpiled := resources.Get "js/theme.js" | babel  -}}
+    {{- $transpiled := resources.Get "js/theme.js" | babel -}}
     <script href="{{ $transpiled.Permalink }}"></script>
   </head>
   <body>

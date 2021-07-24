@@ -13,9 +13,6 @@ pre-commit autoupdate
 pre-commit gc
 ```
 
-
-
-
 ## Icons
 
 - [Github Repository](https://github.com/tailwindlabs/heroicons)

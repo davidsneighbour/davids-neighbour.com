@@ -3,7 +3,6 @@ title: "Bragfile"
 date: 2021-07-21T15:20:34+07:00
 ---
 
-
 Goals for this year:
 List your major goals here! Sharing your goals with your manager & coworkers is really nice because it helps them see how they can support you in accomplishing those goals!
 Goals for next year

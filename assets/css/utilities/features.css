@@ -1,15 +1,14 @@
-
 /* https://tailwindcss.com/docs/adding-new-utilities#generating-responsive-variants */
-  @variants responsive {
-    .scroll-snap-none {
-      scroll-snap-type: none;
-    }
-
-    .scroll-snap-x {
-      scroll-snap-type: x;
-    }
-
-    .scroll-snap-y {
-      scroll-snap-type: y;
-    }
+@variants responsive {
+  .scroll-snap-none {
+    scroll-snap-type: none;
   }
+
+  .scroll-snap-x {
+    scroll-snap-type: x;
+  }
+
+  .scroll-snap-y {
+    scroll-snap-type: y;
+  }
+}

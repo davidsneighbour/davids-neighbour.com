@@ -1,17 +1,17 @@
 @tailwind base;
 @layer base {
   /*noinspection CssInvalidImport*/
-  @import 'base/_index.css';
+  @import "base/_index.css";
 }
 
 @tailwind components;
 @layer components {
   /*noinspection CssInvalidImport*/
-  @import 'components/_index.css';
+  @import "components/_index.css";
 }
 
 @tailwind utilities;
 @layer utilities {
   /*noinspection CssInvalidImport*/
-  @import 'utilities/_index.css';
+  @import "utilities/_index.css";
 }
