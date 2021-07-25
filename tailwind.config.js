@@ -74,6 +74,11 @@ module.exports = {
       body: ["verb"],
       sans: ["verb"],
     },
+    fontWeight: {
+      normal: 200,
+      bold: 700,
+      black: 900,
+    },
     // https://tailwindcss.com/docs/hover-focus-and-other-states#default-variants-reference
     variants: {},
   },

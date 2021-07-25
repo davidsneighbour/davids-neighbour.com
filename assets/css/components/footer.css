@@ -1,8 +1,8 @@
 #footer h3, #footer h4 {
-  @apply text-xs uppercase text-gray-400 font-medium mb-6;
+  @apply text-xs uppercase text-gray-400 mb-6;
 }
 #footer {
-  @apply my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700;
+  @apply my-3 block text-gray-300 hover:text-gray-100 text-sm duration-700;
 }
 
 #footer svg {
