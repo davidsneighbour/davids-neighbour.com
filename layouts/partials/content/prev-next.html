@@ -1,10 +1,10 @@
-<div class="row prevnext">
+<div class="row prevnext mb-5">
   <div class="w-full mx-auto">
-    <div class="sm:grid grid-cols-4 gap-5 mx-auto px-16">
+    <div class="sm:grid grid-cols-4 gap-5 mx-auto">
       {{ with .PrevInSection }}
         <div class="col-start-1 col-end-3">
           <a href="{{- .Permalink -}}">
-            <div class="h-full p-6 dark:bg-gray-800 bg-white hover:shadow-xl rounded border-b-4 border-red-500 shadow-md ">
+            <div class="h-full p-6 hover:shadow-xl rounded border-b-4 border-primary-500 shadow-md ">
               <h3 class="text-2xl mb-3 inline-flex">
                 {{ partialCached "heroicon" "chevron-double-left" "chevron-double-left" }}
                 Prev
@@ -17,7 +17,7 @@
       {{ with .NextInSection }}
         <div class="col-end-5 col-span-2">
           <a href="{{- .Permalink -}}">
-            <div class=" h-full p-6 dark:bg-gray-800 bg-white hover:shadow-xl rounded border-b-4 border-red-500 shadow-md text-right ">
+            <div class=" h-full p-6 hover:shadow-xl rounded border-b-4 border-primary-500 shadow-md text-right ">
               <h3 class="text-2xl mb-3 inline-flex">
                 Next
                 {{ partialCached "heroicon" "chevron-double-right" "chevron-double-right" }}

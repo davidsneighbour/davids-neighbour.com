@@ -9,11 +9,13 @@
       {{- partialCached "content/author.html" . . -}}
     </div>
   </header>
-  <div class=" w-full max-w-screen-md mx-auto relative">
+  <div class="mb-4 md:mb-0 w-full max-w-screen-md mx-auto relative">
     {{- partialCached "content/breadcrumbs.html" . . -}}
   </div>
-  <div class="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed ">
+  <div class="mb-4 md:mb-0 w-full max-w-screen-md mx-auto relative">
     {{- .Content -}}
   </div>
-  {{- partialCached "content/prev-next.html" . . -}}
+  <div class="mb-4 md:mb-0 w-full max-w-screen-md mx-auto relative">
+    {{- partialCached "content/prev-next.html" . . -}}
+  </div>
 </article>
