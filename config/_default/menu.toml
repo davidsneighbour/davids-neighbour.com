@@ -88,11 +88,11 @@ name = "Home"
 url = "/"
 weight = 100
 
-[[main]]
-identifier = "news"
-name = "News"
-url = "/news/"
-weight = 310
+#[[main]]
+#identifier = "news"
+#name = "News"
+#url = "/news/"
+#weight = 310
 
 [[main]]
 identifier = "notes"
