@@ -1,0 +1,2 @@
+{{- $transpiled := resources.Get "js/theme.js" | js.Build -}}
+<script src="{{ $transpiled.Permalink }}"></script>
