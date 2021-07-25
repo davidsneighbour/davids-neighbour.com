@@ -1,5 +1,6 @@
 ---
 title: Welcome
+linktitle: Home
 description: SEO and Digital Marketing on Samui, Thailand
 date: 2019-05-31T15:55:48+07:00
 ---

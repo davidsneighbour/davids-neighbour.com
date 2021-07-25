@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{- .Title -}}</title>
     <meta name="description" content="{{- .Description -}}" />
-    {{- $options := dict "inlineImports" true -}} {{- $styles := resources.Get
-    "css/styles.css" -}} {{- $styles = $styles | resources.PostCSS $options -}}
-    {{- if hugo.IsProduction -}} {{- $styles = $styles | minify | fingerprint |
-    resources.PostProcess -}} {{- end -}}
+    {{- $options := dict "inlineImports" true -}}
+    {{- $styles := resources.Get "css/styles.css" -}}
+    {{- $styles = $styles | resources.PostCSS $options -}}
+    {{- if hugo.IsProduction -}}
+      {{- $styles = $styles | minify | fingerprint | resources.PostProcess -}}
+    {{- end -}}
     <link href="{{- $styles.Permalink -}}" rel="stylesheet" />
     {{- $transpiled := resources.Get "js/theme.js" | babel -}}
-    <script href="{{ $transpiled.Permalink }}"></script>
+    <script src="{{ $transpiled.Permalink }}"></script>
   </head>
-  <body>
-    {{ partial "nav.html" . }}
-    <main class="container mx-auto px-4 py-4">
-      {{- block "main" . -}}{{- end -}}
-    </main>
-    {{ partial "footer.html" . }}
+  <body class="bg-gray-100">
+    <div class="flex flex-col h-screen">
+      {{ partial "header.html" . }}
+      <main class="p-4 flex-grow container mx-auto">
+        {{- block "main" . -}}{{- end -}}
+      </main>
+      {{ partial "footer.html" . }}
+    </div>
   </body>
 </html>

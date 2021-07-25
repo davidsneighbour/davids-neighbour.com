@@ -1,49 +1,48 @@
 <footer class="bg-gray-800 pt-10 sm:mt-10 pt-10">
   <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
-    {{ range seq 3 }}
-    <div class="p-5 w-1/3">
-      <div class="text-xs uppercase text-gray-400 font-medium mb-6">
-        {{ index site.Params.dnb.footer.menu (printf "title%s" (string .)) }}
-      </div>
-      {{- range (index site.Menus (printf "footer%s" (string .))) -}}
-      <a
-        href="{{- .URL -}}"
-        class="
-          my-3
-          block
-          text-gray-300
-          hover:text-gray-100
-          text-sm
-          font-medium
-          duration-700
-        "
-      >
-        {{- .Name -}}
-      </a>
-      {{- end -}}
+    <div class="p-5">
+      <p class="text-xs uppercase text-gray-400 font-medium mb-6">
+        David's Neighbour Part., Ltd.
+      </p>
+      <p class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+        Patrick Kollitsch<br />
+        P.O.Box 135, Post Office Maenam<br />
+        84330 Suratthani, Koh Samui<br />
+        Thailand
+      </p>
+      <p class="text-xs uppercase text-gray-400 font-medium my-6">
+        Contact
+      </p>
+      <p class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+        WhatsApp: +66.8.789.79.350<br />
+        Signal: davidsneighbour<br />
+        Telegram: davidsneighbour<br />
+      </p>
     </div>
+    {{ range seq 3 }}
+      <div class="p-5 w-1/4">
+        <div class="text-xs uppercase text-gray-400 font-medium mb-6 text-right">
+          {{ index site.Params.dnb.footer.menu (printf "title%s" (string .)) }}
+        </div>
+        {{- range (index site.Menus (printf "footer%s" (string .))) -}}
+          <a href="{{- .URL -}}"
+             class=" my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700 text-right ">
+            {{- .Name -}}
+          </a>
+        {{- end -}}
+      </div>
     {{ end }}
   </div>
   <div class="pt-2">
-    <div
-      class="
-        flex
-        pb-5
-        px-3
-        m-auto
-        pt-5
-        border-t border-gray-500
-        text-gray-400 text-sm
-        flex-col
-        md:flex-row
-        max-w-6xl
-      "
-    >
+    <div class="flex pb-5 px-3 m-auto pt-5 border-t border-gray-500 text-gray-400 text-sm flex-col md:flex-row max-w-6xl ">
       <div class="mt-2">
-        {{ $year := partial "func/getYear.html" . }} {{ $copy := printf (string
-        site.Params.dnb.footer.copyright) (string $year) }} {{ $copy |
-        markdownify }}
+        {{ $year := partial "func/getYear.html" . }}
+        {{ $copy := printf (string site.Params.dnb.footer.copyright) (string $year) }}
+        {{ $copy | markdownify }}
       </div>
     </div>
+{{/*    <div class="">*/}}
+{{/*      <img src="/ci/logo-black-square.svg" class="h-1 block w-100" />*/}}
+{{/*    </div>*/}}
   </div>
 </footer>
