@@ -11,7 +11,7 @@
   {{ else if not .p1.IsHome }}
     {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
   {{ end }}
-  <li class="font-bold">
+  <li>
     <a href="{{ .p1.Permalink }}" {{ if eq .p1 .p2 }} class="text-gray-500"{{ end }}>
       {{ .p1.LinkTitle }}
     </a>
