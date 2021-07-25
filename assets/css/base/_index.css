@@ -2,10 +2,6 @@
 @import "headings.css";
 @import "images.css";
 
-body {
-  @apply font-normal;
-}
-
 strong {
   @apply font-bold;
 }
