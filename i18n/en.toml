@@ -1,14 +1,14 @@
+[authoredBy]
+other = "Authored by"
+
 [postedIn]
 other = "Posted in "
-
-[wordCount]
-other = "{{ .WordCount }} words"
 
 [readMore]
 other = "Read More"
 
-[authoredBy]
-other = "Authored by"
-
 [share]
 other = "Share"
+
+[wordCount]
+other = "{{ .WordCount }} words"

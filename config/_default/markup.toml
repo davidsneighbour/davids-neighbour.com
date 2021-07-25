@@ -2,6 +2,7 @@
 # see https://github.com/yuin/goldmark/#built-in-extensions
 # see https://gohugo.io/getting-started/configuration-markup#goldmark
 ################################################################################
+
 [goldmark]
 
 [goldmark.extensions]
@@ -27,13 +28,10 @@ xhtml = false
 anchorLineNos = true
 codeFences = true
 guessSyntax = true
-#hl_Lines = ""
 lineAnchors = "code"
-#lineNoStart = 1
 lineNos = true
 lineNumbersInTable = true
 noClasses = false
-#style = "monokai"
 tabWidth = 2
 
 [tableOfContents]

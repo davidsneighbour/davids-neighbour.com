@@ -1,27 +1,3 @@
-[[main]]
-identifier = "home"
-name = "Home"
-url = "/"
-weight = 100
-
-[[main]]
-identifier = "news"
-name = "News"
-url = "/news/"
-weight = 310
-
-[[main]]
-identifier = "notes"
-name = "Notes"
-url = "/notes/"
-weight = 310
-
-[[main]]
-identifier = "contact"
-name = "Contact"
-url = "/contact/"
-weight = 400
-
 [[footer1]]
 name = "Installation"
 url = ""
@@ -105,3 +81,27 @@ url = ""
 [[footer3]]
 name = "Plugins"
 url = ""
+
+[[main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 100
+
+[[main]]
+identifier = "news"
+name = "News"
+url = "/news/"
+weight = 310
+
+[[main]]
+identifier = "notes"
+name = "Notes"
+url = "/notes/"
+weight = 310
+
+[[main]]
+identifier = "contact"
+name = "Contact"
+url = "/contact/"
+weight = 400
