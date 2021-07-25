@@ -13,15 +13,11 @@
       {{- $styles = $styles | minify | fingerprint | resources.PostProcess -}}
     {{- end -}}
     <link href="{{- $styles.Permalink -}}" rel="stylesheet" />
-    {{- $transpiled := resources.Get "js/theme.js" | babel -}}
-    <script src="{{ $transpiled.Permalink }}"></script>
   </head>
   <body class="bg-gray-100">
-    <div class="flex flex-col h-screen">
+    <div class="flex flex-col h-screen gap-y-4 ">
       {{ partial "header.html" . }}
-      <main class="p-4 flex-grow container mx-auto">
-        {{- block "main" . -}}{{- end -}}
-      </main>
+      {{- block "main" . -}}{{- end -}}
       {{ partial "footer.html" . }}
     </div>
   </body>
