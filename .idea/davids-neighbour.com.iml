@@ -7,5 +7,6 @@
     <orderEntry type="module" module-name="components" />
     <orderEntry type="module" module-name="hooks" />
     <orderEntry type="module" module-name="debugprint" />
+    <orderEntry type="module" module-name="shortcodes" />
   </component>
 </module>
