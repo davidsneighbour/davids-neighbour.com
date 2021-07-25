@@ -43,17 +43,21 @@ module.exports = {
     },
     // https://tailwindcss.com/docs/customizing-colors
     colors: {
-      primary: colors.indigo,
-      secondary: colors.yellow,
-      neutral: colors.gray,
+      primary: colors.cyan,
+      secondary: colors.amber,
+
+      neutral: colors.coolGray,
       transparent: "transparent",
       current: "currentColor",
+
       black: colors.black,
       white: colors.white,
+
       gray: colors.coolGray,
-      indigo: colors.indigo,
+
+      blue: colors.cyan,
       red: colors.rose,
-      green: colors.green,
+      green: colors.lime,
       pink: colors.pink,
       yellow: colors.amber,
     },

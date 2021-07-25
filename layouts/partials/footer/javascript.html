@@ -1,2 +1,62 @@
-{{- $transpiled := resources.Get "js/theme.js" | js.Build -}}
+{{- /* see https://gohugo.io/hugo-pipes/js/ */ -}}
+
+{{- /*
+
+Configuration:
+
+add configuration parameters to `[params.dnb.jsbuild]`.
+
+sample configuration with default values:
+
+```
+[params.dnb.jsbuild]
+minify = true
+targetPath = "theme.js"
+avoidTDZ = true
+[params.dnb.jsbuild.params]
+something = "bla"
+somethingelse = "fasel"
+```
+
+*/ -}}
+
+{{ $params := dict }}
+{{ range $key, $value := site.Data.dnb }}
+  {{ if (and (isset $value "config") (isset $value.config "plugins") (isset $value.config.plugins "esBuildParams")) }}
+    {{- partial "debug.html" (dict "message" (printf "Loading esBuildParams configuration %s" $key) "severity" "debug") -}}
+    {{ range $esKey, $esValue := $value.config.plugins.esBuildParams }}
+      {{ $params = $params | merge (dict $esKey $esValue) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $targetPath := "theme.js" }}
+{{ $minify := true }}
+{{ $avoidTDZ := true }}
+{{ $target := "es2018" }}
+{{ $externals := slice }}
+{{ $defines := dict }}
+{{ $format := "iife" }}
+{{ $sourceMap := "inline" }}
+
+{{- /*
+TODO:
+- inject
+- shims
+*/ -}}
+
+{{ $options := ( dict
+      "targetPath" $targetPath
+      "params" $params
+      "minify" $minify
+      "avoidTDZ" $avoidTDZ
+      "target" $target
+      "externals" $externals
+      "defines" $defines
+      "format" $format
+      "sourceMap" $sourceMap
+) }}
+
+{{- $transpiled := resources.Get "js/theme.js" | js.Build $options -}}
+{{ $transpiled = $transpiled | resources.Fingerprint "sha384"}}
 <script src="{{ $transpiled.Permalink }}"></script>
