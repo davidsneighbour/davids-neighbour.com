@@ -2,6 +2,7 @@
 const forms = require("@tailwindcss/forms");
 const colors = require("tailwindcss/colors");
 const aspectRatio = require("@tailwindcss/aspect-ratio");
+const typography = require("@tailwindcss/typography");
 
 module.exports = {
   // See https://tailwindcss.com/docs/configuration#important
@@ -36,9 +37,36 @@ module.exports = {
   },
   // https://tailwindcss.com/docs/dark-mode
   darkMode: false, // or 'media' or 'class'
-  plugins: [forms, aspectRatio],
+  plugins: [forms, aspectRatio, typography],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: ["verb", "ui-sans-serif", "system-ui"],
+        sans: ["verb", "ui-sans-serif", "system-ui"],
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme("colors.gray.700"),
+            h2: {
+              color: theme("colors.gray.800"),
+            },
+            h3: {
+              color: theme("colors.gray.800"),
+            },
+            strong: {
+              color: theme("colors.gray.800"),
+            },
+            a: {
+              color: theme("colors.green.500"),
+              "&:hover": {
+                color: theme("colors.green.600"),
+              },
+            },
+          },
+        },
+      }),
+    },
     container: {
       center: true,
     },
@@ -71,10 +99,7 @@ module.exports = {
       xl: "1280px", // => @media (min-width: 1280px) { ... }
       "2xl": "1536px", // => @media (min-width: 1536px) { ... }
     },
-    fontFamily: {
-      body: ["verb"],
-      sans: ["verb"],
-    },
+    fontFamily: {},
     fontWeight: {
       normal: 200,
       bold: 700,
