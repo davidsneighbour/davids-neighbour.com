@@ -1,6 +1,7 @@
 // https://github.com/tailwindlabs/tailwindcss-forms
 const forms = require("@tailwindcss/forms");
 const colors = require("tailwindcss/colors");
+const aspectRatio = require("@tailwindcss/aspect-ratio");
 
 module.exports = {
   // See https://tailwindcss.com/docs/configuration#important
@@ -35,7 +36,7 @@ module.exports = {
   },
   // https://tailwindcss.com/docs/dark-mode
   darkMode: false, // or 'media' or 'class'
-  plugins: [forms],
+  plugins: [forms, aspectRatio],
   theme: {
     extend: {},
     container: {

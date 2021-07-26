@@ -53,5 +53,8 @@
     "test:server": "hugo server --port=8888 --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log -v",
     "update": "npm-check-updates -u && npm install"
   },
-  "url": "https://davids-neighbour.com"
+  "url": "https://davids-neighbour.com",
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.1"
+  }
 }
