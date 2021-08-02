@@ -44,6 +44,7 @@ module.exports = {
         body: ["verb", "ui-sans-serif", "system-ui"],
         sans: ["verb", "ui-sans-serif", "system-ui"],
       },
+      // https://github.com/tailwindlabs/tailwindcss-typography/blob/master/src/styles.js
       typography: (theme) => ({
         DEFAULT: {
           css: {

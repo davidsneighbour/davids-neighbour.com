@@ -2,21 +2,18 @@
   <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
     <div class="p-5">
       <p class="text-xs uppercase text-gray-400 mb-6">
-        David's Neighbour Part., Ltd.
+        {{- site.Params.dnb.footer.company.name -}}
       </p>
       <p class="my-3 block text-gray-300 hover:text-gray-100 text-sm duration-700">
-        Patrick Kollitsch<br />
-        P.O.Box 135, Post Office Maenam<br />
-        84330 Suratthani, Koh Samui<br />
-        Thailand
+        {{- delimit site.Params.dnb.footer.company.address "<br/>" -}}
       </p>
       <p class="text-xs uppercase text-gray-400 my-6">
-        Contact
+        {{- i18n "contact" | default "Contact" -}}
       </p>
       <p class="my-3 block text-gray-300 hover:text-gray-100 text-sm duration-700">
-        WhatsApp: +66.8.789.79.350<br />
-        Signal: davidsneighbour<br />
-        Telegram: davidsneighbour<br />
+        {{ range site.Params.dnb.contacts }}
+            {{ .name }}: {{ .address }}<br/>
+        {{ end }}
       </p>
     </div>
     {{ range seq 3 }}
@@ -34,16 +31,18 @@
     {{ end }}
   </div>
   <div class="pt-2">
-    <div class="flex pb-5 px-3 m-auto pt-5 border-t border-gray-500 text-gray-400 text-sm flex-col md:flex-row max-w-6xl ">
+    <div class="flex justify-between pb-5 px-3 m-auto pt-5 border-t border-gray-500 text-gray-400 text-sm flex-col md:flex-row max-w-6xl ">
       <div class="mt-2">
         {{ $year := partial "func/getYear.html" . }}
         {{ $copy := printf (string site.Params.dnb.footer.copyright) (string $year) }}
         {{ $copy | markdownify }}
       </div>
+      <div class="w-7 h-7">
+        <a href="#top">
+          {{- partial "heroicon" "chevron-up" "chevron-up" -}}
+        </a>
+      </div>
     </div>
-{{/*    <div class="">*/}}
-{{/*      <img src="/ci/logo-black-square.svg" class="h-1 block w-100" />*/}}
-{{/*    </div>*/}}
   </div>
 </footer>
 

@@ -28,8 +28,27 @@ params = ["categories", "tags"]
 [dnb]
 javascript = "script-local.js"
 
+[[dnb.contacts]]
+name = "WhatsApp"
+address = "+66.8.789.79.350"
+[[dnb.contacts]]
+name = "Signal"
+address = "davidsneighbour"
+[[dnb.contacts]]
+name = "Telegram"
+address = "davidsneighbour"
+
 [dnb.footer]
 copyright = "&copy; Copyright 2005-%s by [David's Neighbour Part., Ltd.](/) - All rights reserved."
+
+[dnb.footer.company]
+name = "David's Neighbour Part., Ltd."
+address = [
+  "Patrick Kollitsch",
+  "P.O.Box 135, Post Office Maenam",
+  "84330 Suratthani, Koh Samui",
+  "Thailand",
+]
 
 [dnb.footer.menu]
 title1 = "Getting Started"
