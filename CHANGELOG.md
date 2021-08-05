@@ -2,6 +2,98 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2021.3.4](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.2...v2021.3.4) (2021-08-05)
+
+
+### Features
+
+* **shortcode:** add older shortcodes from hugonewsletter repo ([919979b](https://github.com/davidsneighbour/davids-neighbour.com/commit/919979bd52c15723027d5f28581a0c278585fd15))
+
+
+### Theme
+
+* add default random images for news and notes section ([6334aef](https://github.com/davidsneighbour/davids-neighbour.com/commit/6334aef441c6ed34edc3b1692b37fcd27dd6f358))
+* add javascript in footer and remove babel config ([ed39aee](https://github.com/davidsneighbour/davids-neighbour.com/commit/ed39aeec3ed42aa0d728d79464095e1c14b37682))
+* fix font size layout ([a27ae6b](https://github.com/davidsneighbour/davids-neighbour.com/commit/a27ae6bb55f645a9f50e5289befd194d73a41a8b))
+* font setup changes ([b0e3cd5](https://github.com/davidsneighbour/davids-neighbour.com/commit/b0e3cd58c85d4811acabeaf04e65511295f92b3d))
+* i18n and configuration of footer components ([e36850f](https://github.com/davidsneighbour/davids-neighbour.com/commit/e36850fbef670361d60e9f2113d8aab5b2e2b929))
+* list post layout ([33de09a](https://github.com/davidsneighbour/davids-neighbour.com/commit/33de09a8c6cfa00cb1a317de52ef6e70ca7fd208))
+* reconfigure prevnext links ([ebb96b9](https://github.com/davidsneighbour/davids-neighbour.com/commit/ebb96b9fd1ee482624079b99779531c2942f6f3e))
+* refactor layout setup ([ad75b49](https://github.com/davidsneighbour/davids-neighbour.com/commit/ad75b49c6074fd62b7513106060554a25ca5e9aa))
+* remove font styles ([6f74f16](https://github.com/davidsneighbour/davids-neighbour.com/commit/6f74f16a1fb4b9a2faeb384d1723e9a26a08e8a9))
+* **shortcode:** add youtube shortcode with aspect ratio ([1c9a51d](https://github.com/davidsneighbour/davids-neighbour.com/commit/1c9a51da695bf3f37e64ea9e8ffb33b776209e68))
+* **tailwind:** add typography plugin and setup typography ([8568ecc](https://github.com/davidsneighbour/davids-neighbour.com/commit/8568ecc461aa5aef5d56ffe09dfc649da127c86d))
+* update colors and layout options ([b5aeea6](https://github.com/davidsneighbour/davids-neighbour.com/commit/b5aeea6546857f413035596718edd24baebf714d))
+* **wip:** article and site layout ([733aa89](https://github.com/davidsneighbour/davids-neighbour.com/commit/733aa892d0276736c8880b24da22254ecf443da8))
+
+
+### Chore
+
+* add links to pre-commit repositories ([e24e44a](https://github.com/davidsneighbour/davids-neighbour.com/commit/e24e44af6247627407b11e3b2e46b836504a8bbb))
+* **build:** add configuration for pre-commit ([e3b1df3](https://github.com/davidsneighbour/davids-neighbour.com/commit/e3b1df34259ce787630e570fa277dd79cb64807e))
+* **build:** add hugonew script to create new posts ([5856f0f](https://github.com/davidsneighbour/davids-neighbour.com/commit/5856f0f23f77b2b337b2f9f93a3a175b00d5dde2))
+* **build:** add pre-commit setup ([0a401fc](https://github.com/davidsneighbour/davids-neighbour.com/commit/0a401fc1014dda6a9b9cf4611201af917d198019))
+* **build:** add server script to package setup ([91c04e7](https://github.com/davidsneighbour/davids-neighbour.com/commit/91c04e72538b86a6202b2f48f92eede20c5bc647))
+* commit all files prepared by pre-commit ([256c2cf](https://github.com/davidsneighbour/davids-neighbour.com/commit/256c2cfca712b7d06a00b12ede515b00754182cb))
+* commit all files prepared by pre-commit ([38479b0](https://github.com/davidsneighbour/davids-neighbour.com/commit/38479b05eb12a9616d3d1d03c2d446b585df9ed7))
+* **config:** add archetypes for all post types ([938ce30](https://github.com/davidsneighbour/davids-neighbour.com/commit/938ce30e240cefcf79ea4e7d96b7a69da3077089))
+* **config:** add tailwind aspect-ratio plugin ([5531391](https://github.com/davidsneighbour/davids-neighbour.com/commit/55313912ff3f296d632d6d4e6475fa6fe7f460fc))
+* **config:** add vscode configuration ([df1dfc1](https://github.com/davidsneighbour/davids-neighbour.com/commit/df1dfc1476e247b7ac9005c4ff292a337c577efa))
+* **config:** update module configuration ([0127e70](https://github.com/davidsneighbour/davids-neighbour.com/commit/0127e706dc69fdcddae4f427e94c7f658a8c9391))
+* **config:** update pre-commit configuration ([26b107e](https://github.com/davidsneighbour/davids-neighbour.com/commit/26b107e01d6782f57bf81bd08a18611c04cae02b))
+* **config:** update pre-commit configuration ([8c6e934](https://github.com/davidsneighbour/davids-neighbour.com/commit/8c6e934849db1f1a9e2cc238fb4aba397bdf15d4))
+* **deps:** bump @dnb-org/all from 3.1.1 to 3.2.0 ([#217](https://github.com/davidsneighbour/davids-neighbour.com/issues/217)) ([7479b89](https://github.com/davidsneighbour/davids-neighbour.com/commit/7479b89117e07d4597df107a639c40b7f0d2f27c))
+* **deps:** update dependencies ([d64d87b](https://github.com/davidsneighbour/davids-neighbour.com/commit/d64d87b8395587cfd20533318acf9fedbc96e45f))
+* **deps:** update dependencies ([37a2656](https://github.com/davidsneighbour/davids-neighbour.com/commit/37a26565141cb724d0099a7b534fb3ac602f2178))
+* **ide:** add shortcodes module to IntelliJ project ([c07088e](https://github.com/davidsneighbour/davids-neighbour.com/commit/c07088e5fdaaa3f6f383ee2508ea048ef66f0003))
+* **ide:** update IntelliJ configuration ([ee10e30](https://github.com/davidsneighbour/davids-neighbour.com/commit/ee10e308a0db08920eeb523182eb86ce97ca1f22))
+
+### [2021.3.3](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.2...v2021.3.3) (2021-08-05)
+
+
+### Features
+
+* **shortcode:** add older shortcodes from hugonewsletter repo ([919979b](https://github.com/davidsneighbour/davids-neighbour.com/commit/919979bd52c15723027d5f28581a0c278585fd15))
+
+
+### Theme
+
+* add default random images for news and notes section ([6334aef](https://github.com/davidsneighbour/davids-neighbour.com/commit/6334aef441c6ed34edc3b1692b37fcd27dd6f358))
+* add javascript in footer and remove babel config ([ed39aee](https://github.com/davidsneighbour/davids-neighbour.com/commit/ed39aeec3ed42aa0d728d79464095e1c14b37682))
+* fix font size layout ([a27ae6b](https://github.com/davidsneighbour/davids-neighbour.com/commit/a27ae6bb55f645a9f50e5289befd194d73a41a8b))
+* font setup changes ([b0e3cd5](https://github.com/davidsneighbour/davids-neighbour.com/commit/b0e3cd58c85d4811acabeaf04e65511295f92b3d))
+* i18n and configuration of footer components ([e36850f](https://github.com/davidsneighbour/davids-neighbour.com/commit/e36850fbef670361d60e9f2113d8aab5b2e2b929))
+* list post layout ([33de09a](https://github.com/davidsneighbour/davids-neighbour.com/commit/33de09a8c6cfa00cb1a317de52ef6e70ca7fd208))
+* reconfigure prevnext links ([ebb96b9](https://github.com/davidsneighbour/davids-neighbour.com/commit/ebb96b9fd1ee482624079b99779531c2942f6f3e))
+* refactor layout setup ([ad75b49](https://github.com/davidsneighbour/davids-neighbour.com/commit/ad75b49c6074fd62b7513106060554a25ca5e9aa))
+* remove font styles ([6f74f16](https://github.com/davidsneighbour/davids-neighbour.com/commit/6f74f16a1fb4b9a2faeb384d1723e9a26a08e8a9))
+* **shortcode:** add youtube shortcode with aspect ratio ([1c9a51d](https://github.com/davidsneighbour/davids-neighbour.com/commit/1c9a51da695bf3f37e64ea9e8ffb33b776209e68))
+* **tailwind:** add typography plugin and setup typography ([8568ecc](https://github.com/davidsneighbour/davids-neighbour.com/commit/8568ecc461aa5aef5d56ffe09dfc649da127c86d))
+* update colors and layout options ([b5aeea6](https://github.com/davidsneighbour/davids-neighbour.com/commit/b5aeea6546857f413035596718edd24baebf714d))
+* **wip:** article and site layout ([733aa89](https://github.com/davidsneighbour/davids-neighbour.com/commit/733aa892d0276736c8880b24da22254ecf443da8))
+
+
+### Chore
+
+* add links to pre-commit repositories ([e24e44a](https://github.com/davidsneighbour/davids-neighbour.com/commit/e24e44af6247627407b11e3b2e46b836504a8bbb))
+* **build:** add configuration for pre-commit ([e3b1df3](https://github.com/davidsneighbour/davids-neighbour.com/commit/e3b1df34259ce787630e570fa277dd79cb64807e))
+* **build:** add hugonew script to create new posts ([5856f0f](https://github.com/davidsneighbour/davids-neighbour.com/commit/5856f0f23f77b2b337b2f9f93a3a175b00d5dde2))
+* **build:** add pre-commit setup ([0a401fc](https://github.com/davidsneighbour/davids-neighbour.com/commit/0a401fc1014dda6a9b9cf4611201af917d198019))
+* **build:** add server script to package setup ([91c04e7](https://github.com/davidsneighbour/davids-neighbour.com/commit/91c04e72538b86a6202b2f48f92eede20c5bc647))
+* commit all files prepared by pre-commit ([256c2cf](https://github.com/davidsneighbour/davids-neighbour.com/commit/256c2cfca712b7d06a00b12ede515b00754182cb))
+* commit all files prepared by pre-commit ([38479b0](https://github.com/davidsneighbour/davids-neighbour.com/commit/38479b05eb12a9616d3d1d03c2d446b585df9ed7))
+* **config:** add archetypes for all post types ([938ce30](https://github.com/davidsneighbour/davids-neighbour.com/commit/938ce30e240cefcf79ea4e7d96b7a69da3077089))
+* **config:** add tailwind aspect-ratio plugin ([5531391](https://github.com/davidsneighbour/davids-neighbour.com/commit/55313912ff3f296d632d6d4e6475fa6fe7f460fc))
+* **config:** add vscode configuration ([df1dfc1](https://github.com/davidsneighbour/davids-neighbour.com/commit/df1dfc1476e247b7ac9005c4ff292a337c577efa))
+* **config:** update module configuration ([0127e70](https://github.com/davidsneighbour/davids-neighbour.com/commit/0127e706dc69fdcddae4f427e94c7f658a8c9391))
+* **config:** update pre-commit configuration ([26b107e](https://github.com/davidsneighbour/davids-neighbour.com/commit/26b107e01d6782f57bf81bd08a18611c04cae02b))
+* **config:** update pre-commit configuration ([8c6e934](https://github.com/davidsneighbour/davids-neighbour.com/commit/8c6e934849db1f1a9e2cc238fb4aba397bdf15d4))
+* **deps:** bump @dnb-org/all from 3.1.1 to 3.2.0 ([#217](https://github.com/davidsneighbour/davids-neighbour.com/issues/217)) ([7479b89](https://github.com/davidsneighbour/davids-neighbour.com/commit/7479b89117e07d4597df107a639c40b7f0d2f27c))
+* **deps:** update dependencies ([d64d87b](https://github.com/davidsneighbour/davids-neighbour.com/commit/d64d87b8395587cfd20533318acf9fedbc96e45f))
+* **deps:** update dependencies ([37a2656](https://github.com/davidsneighbour/davids-neighbour.com/commit/37a26565141cb724d0099a7b534fb3ac602f2178))
+* **ide:** add shortcodes module to IntelliJ project ([c07088e](https://github.com/davidsneighbour/davids-neighbour.com/commit/c07088e5fdaaa3f6f383ee2508ea048ef66f0003))
+* **ide:** update IntelliJ configuration ([ee10e30](https://github.com/davidsneighbour/davids-neighbour.com/commit/ee10e308a0db08920eeb523182eb86ce97ca1f22))
+
 ### [2021.3.2](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.1...v2021.3.2) (2021-07-23)
 
 ### Features
