@@ -1,0 +1,3 @@
+{{ $element := .Get 1 | default "span" }}
+{{ $output := printf "<%s class=\"%s\">%s</%s>" $element (.Get 0) .Inner $element }}
+{{ $output | safeHTML }}

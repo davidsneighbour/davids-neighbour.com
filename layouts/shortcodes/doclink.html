@@ -1,0 +1,12 @@
+{{- $function := .Get "function" -}}
+{{- $url := default "https://gohugo.io/functions/" (.Get "url") -}}
+{{- $url = printf "%s%s" $url $function -}}
+<div class="doclink">
+  <a href="{{- $url -}}" target="_blank" rel="noopener noreferrer">
+    Read the official
+    <img src="/images/logos/hugo-logo-wide.svg" alt="Hugo Logo" />
+    documentation
+    {{- with $function -}}&nbsp;for <code>{{- . -}}</code>{{- end -}}
+    {{- partialCached "heroicon" "chevron-right" "chevron-right" -}}
+  </a>
+</div>
