@@ -17,10 +17,31 @@ source = "optimized/solid"
 target = "assets/icons/heroicons/solid"
 
 [[imports]]
+path = "github.com/dnb-org/components/auditor"
+
+[[imports]]
 path = "github.com/dnb-org/components/functions"
 
 [[imports]]
 path = "github.com/dnb-org/components/netlification"
+
+[[imports]]
+path = "github.com/dnb-org/components/opensearch"
+
+[[imports]]
+path = "github.com/dnb-org/components/pwa"
+
+[[imports]]
+path = "github.com/dnb-org/components/robots"
+
+[[imports]]
+path = "github.com/dnb-org/components/sitemap"
+
+[[imports]]
+path = "github.com/dnb-org/components/social"
+
+[[imports]]
+path = "github.com/dnb-org/debug"
 
 [[imports]]
 path = "github.com/dnb-org/hooks"
