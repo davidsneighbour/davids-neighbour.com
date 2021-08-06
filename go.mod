@@ -3,7 +3,7 @@ module github.com/davidsneighbour/davids-neighbour.com
 go 1.16
 
 require (
-	github.com/dnb-org/components/auditor v0.0.0-20210801045608-71a5d713f6b3 // indirect
+	github.com/dnb-org/components/auditor v0.0.0-20210803131919-6e0c2a45cb80 // indirect
 	github.com/dnb-org/components/functions v1.1.4 // indirect
 	github.com/dnb-org/components/netlification v1.2.0 // indirect
 	github.com/dnb-org/components/opensearch v1.0.12 // indirect

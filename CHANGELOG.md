@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2021.3.5](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.4...v2021.3.5) (2021-08-06)
+
+
+### Theme
+
+* **fix:** remove non-working content prose configuration ([6992a05](https://github.com/davidsneighbour/davids-neighbour.com/commit/6992a05d161b36276107c4ab091a422833e56e61))
+* theme changes ([54ed158](https://github.com/davidsneighbour/davids-neighbour.com/commit/54ed158a0a0296e2fb4122cc6394e87aa6c6e66b))
+
+
+### Chore
+
+* **config:** add better highlighting theme ([94ac8c4](https://github.com/davidsneighbour/davids-neighbour.com/commit/94ac8c4ef87841fcd4f8d5bc0a7c95dbf54480ca))
+* **config:** rework core configuration ([5e9db9f](https://github.com/davidsneighbour/davids-neighbour.com/commit/5e9db9f76a1ac3bbfb0d7785ee5fef36e85bcb39))
+
 ### [2021.3.4](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.2...v2021.3.4) (2021-08-05)
 
 
