@@ -1,0 +1,8 @@
+.highlight {
+
+  @apply my-5;
+}
+
+.chrome {
+  @apply px-2 py-3;
+}

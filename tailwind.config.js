@@ -43,6 +43,16 @@ module.exports = {
       fontFamily: {
         body: ["verb", "ui-sans-serif", "system-ui"],
         sans: ["verb", "ui-sans-serif", "system-ui"],
+        mono: [
+          "JetBrains Mono",
+          "ui-monospace",
+          "SFMono-Regular",
+          "Menlo, Monaco",
+          "Consolas",
+          "Liberation Mono",
+          "Courier New",
+          "monospace",
+        ],
       },
       // https://github.com/tailwindlabs/tailwindcss-typography/blob/master/src/styles.js
       typography: (theme) => ({
