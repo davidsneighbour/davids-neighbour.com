@@ -11,7 +11,6 @@
     "@dnb-org/all": "3.2.6",
     "@tailwindcss/aspect-ratio": "0.2.1",
     "@tailwindcss/forms": "0.3.3",
-    "@tailwindcss/typography": "0.4.1",
     "alpinejs": "3.2.3",
     "autoprefixer": "10.3.1",
     "cssnano": "5.0.7",
