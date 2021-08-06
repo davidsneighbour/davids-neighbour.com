@@ -31,7 +31,7 @@
   "scripts": {
     "build": "run-s build:critical && build:hugo",
     "build:critical": "./bin/build-critical-css.sh",
-    "build:highlights": "hugo gen chromastyles --style=monokailight > assets/scss/plugins/_highlight.scss",
+    "build:highlights": "hugo gen chromastyles --style=native > assets/css/utilities/syntax.css",
     "clean": "npm-run-all -p clean:cypress clean:hugo",
     "clean:all": "npm-run-all -p clean:*",
     "clean:cypress": "rimraf tests/cypress/screenshots tests/cypress/videos",
