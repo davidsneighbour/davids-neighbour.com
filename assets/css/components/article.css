@@ -10,3 +10,14 @@ article .prevnext svg,
 article .breadcrumbs svg {
   height:1.2em;
 }
+
+article p {
+  @apply mt-5
+}
+
+article code,
+article kbd,
+article samp,
+article pre {
+  font-size: 0.8rem;
+}
