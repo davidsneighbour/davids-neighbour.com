@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2021.3.6](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.5...v2021.3.6) (2021-08-08)
+
+
+### Features
+
+* **config:** configure tailwind and postcss ([c13ec6b](https://github.com/davidsneighbour/davids-neighbour.com/commit/c13ec6bff6341ee768d97ef5813c9ee05e0b9f02))
+
+
+### Chore
+
+* **deps:** update dependabot configuration ([c896921](https://github.com/davidsneighbour/davids-neighbour.com/commit/c896921daa880dca9c2cc90556206674610572ba))
+
+
+### Theme
+
+* add head partial and title compilation ([5a39f50](https://github.com/davidsneighbour/davids-neighbour.com/commit/5a39f50ad3adfa988579d126b404ebaac1823b3c))
+
 ### [2021.3.5](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.4...v2021.3.5) (2021-08-06)
 
 
