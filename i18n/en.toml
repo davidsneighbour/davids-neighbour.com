@@ -12,3 +12,4 @@ other = "Share"
 
 [wordCount]
 other = "{{ .WordCount }} words"
+

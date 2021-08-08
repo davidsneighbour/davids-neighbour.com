@@ -83,12 +83,6 @@ name = "Plugins"
 url = ""
 
 [[main]]
-identifier = "home"
-name = "Home"
-url = "/"
-weight = 100
-
-[[main]]
 identifier = "news"
 name = "News"
 url = "/news/"
