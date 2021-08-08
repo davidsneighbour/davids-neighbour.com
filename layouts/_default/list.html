@@ -4,37 +4,9 @@
       <div class="col">
         <div class="mb-4 md:mb-0 w-full max-w-screen-md mx-auto relative">
           <h1>{{ .Title }}</h1>
-          {{ range .Pages.ByPublishDate.Reverse }}
-            <div class="py-8 flex flex-wrap md:flex-nowrap">
-              <div class="md:w-52 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                {{- with .Keywords -}}
-                  {{- range . -}}
-                    <span class="text-gray-700">
-                      {{- . | upper -}}
-                    </span>
-                  {{- end -}}
-                {{- end -}}
-                <time datetime="{{ .PublishDate }}"
-                      class="text-sm text-gray-500">{{ .PublishDate.Format "January 2, 2006" }}</time>
-              </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl text-gray-900 mb-2">
-                  <a href="{{ .Permalink }}">
-                    {{ .Title }}
-                  </a>
-                </h2>
-                <p>
-                  {{ .Summary }}
-                </p>
-                <a href="{{ .Permalink }}" class="text-indigo-500 inline-flex items-center mt-4">
-                  Read More
-                  <span class="w-4 ml-2">
-                    {{- partialCached "heroicon" "arrow-right" "arrow-right" -}}
-                  </span>
-                </a>
-              </div>
-            </div>
-          {{ end }}
+          {{- range .Pages.ByPublishDate.Reverse -}}
+            {{- partialCached "content/post-card.html" . . -}}
+          {{- end -}}
         </div>
       </div>
     </div>

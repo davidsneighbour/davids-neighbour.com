@@ -1,9 +1,13 @@
-article header {
+article.full header {
   height: 24em;
 }
 
+article.excerpt header {
+  height: 18em;
+}
+
 article header > div {
-  background-image: linear-gradient(180deg,transparent,rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.7));
 }
 
 article .prevnext svg,
