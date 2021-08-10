@@ -8,38 +8,44 @@
     "web": "https://davids-neighbour.com"
   },
   "dependencies": {
-    "@dnb-org/all": "3.2.8",
+    "@dnb-org/all": "3.2.9",
     "@tailwindcss/aspect-ratio": "0.2.1",
     "@tailwindcss/forms": "0.3.3",
     "alpinejs": "3.2.3",
     "autoprefixer": "10.3.1",
+    "babel-loader": "8.2.2",
+    "cross-env": "^7.0.3",
     "cssnano": "5.0.7",
+    "lazysizes": "5.3.2",
+    "pixrem": "5.0.0",
     "postcss": "8.3.6",
     "postcss-cli": "8.3.1",
     "postcss-import": "^14.0.2",
     "postcss-nesting": "8.0.1",
     "postcss-preset-env": "^6.7.0",
     "postcss-purgecss": "2.0.3",
-    "tailwindcss": "2.2.7"
+    "precss": "4.0.0",
+    "tailwindcss": "2.2.7",
+    "webpack": "5.49.0",
+    "webpack-cli": "4.7.2",
+    "webpack-merge": "5.8.0"
   },
   "homepage": "https://davids-neighbour.com",
   "license": "UNLICENSED",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/davidsneighbour/davids-neighbour.com.git"
-  },
+  "repository": "davidsneighbour/davids-neighbour.com",
   "scripts": {
     "build": "run-s build:critical && build:hugo",
     "build:critical": "./bin/build-critical-css.sh",
     "build:highlights": "hugo gen chromastyles --style=native > assets/css/utilities/syntax.css",
+    "build:hugo": "hugo --gc --minify",
+    "build:new": "npm run build:webpack && npm run build:hugo",
+    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.production.js",
     "clean": "npm-run-all -p clean:cypress clean:hugo",
     "clean:all": "npm-run-all -p clean:*",
     "clean:cypress": "rimraf tests/cypress/screenshots tests/cypress/videos",
     "clean:hugo": "rimraf hugo.log hugo_stats.json resources",
     "clean:npm": "rimraf node_modules package-lock.json",
-    "hugo:build": "hugo --gc --minify",
-    "hugo:serve": "rimraf hugo.log && hugo server --bind 192.168.1.201 --baseURL http://192.168.1.201 --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log -v",
     "lint:fix": "run-p lint:scss:fix lint:textlint:fix",
     "lint:remark": "remark",
     "lint:scss": "stylelint assets/scss/",
@@ -54,7 +60,10 @@
     "test:cypress": "cypress open",
     "test:server": "hugo server --port=8888 --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log -v",
     "update": "npm-check-updates -u && npm install",
-    "server": "npm-run-all -p hugo:serve"
+    "serve": "npm run build:webpack && npm-run-all -p serve:**",
+    "serve:hugo": "rimraf hugo.log && hugo server --bind 192.168.1.201 --baseURL http://192.168.1.201 --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log -v",
+    "serve:webpack": "webpack --watch --config webpack.development.js"
   },
-  "url": "https://davids-neighbour.com"
+  "url": "https://davids-neighbour.com",
+  "slug": "davids-neighbour-com"
 }

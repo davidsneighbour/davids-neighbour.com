@@ -3,6 +3,7 @@ notes
 package-lock.json
 static/assets
 replacements
+main.js
 
 # files in precompiled sites
 /public/webfonts/**/*.html
