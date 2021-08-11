@@ -8,5 +8,6 @@
     <orderEntry type="module" module-name="hooks" />
     <orderEntry type="module" module-name="debugprint" />
     <orderEntry type="module" module-name="shortcodes" />
+    <orderEntry type="module" module-name="configurations" />
   </component>
 </module>
