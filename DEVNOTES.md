@@ -1,5 +1,3 @@
-# Develoment Notes
-
 ## Development Environment
 
 ### pre-commit
@@ -12,6 +10,20 @@ pre-commit autoupdate
 pre-commit autoupdate
 pre-commit gc
 ```
+
+## NPM scripts
+
+### Development server
+
+### Build scripts
+
+### Cleaning
+
+### Linting
+
+### Testing
+
+### Releasing
 
 ## Icons
 
