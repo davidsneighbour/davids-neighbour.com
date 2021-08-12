@@ -68,7 +68,7 @@
     "test": "run-p test:server test:cypress",
     "test:cypress": "cypress open",
     "test:server": "hugo server --port=8888 --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log -v",
-    "update": "npm-check-updates -u && npm install"
+    "update": "npm-check-updates -u && rimraf node_modules && rimraf package-lock.json && npm install"
   },
   "slug": "davids-neighbour-com",
   "url": "https://davids-neighbour.com"
