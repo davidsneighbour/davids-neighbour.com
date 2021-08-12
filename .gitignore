@@ -4,6 +4,7 @@ package-lock.json
 static/assets
 replacements
 main.js
+static/assets/*
 
 # files in precompiled sites
 /public/webfonts/**/*.html
