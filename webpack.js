@@ -1,4 +1,5 @@
 const path = require("path");
+const TerserPlugin = require("terser-webpack-plugin");
 
 // module.exports = (env, argv) =>
 // noinspection JSUnresolvedVariable
@@ -14,22 +15,37 @@ module.exports = (env) =>
       main: path.join(__dirname, "assets/js", "theme.js"),
     },
 
-    target: ["web", "es2017"],
+    target: ["browserslist"],
 
     output: {
       path: path.join(__dirname, "static/assets"),
       filename: "[name].js",
-      chunkFilename: "[id].css",
+      chunkFilename: "[id].js",
+      assetModuleFilename: "[hash][ext][query]",
       clean: true,
     },
 
+    stats: "minimal",
+
     performance: {
       maxEntrypointSize: 400000,
-      maxAssetSize: 100000,
+      maxAssetSize: 250000,
       hints: "warning",
     },
 
     optimization: {
+      minimize: !!env.production,
+      minimizer: [
+        new TerserPlugin({
+          terserOptions: {
+            format: {
+              comments: false,
+            },
+          },
+          extractComments: false,
+        }),
+      ],
+      emitOnErrors: true,
       moduleIds: "deterministic",
       runtimeChunk: "single",
       splitChunks: {
@@ -41,6 +57,8 @@ module.exports = (env) =>
           },
         },
       },
+      mangleWasmImports: true,
+      mangleExports: "deterministic",
     },
 
     module: {
