@@ -2,6 +2,50 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2021.3.7](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.6...v2021.3.7) (2021-08-13)
+
+
+### Features
+
+* **build:** add webpack configuration ([1a1f3cc](https://github.com/davidsneighbour/davids-neighbour.com/commit/1a1f3cc9ef413cb6d77097234b6cbd00500c4cfd))
+* **webpack:** configuring webpack inclusion ([9d09f6e](https://github.com/davidsneighbour/davids-neighbour.com/commit/9d09f6edf26a98a00fae1c21c55188bc397cbab6))
+* **webpack:** optimise webpack configuration ([f32179c](https://github.com/davidsneighbour/davids-neighbour.com/commit/f32179c56f28ec5418833a616208d032b43bccdb))
+
+
+### Bug Fixes
+
+* remove unused rfs assets ([5d8aaff](https://github.com/davidsneighbour/davids-neighbour.com/commit/5d8aaffe0de6bec65bccb9540e2928afb4292e37))
+
+
+### Refactors
+
+* add eslint ignore rule ([a75d374](https://github.com/davidsneighbour/davids-neighbour.com/commit/a75d37427aa479561d7120b2b4b29a640d753866))
+
+
+### Chore
+
+* **build:** fixpack configuration update ([276f76e](https://github.com/davidsneighbour/davids-neighbour.com/commit/276f76e1c30778d7e63fe07634a6cdd8fa83eaf2))
+* **config:** add lighthouse audit budget file ([c1c3c86](https://github.com/davidsneighbour/davids-neighbour.com/commit/c1c3c86efd53ece2c95a7894876add019390d558))
+* **config:** update IntelliJ configuration ([ca3b9f0](https://github.com/davidsneighbour/davids-neighbour.com/commit/ca3b9f0a169ce36760c7f910309756c078c7d427))
+* **deps:** fix dependency versions ([c734250](https://github.com/davidsneighbour/davids-neighbour.com/commit/c734250680b819ff9ed41f89b6e89d5b4fc45713))
+* **deps:** remove packages that are now in @dnb-org/webpack-config ([bbc9123](https://github.com/davidsneighbour/davids-neighbour.com/commit/bbc9123433391bf7797e243d80e8adb6ab057301))
+* **deps:** update dependencies ([4edd43f](https://github.com/davidsneighbour/davids-neighbour.com/commit/4edd43f102f2ec48f8b24e91b6b27e57eccba476))
+* recent changes ([f803eb9](https://github.com/davidsneighbour/davids-neighbour.com/commit/f803eb9731ceafc29bcacbd3636e37bf77e9331d))
+* remove obsolete scss files and partials ([7075845](https://github.com/davidsneighbour/davids-neighbour.com/commit/7075845b049797a3806cbd1eb095aea218f45a5c))
+
+
+### Theme
+
+* cleanup files ([47dcb1d](https://github.com/davidsneighbour/davids-neighbour.com/commit/47dcb1d727bef271663fe319bed69e47f9cde309))
+* fix footer and header layout and content ([2b382b9](https://github.com/davidsneighbour/davids-neighbour.com/commit/2b382b934294415943c97fd574d51598607a0fce))
+* fix navigation ([33b6c30](https://github.com/davidsneighbour/davids-neighbour.com/commit/33b6c30cbe8e79f316254663e53b0a2a80ca15c9))
+* **fix:** add site title to page titles ([cf00fb0](https://github.com/davidsneighbour/davids-neighbour.com/commit/cf00fb0d8dea3aef8f7dd7255243a4f2279df530))
+* **fix:** full width cover gradient and fix for paragraphs in articles ([fcd5578](https://github.com/davidsneighbour/davids-neighbour.com/commit/fcd5578d38625bc83b11065f669291d374da50ae))
+* **fix:** remove margin top from article date ([1bb784d](https://github.com/davidsneighbour/davids-neighbour.com/commit/1bb784dcb064d9a84810f9574a4de628959ef9f4))
+* **fix:** rework list layouts ([1d2751d](https://github.com/davidsneighbour/davids-neighbour.com/commit/1d2751dba04bfe9a67a4d88f1c2ad1cb2644ae78))
+* rework of contact page ([6134056](https://github.com/davidsneighbour/davids-neighbour.com/commit/61340562aa5bd3fec681342f50ec4e51a28d57e7))
+* WIP list design ([a9157fd](https://github.com/davidsneighbour/davids-neighbour.com/commit/a9157fd9e06d9d13470a7214d84d9f441d38e399))
+
 ### [2021.3.6](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.5...v2021.3.6) (2021-08-08)
 
 
