@@ -1,4 +1,5 @@
 const path = require("path");
+// eslint-disable-next-line import/no-extraneous-dependencies
 const TerserPlugin = require("terser-webpack-plugin");
 
 // module.exports = (env, argv) =>
@@ -83,3 +84,22 @@ module.exports = (env) =>
       ],
     },
   });
+
+// // noinspection JSUnresolvedVariable
+// // eslint-disable-next-line import/no-extraneous-dependencies
+// const { merge } = require("webpack-merge");
+//
+// // eslint-disable-next-line import/no-extraneous-dependencies
+// const commonConfig = require("@dnb-org/webpack-config");
+//
+// module.exports = (env) => {
+//   const localConfig = {
+//     mode: env.production ? "production" : "development",
+//     devtool: env.production ? "source-map" : "inline-source-map",
+//
+//     optimization: {
+//       minimize: !!env.production,
+//     },
+//   };
+//   return merge(localConfig, commonConfig);
+// };

@@ -6,7 +6,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="components" />
     <orderEntry type="module" module-name="hooks" />
-    <orderEntry type="module" module-name="debugprint" />
+    <orderEntry type="module" module-name="debug" />
     <orderEntry type="module" module-name="shortcodes" />
     <orderEntry type="module" module-name="configurations" />
   </component>

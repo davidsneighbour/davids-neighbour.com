@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/../components/.idea/components.iml" filepath="$PROJECT_DIR$/../components/.idea/components.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../configurations/.idea/configurations.iml" filepath="$PROJECT_DIR$/../../configurations/.idea/configurations.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/davids-neighbour.com.iml" filepath="$PROJECT_DIR$/.idea/davids-neighbour.com.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../debug/.idea/debugprint.iml" filepath="$PROJECT_DIR$/../debug/.idea/debugprint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../debug/.idea/debug.iml" filepath="$PROJECT_DIR$/../debug/.idea/debug.iml" />
       <module fileurl="file://$PROJECT_DIR$/../hooks/.idea/hooks.iml" filepath="$PROJECT_DIR$/../hooks/.idea/hooks.iml" />
       <module fileurl="file://$PROJECT_DIR$/../shortcodes/.idea/shortcodes.iml" filepath="$PROJECT_DIR$/../shortcodes/.idea/shortcodes.iml" />
     </modules>
