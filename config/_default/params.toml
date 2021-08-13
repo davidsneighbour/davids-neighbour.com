@@ -51,9 +51,9 @@ address = [
 ]
 
 [dnb.footer.menu]
-title1 = "Getting Started"
-title2 = "Core Concepts"
-title3 = "Customization"
+title1 = "@dnb-org Configurations"
+title2 = "@dnb-org Configurations"
+title3 = "Other Stuff"
 
 [dnb.header]
 

@@ -1,86 +1,91 @@
 [[footer1]]
-name = "Installation"
-url = ""
+name = "@dnb-org/all"
+url = "https://www.npmjs.com/package/@dnb-org/all"
 
 [[footer1]]
-name = "Release Notes"
-url = ""
+name = "@dnb-org/babel-config"
+url = "https://www.npmjs.com/package/@dnb-org/babel-config"
 
 [[footer1]]
-name = "Release Notes"
-url = ""
+name = "@dnb-org/browserslist-config"
+url = "https://www.npmjs.com/package/@dnb-org/browserslist-config"
 
 [[footer1]]
-name = "Upgrade Guide"
-url = ""
+name = "@dnb-org/bootstrap-config"
+url = "https://www.npmjs.com/package/@dnb-org/bootstrap-config"
 
 [[footer1]]
-name = "Using with Preprocessors"
-url = ""
+name = "@dnb-org/commitlint-config"
+url = "https://www.npmjs.com/package/@dnb-org/commitlint-config"
 
 [[footer1]]
-name = "Optimizing for Production"
-url = ""
+name = "@dnb-org/cssnano-config"
+url = "https://www.npmjs.com/package/@dnb-org/cssnano-config"
 
 [[footer1]]
-name = "Browser Support"
-url = ""
+name = "@dnb-org/cypress-config"
+url = "https://www.npmjs.com/package/@dnb-org/cypress-config"
 
 [[footer1]]
-name = "IntelliSense"
-url = ""
+name = "@dnb-org/eslint-config"
+url = "https://www.npmjs.com/package/@dnb-org/eslint-config"
 
 [[footer2]]
-name = "Utility-First"
-url = ""
+name = "@dnb-org/postcss-config"
+url = "https://www.npmjs.com/package/@dnb-org/postcss-config"
 
 [[footer2]]
-name = "Responsive Design"
-url = ""
+name = "@dnb-org/prettier-config"
+url = "https://www.npmjs.com/package/@dnb-org/prettier-config"
 
 [[footer2]]
-name = "Hover, Focus, & Other States"
-url = ""
+name = "@dnb-org/remark-config"
+url = "https://www.npmjs.com/package/@dnb-org/remark-config"
 
 [[footer2]]
-name = "Dark Mode"
-url = ""
+name = "@dnb-org/standard-version-config"
+url = "https://www.npmjs.com/package/@dnb-org/standard-version-config"
 
 [[footer2]]
-name = "Adding Base Styles"
-url = ""
+name = "@dnb-org/stylelint-config"
+url = "https://www.npmjs.com/package/@dnb-org/stylelint-config"
 
 [[footer2]]
-name = "Extracting Components"
-url = ""
+name = "@dnb-org/textlint-config"
+url = "https://www.npmjs.com/package/@dnb-org/textlint-config"
 
 [[footer2]]
-name = "Adding New Utilities"
-url = ""
+name = "@dnb-org/tools"
+url = "https://www.npmjs.com/package/@dnb-org/tools"
+
+[[footer2]]
+name = "@dnb-org/webpack-config"
+url = "https://www.npmjs.com/package/@dnb-org/webpack-config"
 
 [[footer3]]
-name = "Configuration"
-url = ""
+name = "Contact"
+url = "/contact/"
+weight = 100
 
 [[footer3]]
-name = "Theme Configuration"
-url = ""
+name = "Mews"
+url = "/news/"
+weight = 200
 
 [[footer3]]
-name = "Customizing Colors"
-url = ""
+name = "Notes"
+url = "/notes/"
+weight = 300
 
 [[footer3]]
-name = "Customizing Spacing"
-url = ""
+name = "Facebook"
+url = "https://facebook.com/davidsneighbour"
+weight = 400
 
 [[footer3]]
-name = "Configuring Variants"
-url = ""
-
-[[footer3]]
-name = "Plugins"
-url = ""
+name = "Instagram"
+url = "https://instagram.com/davids.neighbour"
+weight = 500
 
 [[main]]
 identifier = "news"

@@ -18,5 +18,7 @@ github.com/dnb-org/debug v1.3.0 h1:w9jTmF/3UHFdyu9nzEmLfhqok2wlV9Ol0E55Wa4yQ9k=
 github.com/dnb-org/debug v1.3.0/go.mod h1:0z/MDK1qgyqHmMM8mSrexsoPSTpJgIsNu3r6nw5zHAU=
 github.com/dnb-org/hooks v1.0.11 h1:NgVhfkY2F+A6SQnW47jEUg5VR6UGVqW8yTynN/eOviU=
 github.com/dnb-org/hooks v1.0.11/go.mod h1:Tz39YfJoDKJEuorz+93zcXtpotNHmWRzyFiB4x9hLls=
+github.com/dnb-org/libraries/heroicons v1.0.1 h1:/dBSrBtw0o7WBXPW4DWUegwLnZXWuNn2II8Pzh3nbHw=
+github.com/dnb-org/libraries/heroicons v1.0.1/go.mod h1:eGLho1QH6BtWicXfclCNSSRsaGYuQ++yaW2f6fhKk6Y=
 github.com/tailwindlabs/heroicons v1.0.3 h1:X7j//m1rTs6gtFRXgYpfqp5TCaESKzDjwpJa11ZIGu0=
 github.com/tailwindlabs/heroicons v1.0.3/go.mod h1:2SHGOdw86jviBkoeQINcTfkzAAao9dciip4RsMS9xIg=

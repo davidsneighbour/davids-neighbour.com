@@ -13,6 +13,7 @@ require (
 	github.com/dnb-org/components/social v0.0.9 // indirect
 	github.com/dnb-org/debug v1.3.0 // indirect
 	github.com/dnb-org/hooks v1.0.11 // indirect
+	github.com/dnb-org/libraries/heroicons v1.0.1 // indirect
 	github.com/tailwindlabs/heroicons v1.0.3 // indirect
 )
 

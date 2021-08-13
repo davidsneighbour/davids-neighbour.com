@@ -1,4 +1,4 @@
-<footer class="bg-gray-800 pt-10 sm:mt-10 pt-10">
+<footer id="footer" class="bg-gray-800 pt-10 sm:mt-10 pt-10">
   <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
     <div class="p-5">
       <p class="text-xs uppercase text-gray-400 mb-6">
@@ -23,7 +23,7 @@
         </div>
         {{- range (index site.Menus (printf "footer%s" (string .))) -}}
           <a href="{{- .URL -}}"
-             class=" my-3 block text-gray-300 hover:text-gray-100 text-sm duration-700 text-right ">
+             class=" my-3 block no-underline hover:underline text-gray-300 hover:text-gray-100 text-sm duration-700 text-right ">
             {{- .Name -}}
           </a>
         {{- end -}}
@@ -31,7 +31,7 @@
     {{ end }}
   </div>
   <div class="pt-2">
-    <div class="flex justify-between pb-5 px-3 m-auto pt-5 border-t border-gray-500 text-gray-400 text-sm flex-col md:flex-row max-w-6xl ">
+    <div class="flex justify-between py-5 px-3 m-auto border-t border-gray-500 text-gray-300 hover:text-gray-100 text-sm flex-col md:flex-row max-w-6xl ">
       <div class="mt-2">
         {{ $year := partial "func/getYear.html" . }}
         {{ $copy := printf (string site.Params.dnb.footer.copyright) (string $year) }}

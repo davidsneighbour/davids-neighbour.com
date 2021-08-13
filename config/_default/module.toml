@@ -3,18 +3,7 @@ extended = false
 min = "0.75.0"
 
 [[imports]]
-path = "github.com/tailwindlabs/heroicons"
-disable = false
-ignoreConfig = true
-ignoreImports = true
-
-[[imports.mounts]]
-source = "optimized/outline"
-target = "assets/icons/heroicons/outline"
-
-[[imports.mounts]]
-source = "optimized/solid"
-target = "assets/icons/heroicons/solid"
+path = "github.com/dnb-org/libraries/heroicons"
 
 [[imports]]
 path = "github.com/dnb-org/components/auditor"

@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/../../configurations" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../debug" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../hooks" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../libraries" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../shortcodes" vcs="Git" />
   </component>
 </project>
