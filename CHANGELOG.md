@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2021.3.8](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.7...v2021.3.8) (2021-08-15)
+
+
+### Chore
+
+* **config:** add alpine plugin to IntelliJ configuration ([296ddc5](https://github.com/davidsneighbour/davids-neighbour.com/commit/296ddc51f3df96fa82f026032c50d4228b7284a6))
+* **config:** beautify tailwind configuration ([d9edff7](https://github.com/davidsneighbour/davids-neighbour.com/commit/d9edff78045d6f960cd7be97398ac418a35748b0))
+* **config:** formatting cz-config file ([2b764c7](https://github.com/davidsneighbour/davids-neighbour.com/commit/2b764c70c739058e0a91e075f4a098f4e306436a))
+* **config:** webpack configuration fixes ([927bf1d](https://github.com/davidsneighbour/davids-neighbour.com/commit/927bf1dfc852aac4ae308218c51c077c546eb1a4))
+
+
+### Theme
+
+* fix footer and webpack configuration ([cdf5ec9](https://github.com/davidsneighbour/davids-neighbour.com/commit/cdf5ec9d0f3a94c87a65698af0ead76bccab376e))
+* **layouts:** rework header layout ([5dc604d](https://github.com/davidsneighbour/davids-neighbour.com/commit/5dc604d1899b67be32b0b4cd686aa9e22f651118))
+
 ### [2021.3.7](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.6...v2021.3.7) (2021-08-13)
 
 
