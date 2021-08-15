@@ -1,5 +1,8 @@
 <footer id="footer" class="bg-gray-800 pt-10 sm:mt-10 pt-10">
-  <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
+  <div class="max-w-6xl m-auto
+          text-gray-800 md:justify-left center
+          grid md:grid-cols-4 gap-4
+          grid-cols-1">
     <div class="p-5">
       <p class="text-xs uppercase text-gray-400 mb-6">
         {{- site.Params.dnb.footer.company.name -}}
@@ -17,13 +20,13 @@
       </p>
     </div>
     {{ range seq 3 }}
-      <div class="p-5 w-1/4">
-        <div class="text-xs uppercase text-gray-400 mb-6 text-right">
+      <div class="p-5">
+        <div class="text-xs uppercase text-gray-400 mb-6 md:text-right text-center">
           {{ index site.Params.dnb.footer.menu (printf "title%s" (string .)) }}
         </div>
         {{- range (index site.Menus (printf "footer%s" (string .))) -}}
           <a href="{{- .URL -}}"
-             class=" my-3 block no-underline hover:underline text-gray-300 hover:text-gray-100 text-sm duration-700 text-right ">
+             class="block no-underline hover:underline text-gray-300 hover:text-gray-100 text-sm duration-700 text-right py-1">
             {{- .Name -}}
           </a>
         {{- end -}}

@@ -21,7 +21,7 @@ module.exports = (env) =>
     output: {
       path: path.join(__dirname, "static/assets"),
       filename: "[name].js",
-      chunkFilename: "[id].js",
+      chunkFilename: "[id][fullhash].js",
       assetModuleFilename: "[hash][ext][query]",
       clean: true,
     },
