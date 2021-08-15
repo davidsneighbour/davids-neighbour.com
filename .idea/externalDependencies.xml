@@ -5,6 +5,7 @@
     <plugin id="HtmlTools" />
     <plugin id="W3Validators" />
     <plugin id="com.1v0.dev.hugo-intellij-plugin" />
+    <plugin id="com.github.inxilpro.intellijalpine" />
     <plugin id="com.intellij.css" />
     <plugin id="com.intellij.tailwindcss" />
     <plugin id="commit-template-idea-plugin" />
