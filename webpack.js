@@ -1,5 +1,4 @@
 const path = require("path");
-// eslint-disable-next-line import/no-extraneous-dependencies
 const TerserPlugin = require("terser-webpack-plugin");
 
 // module.exports = (env, argv) =>
@@ -7,11 +6,13 @@ const TerserPlugin = require("terser-webpack-plugin");
 module.exports = (env) =>
   // noinspection JSUnresolvedVariable
   ({
-    mode: env.production ? "production" : "development",
-    devtool: env.production ? "source-map" : "inline-source-map",
+    mode: "development",
 
-    context: path.resolve(__dirname, "assets"),
+    devtool: "inline-source-map",
 
+    // mode: env.production ? "production" : "development",
+    // devtool: env.production ? "source-map" : "inline-source-map",
+    // context: path.resolve(__dirname, "assets"),
     entry: {
       main: path.join(__dirname, "assets/js", "theme.js"),
     },
@@ -21,7 +22,7 @@ module.exports = (env) =>
     output: {
       path: path.join(__dirname, "static/assets"),
       filename: "[name].js",
-      chunkFilename: "[id][fullhash].js",
+      chunkFilename: "[id].js",
       assetModuleFilename: "[hash][ext][query]",
       clean: true,
     },
