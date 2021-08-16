@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2021.3.9](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.8...v2021.3.9) (2021-08-16)
+
+
+### Features
+
+* header navigation fixed for mobile and desktop ([a0334ae](https://github.com/davidsneighbour/davids-neighbour.com/commit/a0334ae886c640f38a93e6b06ab849b56402bc35))
+
+
+### Theme
+
+* fix footer setup ([8d5c597](https://github.com/davidsneighbour/davids-neighbour.com/commit/8d5c59742a26c04af61210d4d3809a5ab2d9d81f))
+
 ### [2021.3.8](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.7...v2021.3.8) (2021-08-15)
 
 
