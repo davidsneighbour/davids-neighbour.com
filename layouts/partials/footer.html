@@ -1,15 +1,15 @@
-<footer id="footer" class="bg-gray-800 pt-10 sm:mt-10 pt-10">
-  <div class="max-w-6xl m-auto
+<footer id="footer" class="bg-gray-800 pt-10 sm:mt-10 py-10">
+  <div class="max-w-6xl m-auto mb-10
           text-gray-800 md:justify-left center
-          grid md:grid-cols-4 gap-4
+          grid md:grid-cols-4 space-x-4
           grid-cols-1">
     {{- partialCached "footer/address.html" . -}}
     {{ range seq 3 }}
       {{- partialCached "footer/navigation.html" . . -}}
     {{ end }}
   </div>
-  <div class="pt-2">
-    <div class="flex justify-between py-5 px-3 m-auto border-t border-gray-500 text-gray-300 hover:text-gray-100 text-sm flex-col md:flex-row max-w-6xl ">
+  <div class="max-w-6xl m-auto mt-5">
+    <div class="flex justify-between space-x-4 m-auto border-t border-gray-500 text-gray-300 hover:text-gray-100 text-sm flex-col md:flex-row max-w-6xl py-5">
       <div class="mt-2">
         {{- partialCached "footer/copyright.html" . -}}
       </div>
