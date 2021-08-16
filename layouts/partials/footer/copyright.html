@@ -1,0 +1,3 @@
+{{ $year := partial "func/getYear.html" . }}
+{{ $copy := printf (string site.Params.dnb.footer.copyright) (string $year) }}
+{{ $copy | markdownify }}

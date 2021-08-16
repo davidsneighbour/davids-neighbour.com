@@ -1,0 +1,11 @@
+<div class="p-5">
+  <div class="text-xs uppercase text-gray-400 mb-6 md:text-right text-center">
+    {{ index site.Params.dnb.footer.menu (printf "title%s" (string .)) }}
+  </div>
+  {{- range (index site.Menus (printf "footer%s" (string .))) -}}
+    <a href="{{- .URL -}}"
+       class="block no-underline hover:underline text-gray-300 hover:text-gray-100 text-sm duration-700 text-right py-1">
+      {{- .Name -}}
+    </a>
+  {{- end -}}
+</div>

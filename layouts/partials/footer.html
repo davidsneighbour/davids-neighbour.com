@@ -3,42 +3,15 @@
           text-gray-800 md:justify-left center
           grid md:grid-cols-4 gap-4
           grid-cols-1">
-    <div class="p-5">
-      <p class="text-xs uppercase text-gray-400 mb-6">
-        {{- site.Params.dnb.footer.company.name -}}
-      </p>
-      <p class="my-3 block text-gray-300 hover:text-gray-100 text-sm duration-700">
-        {{- delimit site.Params.dnb.footer.company.address "<br/>" -}}
-      </p>
-      <p class="text-xs uppercase text-gray-400 my-6">
-        {{- i18n "contact" | default "Contact" -}}
-      </p>
-      <p class="my-3 block text-gray-300 hover:text-gray-100 text-sm duration-700">
-        {{ range site.Params.dnb.contacts }}
-            {{ .name }}: {{ .address }}<br/>
-        {{ end }}
-      </p>
-    </div>
+    {{- partialCached "footer/address.html" . -}}
     {{ range seq 3 }}
-      <div class="p-5">
-        <div class="text-xs uppercase text-gray-400 mb-6 md:text-right text-center">
-          {{ index site.Params.dnb.footer.menu (printf "title%s" (string .)) }}
-        </div>
-        {{- range (index site.Menus (printf "footer%s" (string .))) -}}
-          <a href="{{- .URL -}}"
-             class="block no-underline hover:underline text-gray-300 hover:text-gray-100 text-sm duration-700 text-right py-1">
-            {{- .Name -}}
-          </a>
-        {{- end -}}
-      </div>
+      {{- partialCached "footer/navigation.html" . . -}}
     {{ end }}
   </div>
   <div class="pt-2">
     <div class="flex justify-between py-5 px-3 m-auto border-t border-gray-500 text-gray-300 hover:text-gray-100 text-sm flex-col md:flex-row max-w-6xl ">
       <div class="mt-2">
-        {{ $year := partial "func/getYear.html" . }}
-        {{ $copy := printf (string site.Params.dnb.footer.copyright) (string $year) }}
-        {{ $copy | markdownify }}
+        {{- partialCached "footer/copyright.html" . -}}
       </div>
       <div class="w-7 h-7">
         <a href="#top">
