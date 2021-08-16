@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2021.3.10](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.9...v2021.3.10) (2021-08-16)
+
+
+### Bug Fixes
+
+* typo ([4d89a02](https://github.com/davidsneighbour/davids-neighbour.com/commit/4d89a0261dd24413cec899e84c2729c685e875d0))
+
 ### [2021.3.9](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.8...v2021.3.9) (2021-08-16)
 
 
