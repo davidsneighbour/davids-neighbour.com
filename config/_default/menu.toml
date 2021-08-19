@@ -78,6 +78,11 @@ url = "/notes/"
 weight = 300
 
 [[footer3]]
+name = "Payment Options"
+url = "/payment-options/"
+weight = 340
+
+[[footer3]]
 name = "Facebook"
 url = "https://facebook.com/davidsneighbour"
 weight = 400

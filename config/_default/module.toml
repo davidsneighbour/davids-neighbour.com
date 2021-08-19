@@ -30,6 +30,9 @@ path = "github.com/dnb-org/components/sitemap"
 path = "github.com/dnb-org/components/social"
 
 [[imports]]
+path = "github.com/dnb-org/shortcodes/exchangerates"
+
+[[imports]]
 path = "github.com/dnb-org/debug"
 
 [[imports]]

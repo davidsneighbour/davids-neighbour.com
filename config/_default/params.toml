@@ -70,3 +70,6 @@ appid = "2047624572136513" # samui-samui.de
 [social.twitter]
 profileid = "davidsneighbour"
 siteid = "samui2"
+
+[dnb.exchangerates]
+api_Key = "9f34bc441a9f0a86101875ff710500e7"

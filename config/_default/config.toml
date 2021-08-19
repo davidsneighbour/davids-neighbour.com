@@ -17,3 +17,6 @@ rssLimit = 10
 summaryLength = 70
 timeZone = "Asia/Bangkok"
 title = "David's Neighbour"
+
+# ignoring getjson errors so we can catch the issue in the template
+ignoreErrors = ["error-remote-getjson"]
