@@ -1,7 +1,7 @@
 <footer id="footer" class="bg-gray-800 pt-10 sm:mt-10 py-10">
-  <div class="max-w-4xl m-auto mb-10
+  <div class="max-w-6xl m-auto mb-10
           text-gray-800 md:justify-left center
-          flex space-x-8">
+          flex gap-16">
     {{- partialCached "footer/address.html" . -}}
     {{ range seq 3 }}
       {{- partialCached "footer/navigation.html" . . -}}
