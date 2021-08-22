@@ -1,16 +1,1 @@
-<div class="flex-initial flex-grow">
-  <p class="text-xs uppercase text-gray-400 mb-6">
-    {{- site.Params.dnb.footer.company.name -}}
-  </p>
-  <p class="my-3 block text-gray-300 hover:text-gray-100 text-sm duration-700">
-    {{- delimit site.Params.dnb.footer.company.address "<br/>" -}}
-  </p>
-  <p class="text-xs uppercase text-gray-400 my-6">
-    {{- i18n "contact" | default "Contact" -}}
-  </p>
-  <p class="my-3 block text-gray-300 hover:text-gray-100 text-sm duration-700">
-    {{ range site.Params.dnb.contacts }}
-        {{ .name }}: {{ .address }}<br/>
-    {{ end }}
-  </p>
-</div>
+

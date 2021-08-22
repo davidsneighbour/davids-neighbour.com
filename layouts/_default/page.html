@@ -5,7 +5,9 @@
         <div class="mb-4 md:mb-0 w-full max-w-screen-md mx-auto relative">
           <div class="text-justify">
             <h1>{{ .Title }}</h1>
-            {{ .Content }}
+            <div class="prose max-w-none prose-sm sm:prose lg:prose-md xl:prose-lg">
+              {{ .Content }}
+            </div>
           </div>
         </div>
       </div>

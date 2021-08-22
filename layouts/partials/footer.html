@@ -1,24 +1,63 @@
-<footer id="footer" class="bg-gray-800 pt-10 sm:mt-10 py-10">
+<footer id="footer" class="bg-gray-800
+                           pt-10 sm:mt-10 py-10">
   <div class="max-w-6xl m-auto mb-10
-          text-gray-800 md:justify-left center
-          flex gap-16">
-    {{- partialCached "footer/address.html" . -}}
+          text-gray-800
+          flex flex-col md:flex-row gap-16">
+    <div class="flex-initial flex-grow">
+      <p class="text-xs uppercase text-gray-400 mb-6
+                text-center  md:text-left">
+        {{- site.Params.dnb.footer.company.name -}}
+      </p>
+      <p class="my-3 block text-gray-300 hover:text-gray-100 text-sm duration-700
+                text-center md:text-left">
+        {{- delimit site.Params.dnb.footer.company.address "<br/>" -}}
+      </p>
+      <p class="text-xs uppercase text-gray-400 my-6
+                text-center md:text-left">
+        {{- i18n "contact" | default "Contact" -}}
+      </p>
+      <p class="my-3 block text-gray-300 hover:text-gray-100 text-sm duration-700
+                text-center md:text-left">
+        {{ range site.Params.dnb.contacts }}
+            {{ .name }}: {{ .address }}<br/>
+        {{ end }}
+      </p>
+    </div>
     {{ range seq 3 }}
-      {{- partialCached "footer/navigation.html" . . -}}
+      {{- $menu := (index site.Menus (printf "footer%s" (string .))) -}}
+      {{- $title := index site.Params.dnb.footer.menu (printf "title%s" (string .)) -}}
+      <div class="flex-initial">
+        <div class="text-xs uppercase text-gray-400 mb-6
+                    text-center md:text-right">
+          {{- $title -}}
+        </div>
+        {{- range $menu -}}
+          <a href="{{- .URL -}}"
+             class="block
+                    no-underline hover:underline
+                    text-gray-300 hover:text-gray-100
+                    text-sm duration-700
+                    text-center md:text-right
+                    py-1">
+            {{- .Name -}}
+          </a>
+        {{- end -}}
+      </div>
     {{ end }}
   </div>
-  <div class="max-w-6xl m-auto mt-5">
-    <div class="flex justify-between space-x-4 m-auto border-t border-gray-500 text-gray-300 hover:text-gray-100 text-sm flex-col md:flex-row max-w-6xl py-5">
+  <div class="max-w-6xl m-auto mt-5
+              flex justify-between space-x-4 m-auto border-t border-gray-500 text-gray-300 hover:text-gray-100 text-sm flex-col md:flex-row max-w-6xl py-5">
       <div class="mt-2">
-        {{- partialCached "footer/copyright.html" . -}}
+        {{ $year := partial "func/getYear.html" . }}
+        {{ $copy := printf (string site.Params.dnb.footer.copyright) (string $year) }}
+        {{ $copy | markdownify }}
       </div>
       <div class="w-7 h-7">
         <a href="#top">
           {{- partial "heroicon" "chevron-up" "chevron-up" -}}
         </a>
       </div>
-    </div>
   </div>
 </footer>
 
-{{ partialCached "footer/javascript.html" . }}
+<script src="/assets/main.js"></script>

@@ -1,4 +1,4 @@
-// https://github.com/tailwindlabs/tailwindcss-forms
+const typography = require("@tailwindcss/typography");
 const forms = require("@tailwindcss/forms");
 const colors = require("tailwindcss/colors");
 const aspectRatio = require("@tailwindcss/aspect-ratio");
@@ -40,7 +40,7 @@ module.exports = {
   },
   // https://tailwindcss.com/docs/dark-mode
   darkMode: false, // or 'media' or 'class'
-  plugins: [forms, aspectRatio],
+  plugins: [forms, aspectRatio, typography],
   theme: {
     extend: {
       fontFamily: {
@@ -64,17 +64,19 @@ module.exports = {
             color: theme("colors.gray.700"),
             h2: {
               color: theme("colors.gray.800"),
+              fontWeight: "500",
             },
             h3: {
               color: theme("colors.gray.800"),
+              fontWeight: "500",
             },
             strong: {
               color: theme("colors.gray.800"),
             },
             a: {
-              color: theme("colors.green.500"),
+              color: theme("colors.blue.600"),
               "&:hover": {
-                color: theme("colors.green.600"),
+                color: theme("colors.blue.700"),
               },
             },
           },

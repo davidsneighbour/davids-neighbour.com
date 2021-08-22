@@ -1,5 +1,5 @@
 <article class="mt-10 full">
-  <header class="mb-4 md:mb-0 w-full max-w-screen-md mx-auto relative">
+  <header class="mb-4 md:mb-0 w-full mx-auto relative">
     <div class="absolute left-0 bottom-0 w-full h-full z-10"></div>
     {{- $image := "" -}}
     {{- with .Params.image -}}
@@ -19,13 +19,18 @@
       {{- partialCached "content/author.html" . . -}}
     </div>
   </header>
-  <div class="mb-4 md:mb-0 w-full max-w-screen-md mx-auto relative">
-    {{- partialCached "content/breadcrumbs.html" . . -}}
+  <div class="bg-white">
+    <div class="mb-4 md:mb-0 w-full mx-auto relative">
+      {{- partialCached "content/breadcrumbs.html" . . -}}
+    </div>
+    <div class="mb-4 md:mb-0 w-full max-w-screen-md mx-auto relative
+                prose prose-sm sm:prose lg:prose-md xl:prose-lg max-w-none
+    ">
+      {{- .Content -}}
+    </div>
   </div>
-  <div class="mb-4 md:mb-0 w-full max-w-screen-md mx-auto relative">
-    {{- .Content -}}
-  </div>
-  <div class="mb-4 md:mb-0 w-full max-w-screen-md mx-auto relative">
+  <div class="mb-4 md:mb-0 w-full relative">
     {{- partialCached "content/prev-next.html" . . -}}
   </div>
 </article>
+
