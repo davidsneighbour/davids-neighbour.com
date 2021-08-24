@@ -1,7 +1,0 @@
-Contact: mailto:security@davids-neighbour.com
-Expires: 2021-09-02T05:00:00.000Z
-Encryption: https://bla.fasel
-Acknowledgments: https://bla.fasel
-Preferred-Languages: en,de
-Canonical: https://bla.fasel
-Policy: https://bla.fasel

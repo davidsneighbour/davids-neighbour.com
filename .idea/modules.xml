@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/../hooks/.idea/hooks.iml" filepath="$PROJECT_DIR$/../hooks/.idea/hooks.iml" />
       <module fileurl="file://$PROJECT_DIR$/../libraries/.idea/libraries.iml" filepath="$PROJECT_DIR$/../libraries/.idea/libraries.iml" />
       <module fileurl="file://$PROJECT_DIR$/../shortcodes/.idea/shortcodes.iml" filepath="$PROJECT_DIR$/../shortcodes/.idea/shortcodes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../templates/.idea/templates.iml" filepath="$PROJECT_DIR$/../templates/.idea/templates.iml" />
     </modules>
   </component>
 </project>

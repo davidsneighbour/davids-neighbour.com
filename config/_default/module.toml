@@ -24,6 +24,9 @@ path = "github.com/dnb-org/components/pwa"
 path = "github.com/dnb-org/components/robots"
 
 [[imports]]
+path = "github.com/dnb-org/components/security"
+
+[[imports]]
 path = "github.com/dnb-org/components/sitemap"
 
 [[imports]]
