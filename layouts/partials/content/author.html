@@ -2,7 +2,6 @@
 {{- $homepage := site.Author.homepage | default nil -}}
 {{- $image := site.Author.image | default "/images/author.jpg" -}}
 {{- with .Params.author -}}
-  {{ partial "debugprint" .Params }}
   {{- $name = .name -}}
   {{- $homepage = .homepage | default nil -}}
   {{- $image = .image | default "/images/author.jpg" -}}

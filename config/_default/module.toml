@@ -32,8 +32,11 @@ path = "github.com/dnb-org/components/sitemap"
 [[imports]]
 path = "github.com/dnb-org/components/social"
 
-[[imports]]
-path = "github.com/dnb-org/shortcodes/exchangerates"
+#[[imports]]
+#path = "github.com/dnb-org/shortcodes/exchangerates"
+
+#[[imports]]
+#path = "github.com/dnb-org/shortcodes/youtube"
 
 [[imports]]
 path = "github.com/dnb-org/debug"
