@@ -57,6 +57,10 @@ module.exports = {
           "monospace",
         ],
       },
+      textColor: {
+        primary: colors.cyan,
+        secondary: colors.amber,
+      },
       // https://github.com/tailwindlabs/tailwindcss-typography/blob/master/src/styles.js
       typography: (theme) => ({
         DEFAULT: {
@@ -64,11 +68,11 @@ module.exports = {
             color: theme("colors.gray.700"),
             h2: {
               color: theme("colors.gray.800"),
-              fontWeight: "500",
+              fontWeight: "300",
             },
             h3: {
               color: theme("colors.gray.800"),
-              fontWeight: "500",
+              fontWeight: "300",
             },
             strong: {
               color: theme("colors.gray.800"),

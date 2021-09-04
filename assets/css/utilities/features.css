@@ -12,3 +12,8 @@
     scroll-snap-type: y;
   }
 }
+
+/** alpine.js hide content */
+[x-cloak] {
+  display: none;
+}
