@@ -39,6 +39,9 @@ path = "github.com/dnb-org/components/social"
 #path = "github.com/dnb-org/shortcodes/youtube"
 
 [[imports]]
+path = "github.com/dnb-org/shortcodes/pictures"
+
+[[imports]]
 path = "github.com/dnb-org/debug"
 
 [[imports]]
