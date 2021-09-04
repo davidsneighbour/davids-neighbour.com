@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../asylum/.idea/asylum.iml" filepath="$PROJECT_DIR$/../asylum/.idea/asylum.iml" />
       <module fileurl="file://$PROJECT_DIR$/../components/.idea/components.iml" filepath="$PROJECT_DIR$/../components/.idea/components.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../configurations/.idea/configurations.iml" filepath="$PROJECT_DIR$/../../configurations/.idea/configurations.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/davids-neighbour.com.iml" filepath="$PROJECT_DIR$/.idea/davids-neighbour.com.iml" />

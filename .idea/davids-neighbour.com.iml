@@ -16,5 +16,6 @@
     <orderEntry type="module" module-name="configurations" />
     <orderEntry type="module" module-name="libraries" />
     <orderEntry type="module" module-name="templates" />
+    <orderEntry type="module" module-name="asylum" />
   </component>
 </module>
