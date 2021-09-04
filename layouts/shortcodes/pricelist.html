@@ -1,0 +1,57 @@
+{{- $pricelist := .Page.Params.pricelist -}}
+
+{{- with $pricelist -}}
+
+  <div class="flex flex-col items-center justify-center mt-16 space-y-8
+      lg:flex-row lg:items-stretch lg:space-x-8 lg:space-y-0">
+
+    {{- range $pricelist -}}
+
+      <section class="flex flex-col w-full max-w-sm p-4 space-y-6 bg-white
+                      text-center">
+        <div class="flex-shrink-0 pb-6 space-y-2 border-b">
+          <h2 class="text-2xl color-primary-500">{{ .name }}</h2>
+          <p class="text-sm">{{ .discretion }}</p>
+        </div>
+
+        {{ range .features }}
+
+          <span class="block text-sm">{{ . }}</span>
+
+        {{ end }}
+
+        <div class="text-2xl tracking-tight text-primary-500">
+          THB {{ .price.monthly | lang.FormatNumber 0 -}}
+          <span class="text-gray-400 text-center text-sm">/month</span>
+        </div>
+
+        <div class="text-2xl tracking-tight text-primary-500">
+          THB {{ .price.annually | lang.FormatNumber 0 -}}
+          <span class="text-gray-400 text-center text-sm">/year</span>
+        </div>
+
+        <div class="flex-shrink-0 pt-4">
+          <button
+            class="inline-flex items-center justify-center
+                   w-full max-w-xs
+                   px-4 py-2
+                   border
+                   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500
+                   bg-primary-500 hover:bg-primary-700 text-white">
+            Get {{ .name }}
+          </button>
+        </div>
+
+      </section>
+
+    {{- end -}}
+
+  </div>
+
+{{- else -}}
+
+  <p class="bg-red-300 color-grey-500 p-4 border border-rounded">
+    ERROR in shortcode "pricelist": no pricelist setup given...
+  </p>
+
+{{- end -}}
