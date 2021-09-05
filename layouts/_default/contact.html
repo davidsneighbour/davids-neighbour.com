@@ -11,7 +11,7 @@
                 style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
         <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md w-full">
           <div class="lg:w-1/2 px-6">
-            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">
+            <h2 class="title-font font-semibold text-gray-900 text-sm">
               {{- site.Params.dnb.footer.company.name -}}
             </h2>
             <p class="mt-1">
@@ -20,12 +20,17 @@
           </div>
           <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
             {{ range site.Params.dnb.contacts }}
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">
+              <!-- add a line per contact option -->
+              <h2 class="title-font font-regular text-gray-900 text-sm">
                 {{ .name }}
               </h2>
-              <a class="text-indigo-500 leading-relaxed">
-                {{ .address }}
-              </a>
+              {{- with .url -}}
+              <a class="text-indigo-500" href="{{- . -}}">
+              {{- else -}}
+              <span class="text-indigo-500">
+              {{- end -}}
+                {{- .username -}}
+              {{- with .url -}}</a>{{- else -}}</span>{{- end -}}
             {{ end }}
           </div>
         </div>

@@ -30,13 +30,15 @@ javascript = "script-local.js"
 
 [[dnb.contacts]]
 name = "WhatsApp"
-address = "66878979350"
+url = "https://wa.me/66878979350?&lang=en"
+username = "Contact me"
 [[dnb.contacts]]
 name = "Signal"
-address = "davidsneighbour"
+username = "davidsneighbour"
 [[dnb.contacts]]
 name = "Telegram"
-address = "davidsneighbour"
+url = "https://t.me/davidsneighbour"
+username = "davidsneighbour"
 
 [dnb.footer]
 copyright = "&copy; Copyright 2005-%s by [David's Neighbour Part., Ltd.](/) - All rights reserved."
