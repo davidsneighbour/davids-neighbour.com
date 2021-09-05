@@ -18,6 +18,9 @@
     "precss": "4.0.0",
     "tailwindcss": "2.2.9"
   },
+  "browserslist": [
+    "extends @dnb-org/browserslist-config"
+  ],
   "homepage": "https://davids-neighbour.com",
   "license": "UNLICENSED",
   "private": true,
