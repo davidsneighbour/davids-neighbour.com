@@ -1,9 +1,14 @@
 <nav class="breadcrumbs block text-sm text-left text-green-600 bg-green-500 bg-opacity-10
             h-12 flex items-center p-4 rounded-md"
      aria-label="Breadcrumb">
-  <ol class="list-reset flex text-grey-dark">
+  <ol class="list-reset flex flex-grow text-grey-dark">
     {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
   </ol>
+  {{ with partial "func/getReadingTime.html" . }}
+    <span>
+      {{ .words }} words/Reading time {{ .minutes }} minutes
+    <span>
+  {{ end }}
 </nav>
 
 {{ define "breadcrumbnav" }}
