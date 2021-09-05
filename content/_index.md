@@ -3,6 +3,10 @@ title: Online Marketing made in Paradise
 linktitle: Home
 description: SEO and Digital Marketing on Koh Samui, Thailand
 date: 2021-08-13T10:00:00+07:00
+menu:
+  main:
+    weight: 1
+    identifier: home
 ---
 
 ![David's Neighbour - Marketing made in paradise!](/ci/logo-black.svg)

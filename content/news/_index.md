@@ -7,4 +7,8 @@ author:
   name: Patrick Kollitsch
   homepage: https://davids-neighbour.com/
   image: /images/patrick-kollitsch.jpg
+menu:
+  main:
+    weight: 200
+    identifier: news
 ---

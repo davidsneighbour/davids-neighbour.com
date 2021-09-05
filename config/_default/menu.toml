@@ -91,21 +91,3 @@ weight = 400
 name = "Instagram"
 url = "https://instagram.com/davids.neighbour"
 weight = 500
-
-[[main]]
-identifier = "news"
-name = "News"
-url = "/news/"
-weight = 310
-
-[[main]]
-identifier = "notes"
-name = "Notes"
-url = "/notes/"
-weight = 310
-
-[[main]]
-identifier = "contact"
-name = "Contact"
-url = "/contact/"
-weight = 400

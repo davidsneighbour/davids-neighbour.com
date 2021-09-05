@@ -8,13 +8,6 @@
 {{ $config := index site.Data.dnb "blocks-bootstrap" "config" }}
 <div class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto text-center lg:text-right" id="menu">
   <div class="text-sm lg:flex-grow">
-    <a href="/"
-      class="block mt-4 lg:inline-block lg:mt-0
-             text-gray-600 hover:text-gray-700 hover:underline no-underline
-             mr-4{{ if $currentPage.IsHome }}
-             active font-bold{{ end }}">
-      Home
-    </a>
     {{- range .Site.Menus.main -}}
       <a href="{{ .URL }}"
          class="block mt-4 lg:inline-block lg:mt-0
