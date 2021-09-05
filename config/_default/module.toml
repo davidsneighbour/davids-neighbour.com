@@ -3,9 +3,6 @@ extended = false
 min = "0.75.0"
 
 [[imports]]
-path = "github.com/dnb-org/libraries/heroicons"
-
-[[imports]]
 path = "github.com/dnb-org/components/auditor"
 
 [[imports]]
@@ -32,11 +29,14 @@ path = "github.com/dnb-org/components/sitemap"
 [[imports]]
 path = "github.com/dnb-org/components/social"
 
+[[imports]]
+path = "github.com/dnb-org/libraries/heroicons"
+
 #[[imports]]
 #path = "github.com/dnb-org/shortcodes/exchangerates"
 
-#[[imports]]
-#path = "github.com/dnb-org/shortcodes/youtube"
+[[imports]]
+path = "github.com/dnb-org/shortcodes/youtube"
 
 [[imports]]
 path = "github.com/dnb-org/shortcodes/pictures"
