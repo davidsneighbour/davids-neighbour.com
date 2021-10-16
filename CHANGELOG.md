@@ -2,6 +2,58 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2021.3.11](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.10...v2021.3.11) (2021-10-16)
+
+
+### Features
+
+* **shortcode:** add youtube lite shortcode as module ([2405230](https://github.com/davidsneighbour/davids-neighbour.com/commit/24052302b85ec357b249dbd0b7b37ba2fab42139))
+
+
+### Bug Fixes
+
+* padding/margin in footer area ([d1b9a4f](https://github.com/davidsneighbour/davids-neighbour.com/commit/d1b9a4f9876bdbfe410442d8e433c9d7c29def86))
+
+
+### Documentation
+
+* updating dev docs ([3c79979](https://github.com/davidsneighbour/davids-neighbour.com/commit/3c7997987c739a8a8928a8e46d143cad983192f2))
+* updating dev docs ([12a7f37](https://github.com/davidsneighbour/davids-neighbour.com/commit/12a7f37c977e02dfbca2bb8d9089df8a3c582dc6))
+* updating dev docs ([351310b](https://github.com/davidsneighbour/davids-neighbour.com/commit/351310bc84c07100398fde863921eaff2eda91fd))
+
+
+### Theme
+
+* add reading time and word count to post layout ([87bcd2f](https://github.com/davidsneighbour/davids-neighbour.com/commit/87bcd2f10bd2cf60fc713d4728f29244b87d258b)), closes [#214](https://github.com/davidsneighbour/davids-neighbour.com/issues/214)
+* better contact method links ([38463ad](https://github.com/davidsneighbour/davids-neighbour.com/commit/38463ad52a3880148b0c04e84a2ee60461ce4798))
+* changes to layouts ([24f685d](https://github.com/davidsneighbour/davids-neighbour.com/commit/24f685da29fae77163c80dd738a159a38b0fda28))
+* fixes to content area and footer area, typography in tailwind ([13cafe0](https://github.com/davidsneighbour/davids-neighbour.com/commit/13cafe070c88989892dc5be4190c83e45f765e6f))
+* fixes to footer layout and separation ([5726a68](https://github.com/davidsneighbour/davids-neighbour.com/commit/5726a6898b10e12471f53f70ab61d033d8ae9fae))
+* move menu into content files ([627405d](https://github.com/davidsneighbour/davids-neighbour.com/commit/627405d53dea1bd5dad20f0dde186c6d2dc2ffc5))
+* recent layout changes (WIP) ([e3f4435](https://github.com/davidsneighbour/davids-neighbour.com/commit/e3f443502b6cc9110b7164287ff7e023f1b3ffcc))
+* update tailwind configuration and setup ([cb40fda](https://github.com/davidsneighbour/davids-neighbour.com/commit/cb40fda2dad37ba8aa7251d45708973fc0bd6362))
+
+
+### Chore
+
+* **archetypes:** remove unused archetypes ([20f1e93](https://github.com/davidsneighbour/davids-neighbour.com/commit/20f1e93514224c99429457b9f0ad2069f6d8a546))
+* **config:** add pictures shortcode ([bd40aa2](https://github.com/davidsneighbour/davids-neighbour.com/commit/bd40aa2cc64627a75043beb79ec87252f23dc0cc))
+* **config:** add security.txt to production setup ([592a075](https://github.com/davidsneighbour/davids-neighbour.com/commit/592a07586e019a094d4771f58bc6503aa9721dae))
+* **config:** move browserslist config into package.json ([26aa9c7](https://github.com/davidsneighbour/davids-neighbour.com/commit/26aa9c7bab0602e20f613b79125e2a9be10d586e))
+* **config:** update configuration for contact methods ([e4a72c2](https://github.com/davidsneighbour/davids-neighbour.com/commit/e4a72c27836083c42c0a0839abb414d3d071df51))
+* **config:** update IDE configurations ([06faac5](https://github.com/davidsneighbour/davids-neighbour.com/commit/06faac5592e13cb797c168c9f01bd0776bd9974d))
+* **config:** update minification configuration ([a34ab97](https://github.com/davidsneighbour/davids-neighbour.com/commit/a34ab97631a8d10b899983166a9ce3060b0b80f4))
+* **config:** update pre-commit configuration ([a4b05b6](https://github.com/davidsneighbour/davids-neighbour.com/commit/a4b05b69ecc90f02532340867644ec6a561aa900))
+* **deps:** update dependencies ([cd03b5e](https://github.com/davidsneighbour/davids-neighbour.com/commit/cd03b5ec67065d9cf83dfee5693d53e57e6537c0))
+* **deps:** update dependencies ([b3ed242](https://github.com/davidsneighbour/davids-neighbour.com/commit/b3ed24206073ec6895602ecb31d7a1a1e29962db))
+* **deps:** update dependencies ([4f4bffb](https://github.com/davidsneighbour/davids-neighbour.com/commit/4f4bffb9d662a6181d37ada181f8ea72d4693deb))
+* **deps:** update dependencies ([7fc1ddb](https://github.com/davidsneighbour/davids-neighbour.com/commit/7fc1ddbab6cfe6540b6b2fd2b5b8dd8b51300c80))
+* fix gitignore file ([5d2d83d](https://github.com/davidsneighbour/davids-neighbour.com/commit/5d2d83d49ce98f17a4f5ab21a9ae23ccc6be3a74))
+* moving security policy to content folder ([8cb6fab](https://github.com/davidsneighbour/davids-neighbour.com/commit/8cb6fabef6315dce6956969efb5db7475ca320a6))
+* recent changes ([721ded4](https://github.com/davidsneighbour/davids-neighbour.com/commit/721ded44953601cf806580372ce4be21454eb61c))
+* recent changes, unsorted ([4f74a6b](https://github.com/davidsneighbour/davids-neighbour.com/commit/4f74a6b65751bdd9bd1ac701b1ccfe2eb31439a4))
+* update modules ([8b89f94](https://github.com/davidsneighbour/davids-neighbour.com/commit/8b89f94b9c6d304cd6e035817fb8e56a7c40d5ff))
+
 ### [2021.3.10](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.9...v2021.3.10) (2021-08-16)
 
 
