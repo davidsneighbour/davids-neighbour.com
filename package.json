@@ -17,7 +17,7 @@
     "lite-youtube-embed": "^0.2.0",
     "pixrem": "5.0.0",
     "precss": "4.0.0",
-    "tailwindcss": "2.2.17"
+    "tailwindcss": "2.2.19"
   },
   "browserslist": [
     "extends @dnb-org/browserslist-config"
