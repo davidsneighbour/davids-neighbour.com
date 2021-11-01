@@ -8,7 +8,7 @@
     "web": "https://davids-neighbour.com"
   },
   "dependencies": {
-    "@dnb-org/all": "3.3.5",
+    "@dnb-org/all": "3.3.8",
     "@tailwindcss/aspect-ratio": "0.3.0",
     "@tailwindcss/forms": "0.3.4",
     "@tailwindcss/typography": "0.4.1",
