@@ -7,39 +7,39 @@ module.exports = {
   // See https://tailwindcss.com/docs/configuration#important
   important: false,
   // prefix: "dnb-",
-  purge: {
-    enabled: process.env.HUGO_ENVIRONMENT === "production",
-    content: [
-      "./hugo_stats.json",
-      "./layouts/**/*.{vue,js,ts,jsx,tsx,html}",
-      "./assets/**/*.{vue,js,ts,jsx,tsx,html}",
-    ],
-    extractors: [
-      {
-        extractor: (content) => {
-          // noinspection JSUnresolvedVariable
-          const els = JSON.parse(content).htmlElements;
-          return els.tags.concat(els.classes, els.ids);
-        },
-        extensions: ["json"],
-      },
-    ],
-    // in case of missing styles read this part of the documentation
-    // https://tailwindcss.com/docs/optimizing-for-production#removing-all-unused-styles
-    mode: "all",
-    preserveHtmlElements: false,
-    safelist: ["text-center"],
-    // https://purgecss.com/configuration#options
-    options: {
-      // https://tailwindcss.com/docs/optimizing-for-production#removing-unused-keyframes
-      keyframes: true,
-      fontFace: true,
-      variables: true,
-      rejected: false,
-    },
-  },
+  // purge: {
+  //   enabled: process.env.HUGO_ENVIRONMENT === "production",
+  //   content: [
+  //     "./hugo_stats.json",
+  //     "./layouts/**/*.{vue,js,ts,jsx,tsx,html}",
+  //     "./assets/**/*.{vue,js,ts,jsx,tsx,html}",
+  //   ],
+  //   extractors: [
+  //     {
+  //       extractor: (content) => {
+  //         // noinspection JSUnresolvedVariable
+  //         const els = JSON.parse(content).htmlElements;
+  //         return els.tags.concat(els.classes, els.ids);
+  //       },
+  //       extensions: ["json"],
+  //     },
+  //   ],
+  //   // in case of missing styles read this part of the documentation
+  //   // https://tailwindcss.com/docs/optimizing-for-production#removing-all-unused-styles
+  //   mode: "all",
+  //   preserveHtmlElements: false,
+  //   safelist: ["text-center"],
+  //   // https://purgecss.com/configuration#options
+  //   options: {
+  //     // https://tailwindcss.com/docs/optimizing-for-production#removing-unused-keyframes
+  //     keyframes: true,
+  //     fontFace: true,
+  //     variables: true,
+  //     rejected: false,
+  //   },
+  // },
   // https://tailwindcss.com/docs/dark-mode
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "media", // or 'media' or 'class'
   plugins: [forms, aspectRatio, typography],
   theme: {
     extend: {
@@ -95,14 +95,14 @@ module.exports = {
       primary: colors.cyan,
       secondary: colors.amber,
 
-      neutral: colors.coolGray,
+      neutral: colors.gray,
       transparent: "transparent",
       current: "currentColor",
 
       black: colors.black,
       white: colors.white,
 
-      gray: colors.coolGray,
+      gray: colors.gray,
 
       blue: colors.cyan,
       red: colors.rose,
