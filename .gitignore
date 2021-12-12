@@ -1,9 +1,14 @@
 # local files
-notes
-package-lock.json
 bin/replacements
-static/assets/*
 hugo_stats.json
+resources
+assets/content
+assets/js/**/*.js
+assets/jsconfig.json
+content/ideas.md
+.vscode/*.code-snippets
+scratch
+TODO
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,hugo,phpstorm,sublimetext,visualstudiocode,vuejs,vue,sass
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,hugo,phpstorm,sublimetext,visualstudiocode,vuejs,vue,sass
@@ -12,6 +17,9 @@ hugo_stats.json
 # Generated files by hugo
 /public/
 /resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+.hugo_build.lock
 
 # Executable may be added to repository
 hugo.exe
