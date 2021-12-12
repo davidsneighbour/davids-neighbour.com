@@ -72,5 +72,9 @@
     "update": "npm-check-updates -u && rimraf node_modules && rimraf package-lock.json && npm install"
   },
   "slug": "davids-neighbour-com",
-  "url": "https://davids-neighbour.com"
+  "url": "https://davids-neighbour.com",
+  "dependencies": {
+    "mem": "^9.0.1",
+    "trim": "^1.0.1"
+  }
 }
