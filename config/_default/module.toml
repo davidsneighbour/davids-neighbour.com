@@ -3,37 +3,34 @@ extended = false
 min = "0.75.0"
 
 [[imports]]
-path = "github.com/dnb-org/components/auditor"
+path = "github.com/dnb-org/dnb-hugo-auditor"
 
 [[imports]]
-path = "github.com/dnb-org/components/functions"
+path = "github.com/dnb-org/dnb-hugo-functions"
 
 [[imports]]
-path = "github.com/dnb-org/components/netlification"
+path = "github.com/dnb-org/dnb-hugo-netlification"
 
 [[imports]]
-path = "github.com/dnb-org/components/opensearch"
+path = "github.com/dnb-org/dnb-hugo-opensearch"
 
 [[imports]]
-path = "github.com/dnb-org/components/pwa"
+path = "github.com/dnb-org/dnb-hugo-pwa"
 
 [[imports]]
-path = "github.com/dnb-org/components/robots"
+path = "github.com/dnb-org/dnb-hugo-robots"
 
 [[imports]]
-path = "github.com/dnb-org/components/security"
+path = "github.com/dnb-org/dnb-hugo-security"
 
 [[imports]]
-path = "github.com/dnb-org/components/sitemap"
+path = "github.com/dnb-org/dnb-hugo-sitemap"
 
 [[imports]]
-path = "github.com/dnb-org/components/social"
+path = "github.com/dnb-org/dnb-hugo-social"
 
 [[imports]]
 path = "github.com/dnb-org/libraries/heroicons"
-
-#[[imports]]
-#path = "github.com/dnb-org/shortcodes/exchangerates"
 
 [[imports]]
 path = "github.com/dnb-org/shortcodes/youtube"
@@ -42,7 +39,7 @@ path = "github.com/dnb-org/shortcodes/youtube"
 path = "github.com/dnb-org/shortcodes/pictures"
 
 [[imports]]
-path = "github.com/dnb-org/debug"
+path = "github.com/dnb-org/dnb-hugo-debug"
 
 [[imports]]
-path = "github.com/dnb-org/hooks"
+path = "github.com/dnb-org/dnb-hugo-hooks"

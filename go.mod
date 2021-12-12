@@ -3,17 +3,17 @@ module github.com/davidsneighbour/davids-neighbour.com
 go 1.16
 
 require (
-	github.com/dnb-org/components/auditor v1.4.13 // indirect
-	github.com/dnb-org/components/functions v1.4.13 // indirect
-	github.com/dnb-org/components/netlification v1.4.13 // indirect
-	github.com/dnb-org/components/opensearch v1.4.13 // indirect
-	github.com/dnb-org/components/pwa v1.4.13 // indirect
-	github.com/dnb-org/components/robots v1.4.13 // indirect
-	github.com/dnb-org/components/security v1.4.13 // indirect
-	github.com/dnb-org/components/sitemap v1.4.13 // indirect
-	github.com/dnb-org/components/social v1.4.13 // indirect
-	github.com/dnb-org/debug v1.4.1 // indirect
-	github.com/dnb-org/hooks v1.0.20 // indirect
+	github.com/dnb-org/dnb-hugo-auditor v0.0.2 // indirect
+	github.com/dnb-org/dnb-hugo-debug v1.4.3 // indirect
+	github.com/dnb-org/dnb-hugo-functions v0.0.3 // indirect
+	github.com/dnb-org/dnb-hugo-hooks v1.0.23 // indirect
+	github.com/dnb-org/dnb-hugo-netlification v1.0.3 // indirect
+	github.com/dnb-org/dnb-hugo-opensearch v0.0.2 // indirect
+	github.com/dnb-org/dnb-hugo-pwa v0.0.2 // indirect
+	github.com/dnb-org/dnb-hugo-robots v0.0.7 // indirect
+	github.com/dnb-org/dnb-hugo-security v0.0.2 // indirect
+	github.com/dnb-org/dnb-hugo-sitemap v0.0.2 // indirect
+	github.com/dnb-org/dnb-hugo-social v0.0.2 // indirect
 	github.com/dnb-org/libraries/heroicons v1.0.3 // indirect
 	github.com/dnb-org/shortcodes/pictures v0.0.12 // indirect
 	github.com/dnb-org/shortcodes/youtube v1.4.16 // indirect
