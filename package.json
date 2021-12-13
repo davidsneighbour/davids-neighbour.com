@@ -10,7 +10,7 @@
   "browserslist": [
     "extends @dnb-org/browserslist-config"
   ],
-  "devDependencies": {
+  "dependencies": {
     "@dnb-org/babel-config": "^3.4.3",
     "@dnb-org/bootstrap-config": "^3.4.4",
     "@dnb-org/browserslist-config": "^3.4.3",
@@ -26,15 +26,18 @@
     "@dnb-org/textlint-config": "^3.4.3",
     "@dnb-org/tools": "^3.4.3",
     "@dnb-org/webpack-config": "^3.4.5",
-    "@tailwindcss/aspect-ratio": "0.4.0",
-    "@tailwindcss/forms": "0.4.0",
-    "@tailwindcss/typography": "0.5.0",
-    "alpinejs": "3.7.0",
-    "lazysizes": "5.3.2",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "alpinejs": "^3.7.0",
+    "lazysizes": "^5.3.2",
     "lite-youtube-embed": "^0.2.0",
-    "pixrem": "5.0.0",
-    "precss": "4.0.0",
-    "tailwindcss": "3.0.1"
+    "mem": "^9.0.1",
+    "pixrem": "^5.0.0",
+    "postcss-import": "^14.0.2",
+    "precss": "^4.0.0",
+    "tailwindcss": "^3.0.1",
+    "trim": "^1.0.1"
   },
   "homepage": "https://davids-neighbour.com",
   "license": "UNLICENSED",
@@ -60,21 +63,20 @@
     "lint:scss:fix": "stylelint assets/scss/ --fix",
     "lint:textlint": "textlint",
     "lint:textlint:fix": "textlint --fix",
+    "postcss": "postcss assets/css/styles.css",
     "release": "standard-version --release-as patch -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
     "release-major": "standard-version --release-as major -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
     "release-next": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
     "serve": "npm run build:webpack && npm-run-all -p serve:**",
     "serve:hugo": "rimraf hugo.log && hugo server --bind 192.168.1.201 --baseURL http://192.168.1.201 --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log -v",
+    "serve:tailwind": "tailwindcss -i ./assets/css/styles.css -o ./assets/css/theme.css --watch",
     "serve:webpack": "webpack --watch --config webpack.development.js",
+    "server": "npm run serve",
     "test": "run-p test:server test:cypress",
     "test:cypress": "cypress open",
     "test:server": "hugo server --port=8888 --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log -v",
     "update": "npm-check-updates -u && rimraf node_modules && rimraf package-lock.json && npm install"
   },
   "slug": "davids-neighbour-com",
-  "url": "https://davids-neighbour.com",
-  "dependencies": {
-    "mem": "^9.0.1",
-    "trim": "^1.0.1"
-  }
+  "url": "https://davids-neighbour.com"
 }
