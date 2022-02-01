@@ -11,7 +11,7 @@
     "extends @dnb-org/browserslist-config"
   ],
   "dependencies": {
-    "@dnb-org/babel-config": "^3.4.3",
+    "@dnb-org/babel-config": "^3.5.2",
     "@dnb-org/bootstrap-config": "^3.4.4",
     "@dnb-org/browserslist-config": "^3.4.3",
     "@dnb-org/commitlint-config": "^3.4.4",
