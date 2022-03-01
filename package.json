@@ -23,7 +23,7 @@
     "@dnb-org/remark-config": "^3.4.4",
     "@dnb-org/standard-version-config": "^3.4.3",
     "@dnb-org/stylelint-config": "^3.4.3",
-    "@dnb-org/textlint-config": "^3.4.3",
+    "@dnb-org/textlint-config": "^3.5.8",
     "@dnb-org/tools": "^3.4.3",
     "@dnb-org/webpack-config": "^3.4.5",
     "@tailwindcss/aspect-ratio": "^0.4.0",
