@@ -1,4 +1,4 @@
 #!/bin/bash
 
 rm -rf public/
-hugo --gc --minify
+npm run build:new

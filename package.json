@@ -42,7 +42,7 @@
   "repository": "davidsneighbour/davids-neighbour.com",
   "scripts": {
     "build": "run-s build:critical && build:hugo",
-    "build:critical": "./bin/build-critical-css.sh",
+    "build:critical": "./bin/build/critical",
     "build:highlights": "hugo gen chromastyles --style=native > assets/css/utilities/syntax.css",
     "build:hugo": "hugo --gc --minify",
     "build:new": "npm run build:webpack && npm run build:hugo",
