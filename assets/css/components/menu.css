@@ -1,4 +1,0 @@
-/* show menu on mobile if checkbox is checked */
-#menu-toggle:checked+#menu {
-  display: block;
-}
