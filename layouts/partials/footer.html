@@ -46,7 +46,7 @@
     {{ end }}
   </div>
   <div class="max-w-6xl m-auto mt-5
-              flex justify-between space-x-4 m-auto border-t border-gray-500 text-gray-300 hover:text-gray-100 text-sm flex-col md:flex-row max-w-6xl py-5">
+              flex justify-between space-x-4 border-t border-gray-500 text-gray-300 hover:text-gray-100 text-sm flex-col md:flex-row py-5">
       <div class="mt-2">
         {{ $year := partial "func/getYear.html" . }}
         {{ $copy := printf (string site.Params.dnb.footer.copyright) (string $year) }}
