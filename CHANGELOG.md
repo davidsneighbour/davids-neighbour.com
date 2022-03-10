@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2022.1.3](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2022.1.2...v2022.1.3) (2022-03-10)
+
 ### [2022.1.2](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2022.1.1...v2022.1.2) (2022-03-10)
 
 
