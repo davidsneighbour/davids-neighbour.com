@@ -7,7 +7,7 @@
 {{- $styles := resources.Get "css/theme.css" -}}
 {{/* {{- $styles = $styles | resources.PostCSS $options -}} */}}
 {{- if hugo.IsProduction -}}
-  {{- $styles = $styles | minify | fingerprint | resources.PostProcess -}}
+  {{- $styles = $styles | minify | fingerprint -}}
 {{- end -}}
 <link href="{{- $styles.Permalink -}}" rel="stylesheet" />
 
