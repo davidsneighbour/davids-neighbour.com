@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2022.1.0](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2022.0.0...v2022.1.0) (2022-03-10)
+
+
+### Chore
+
+* cleanup and preparation for live deploys ([b7eab55](https://github.com/davidsneighbour/davids-neighbour.com/commit/b7eab554cfae445fc9481d191a775b4860695763))
+* **config:** update dependabot configuration ([a5bd415](https://github.com/davidsneighbour/davids-neighbour.com/commit/a5bd415791750fe73a4a4cf96c56bb2462a6b6d6))
+
 ## [2022.0.0](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.12...v2022.0.0) (2022-03-10)
 
 
