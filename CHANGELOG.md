@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2022.1.7](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2022.1.6...v2022.1.7) (2022-03-10)
+
+
+### Theme
+
+* add styles to repo ([9c13a88](https://github.com/davidsneighbour/davids-neighbour.com/commit/9c13a880caae1d4dd883aae5287597d019d391ac))
+
 ### [2022.1.6](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2022.1.5...v2022.1.6) (2022-03-10)
 
 
