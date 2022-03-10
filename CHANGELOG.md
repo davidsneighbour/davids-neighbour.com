@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2022.1.8](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2022.1.7...v2022.1.8) (2022-03-10)
+
+
+### Chore
+
+* setup proper form handling ([c815163](https://github.com/davidsneighbour/davids-neighbour.com/commit/c815163af411ca75815648565ef7edeebf058ac1))
+
 ### [2022.1.7](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2022.1.6...v2022.1.7) (2022-03-10)
 
 
