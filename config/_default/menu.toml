@@ -68,11 +68,6 @@ url = "/contact/"
 weight = 100
 
 [[footer3]]
-name = "News"
-url = "/news/"
-weight = 200
-
-[[footer3]]
 name = "Notes"
 url = "/notes/"
 weight = 300
