@@ -6,9 +6,9 @@
 {{- $options := dict "inlineImports" true -}}
 {{- $styles := resources.Get "css/theme.css" -}}
 {{/* {{- $styles = $styles | resources.PostCSS $options -}} */}}
-{{- if hugo.IsProduction -}}
+{{/* {{- if hugo.IsProduction -}}
   {{- $styles = $styles | minify | fingerprint -}}
-{{- end -}}
+{{- end -}} */}}
 <link href="{{- $styles.Permalink -}}" rel="stylesheet" />
 
 {{- partial "head/metadata.html" . -}}
