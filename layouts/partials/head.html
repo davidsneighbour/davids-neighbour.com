@@ -5,7 +5,7 @@
 <meta name="description" content="{{- .Description -}}" />
 {{- $options := dict "inlineImports" true -}}
 {{- $styles := resources.Get "css/theme.css" -}}
-{{- $styles = $styles | resources.PostCSS $options -}}
+{{/* {{- $styles = $styles | resources.PostCSS $options -}} */}}
 {{- if hugo.IsProduction -}}
   {{- $styles = $styles | minify | fingerprint | resources.PostProcess -}}
 {{- end -}}
