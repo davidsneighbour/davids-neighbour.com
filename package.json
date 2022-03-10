@@ -36,7 +36,7 @@
     "pixrem": "^5.0.0",
     "postcss-import": "^14.0.2",
     "precss": "^4.0.0",
-    "tailwindcss": "^3.0.1",
+    "tailwindcss": "^3.0.3",
     "trim": "^1.0.1"
   },
   "homepage": "https://davids-neighbour.com",
@@ -68,7 +68,7 @@
     "release-major": "standard-version --release-as major -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
     "release-next": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release-hook-postrelease.sh",
     "serve": "npm run build:webpack && npm-run-all -p serve:**",
-    "serve:hugo": "rimraf hugo.log && hugo server --bind 192.168.1.201 --baseURL http://192.168.1.201 --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log -v",
+    "serve:hugo": "rimraf hugo.log && hugo server --bind 192.168.1.201 --baseURL http://192.168.1.201 --disableFastRender --printI18nWarnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --printPathWarnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log -v",
     "serve:tailwind": "tailwindcss -i ./assets/css/styles.css -o ./assets/css/theme.css --watch",
     "serve:webpack": "webpack --watch --config webpack.development.js",
     "server": "npm run serve",
