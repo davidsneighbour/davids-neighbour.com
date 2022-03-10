@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2022.1.5](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2022.1.4...v2022.1.5) (2022-03-10)
+
+
+### Theme
+
+* **fix:** remove postprocessing ([e765588](https://github.com/davidsneighbour/davids-neighbour.com/commit/e7655887822cd5a5410531cf9f84ae7966469122))
+
 ### [2022.1.4](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2022.1.3...v2022.1.4) (2022-03-10)
 
 
