@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2022.0.0](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.12...v2022.0.0) (2022-03-10)
+
+
+### Theme
+
+* **config:** updated tailwind configuration to v3 ([8d4d76e](https://github.com/davidsneighbour/davids-neighbour.com/commit/8d4d76e10495ae3fa7c3959eba12a31b5320b1d8))
+* **layouts:** fixes ([59ea183](https://github.com/davidsneighbour/davids-neighbour.com/commit/59ea183d7ee32eef843038920f68206561ea2b55))
+* **styles:** update design ([8eb4506](https://github.com/davidsneighbour/davids-neighbour.com/commit/8eb4506e8d9137f5036559fcb0b79f349b6879fd))
+
+
+### Chore
+
+* **config:** add new assets directory to gitignore ([97baef9](https://github.com/davidsneighbour/davids-neighbour.com/commit/97baef9dbb4fa8975c3d6c88e78896d26d13c184))
+* **config:** add recommended extensions ([1eeefce](https://github.com/davidsneighbour/davids-neighbour.com/commit/1eeefceb7bfff261aa9ca34227c15479da41f270))
+* **config:** fix hugo CLI parameters ([06f0b42](https://github.com/davidsneighbour/davids-neighbour.com/commit/06f0b42f1aa52a9eb048a22c62917e446f5a4791))
+* **config:** remove workspace configuration ([d7a2432](https://github.com/davidsneighbour/davids-neighbour.com/commit/d7a2432d846d4e1b6a63ed9741e10adb32275a88))
+* **config:** update module configuration ([57dcd3e](https://github.com/davidsneighbour/davids-neighbour.com/commit/57dcd3e51a41b89ee2280a05b5a0df26d3203c83))
+* delete .idea directory ([eee3f63](https://github.com/davidsneighbour/davids-neighbour.com/commit/eee3f63fe7cc26a6237ecf175cfda67b076e4259))
+* **deps:** add mem and trim to fix security warnings by dependabot ([662e21d](https://github.com/davidsneighbour/davids-neighbour.com/commit/662e21d62547d6b8535f207f211d9961b88ee914))
+* **deps:** update dependencies ([a25d4b2](https://github.com/davidsneighbour/davids-neighbour.com/commit/a25d4b2b48109439b2cebd5825d8b34dc8caf58c))
+* **deps:** update dependencies and add lock file ([90c7510](https://github.com/davidsneighbour/davids-neighbour.com/commit/90c7510c775b6b860ef7b03126d81a175b632e53))
+* **deps:** update dependencies and npm scripts ([0ac4e45](https://github.com/davidsneighbour/davids-neighbour.com/commit/0ac4e4591a16bb3aa852ccfe1d60f02af7340fb1))
+* **deps:** update golang dependencies ([712084c](https://github.com/davidsneighbour/davids-neighbour.com/commit/712084cec9fc654fe96e71808839f568ea8e77c5))
+
+
+### Build System
+
+* update build file structure to new system ([f610695](https://github.com/davidsneighbour/davids-neighbour.com/commit/f6106950f2e92f143fb89814a9d736185ae82b3e))
+* update build system to current state ([ca6afda](https://github.com/davidsneighbour/davids-neighbour.com/commit/ca6afda7efffacbc6711075a99bf86f53580ca5a))
+
 ### [2021.3.12](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.11...v2021.3.12) (2021-11-11)
 
 ### [2021.3.11](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2021.3.10...v2021.3.11) (2021-10-16)
