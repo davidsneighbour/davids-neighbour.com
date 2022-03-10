@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2022.1.1](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2022.1.0...v2022.1.1) (2022-03-10)
+
+
+### Chore
+
+* **fix:** fix build on netlify ([26c88ed](https://github.com/davidsneighbour/davids-neighbour.com/commit/26c88edee3f8b64000156eb8c9f98b5518be3724))
+
 ## [2022.1.0](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2022.0.0...v2022.1.0) (2022-03-10)
 
 

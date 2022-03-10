@@ -3,8 +3,6 @@ github.com/dnb-org/dnb-hugo-auditor v0.0.4 h1:2oG+ZCGYNwPi5UrR9tglrwpTj9N5iiVmLM
 github.com/dnb-org/dnb-hugo-auditor v0.0.4/go.mod h1:XWE5TwHhyPD0oOYqDjULpphIiMC0a+8+2ijfZfEemFk=
 github.com/dnb-org/dnb-hugo-debug v1.4.3 h1:LbSxXq624VWkFEtoMJBaLuH7cXvZIXRYzzP6xiS4o2o=
 github.com/dnb-org/dnb-hugo-debug v1.4.3/go.mod h1:NWi/VpUDXC2GU5TLM7UEjL7HPT2WmgHgoURHTCVzTho=
-github.com/dnb-org/dnb-hugo-functions v1.0.2/go.mod h1:bTX/w1EzpOQYB+XOcInG/k/zPK8/pj7P2OuQNTXnp5g=
-github.com/dnb-org/dnb-hugo-functions v1.0.6/go.mod h1:bTX/w1EzpOQYB+XOcInG/k/zPK8/pj7P2OuQNTXnp5g=
 github.com/dnb-org/dnb-hugo-functions v1.0.7 h1:odQcI3oTzW7c1DSa0Gz4WFjSu8rQVYoUsQA0WsmuHjE=
 github.com/dnb-org/dnb-hugo-functions v1.0.7/go.mod h1:bTX/w1EzpOQYB+XOcInG/k/zPK8/pj7P2OuQNTXnp5g=
 github.com/dnb-org/dnb-hugo-hooks v1.1.0 h1:dmVi19eea7VytVKEK+Hkgzncon7rmWolHVFqjMKHwCA=
@@ -31,6 +29,5 @@ github.com/dnb-org/shortcodes/pictures v0.0.12/go.mod h1:lzda/swoLiTpsOxJ0OsKUtX
 github.com/dnb-org/shortcodes/youtube v1.4.16 h1:srA1K+TW/Yd8IxvQPN4uARDLMd8m2zS78oi5Sa/IG3Q=
 github.com/dnb-org/shortcodes/youtube v1.4.16/go.mod h1:zuuEmKods4+g66Q0CI4zJ6R716ZNs29ZkPfCJnrlKA8=
 github.com/paulirish/lite-youtube-embed v0.2.0/go.mod h1:9nuUWCzbFF/vvl3ClpZ1KsYFi/hlKjVOkmG8E+nsGDY=
-github.com/tailwindlabs/heroicons v1.0.3/go.mod h1:2SHGOdw86jviBkoeQINcTfkzAAao9dciip4RsMS9xIg=
 github.com/tailwindlabs/heroicons v1.0.5/go.mod h1:2SHGOdw86jviBkoeQINcTfkzAAao9dciip4RsMS9xIg=
 github.com/twbs/icons v1.8.1/go.mod h1:GnRlymgVWp5iVJCMa0Me5b6tFyGpVc2bSxPMRGIJmyA=
