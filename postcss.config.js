@@ -7,8 +7,9 @@ module.exports = {
     ...(process.env.HUGO_ENVIRONMENT === "production"
       ? { autoprefixer: {} }
       : {}),
-    // "postcss-preset-env": {
-    //   features: { "nesting-rules": false },
-    // },
+    "postcss-preset-env": {
+      features: { "nesting-rules": false },
+    },
+    ...(process.env.HUGO_ENVIRONMENT === "production" ? { cssnano: {} } : {}),
   },
 };
