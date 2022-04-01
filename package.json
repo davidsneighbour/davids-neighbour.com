@@ -20,7 +20,7 @@
     "@dnb-org/postcss-config": "^3.5.7",
     "@dnb-org/prettier-config": "^3.5.8",
     "@dnb-org/standard-version-config": "^3.5.7",
-    "@dnb-org/stylelint-config": "^3.5.12",
+    "@dnb-org/stylelint-config": "^3.5.14",
     "@dnb-org/tools": "^3.5.7",
     "@dnb-org/webpack-config": "^3.5.8",
     "@tailwindcss/aspect-ratio": "^0.4.0",
