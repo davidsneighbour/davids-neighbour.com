@@ -33,7 +33,7 @@
     "pixrem": "^5.0.0",
     "postcss-import": "^14.0.2",
     "precss": "^4.0.0",
-    "tailwindcss": "^3.0.23",
+    "tailwindcss": "^3.1.8",
     "trim": "^1.0.1"
   },
   "homepage": "https://davids-neighbour.com",
