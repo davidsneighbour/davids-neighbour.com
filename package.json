@@ -31,7 +31,7 @@
     "lite-youtube-embed": "^0.2.0",
     "mem": "^9.0.2",
     "pixrem": "^5.0.0",
-    "postcss-import": "^14.0.2",
+    "postcss-import": "^15.1.0",
     "precss": "^4.0.0",
     "tailwindcss": "^3.0.23",
     "trim": "^1.0.1"
