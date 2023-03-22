@@ -1,10 +1,6 @@
 [build]
-base = "./"
-publish = "./public"
+  publish = "out"
+  command = "npm run build-prod"
 
-[context.production]
-command = "./bin/netlify-build.sh"
-
-[context.production.environment]
-HUGO_VERSION = "0.93.3"
-HUGO_ENV = "production"
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
