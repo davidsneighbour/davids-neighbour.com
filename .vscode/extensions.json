@@ -1,10 +1,11 @@
 {
   "recommendations": [
-    "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "mikestead.dotenv",
     "csstools.postcss",
     "bradlc.vscode-tailwindcss",
-    "Orta.vscode-jest"
+    "orta.vscode-jest",
+    "mohammadbaqer.better-folding",
+    "mikestead.dotenv",
+    "dbaeumer.vscode-eslint"
   ]
 }
