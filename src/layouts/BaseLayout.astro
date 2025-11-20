@@ -1,0 +1,59 @@
+import '../styles/global.css';
+import { AppConfig } from '../utils/AppConfig';
+
+export interface Props {
+  pageTitle?: string;
+  pageDescription?: string;
+}
+
+const { pageTitle, pageDescription } = Astro.props as Props;
+const title = pageTitle ? `${pageTitle} | ${AppConfig.title}` : AppConfig.title;
+const description = pageDescription || AppConfig.description;
+---
+<!doctype html>
+<html lang={AppConfig.locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body class="w-full px-4 text-gray-700 antialiased">
+    <div class="mx-auto max-w-screen-md">
+      <header class="border-b border-gray-300">
+        <div class="pt-16 pb-8">
+          <h1 class="text-3xl font-bold text-gray-900">{AppConfig.title}</h1>
+          <h2 class="text-xl">{AppConfig.description}</h2>
+        </div>
+        <nav>
+          <ul class="flex flex-wrap text-xl">
+            <li class="mr-6">
+              <a class="border-none text-gray-700 hover:text-gray-900" href="/">Home</a>
+            </li>
+            <li class="mr-6">
+              <a class="border-none text-gray-700 hover:text-gray-900" href="/contact/">Contact</a>
+            </li>
+            <li class="mr-6">
+              <a
+                class="border-none text-gray-700 hover:text-gray-900"
+                href="https://github.com/ixartz/Next-js-Boilerplate"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="content py-5 text-xl">
+        <slot />
+      </main>
+
+      <footer class="border-t border-gray-300 py-8 text-center text-sm">
+        © Copyright {new Date().getFullYear()} {AppConfig.title}. Made with{' '}
+        <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>.
+      </footer>
+    </div>
+  </body>
+</html>
