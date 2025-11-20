@@ -1,11 +1,4 @@
 {
   "recommendations": [
-    "esbenp.prettier-vscode",
-    "csstools.postcss",
-    "bradlc.vscode-tailwindcss",
-    "orta.vscode-jest",
-    "mohammadbaqer.better-folding",
-    "mikestead.dotenv",
-    "dbaeumer.vscode-eslint"
   ]
 }
