@@ -1,13 +1,8 @@
 {
-  "name": "davids-neighbour-site",
+  "name": "@davidsneighbour/davids-neighbour.com",
+  "description": "website setup and content for davids-neighbour.com",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "astro:dev": "astro dev --verbose",
-    "astro:build": "astro build --verbose",
-    "astro:preview": "astro preview --verbose",
-    "astro:check": "astro check --verbose"
-  },
   "dependencies": {
     "@astrojs/check": "0.9.5",
     "@astrojs/mdx": "4.3.12",
@@ -15,5 +10,12 @@
     "astro": "5.16.0",
     "tailwindcss": "4.1.17",
     "typescript": "5.9.3"
-  }
+  },
+  "scripts": {
+    "astro:build": "astro build --verbose",
+    "astro:check": "astro check --verbose",
+    "astro:dev": "astro dev --verbose",
+    "astro:preview": "astro preview --verbose"
+  },
+  "type": "module"
 }
