@@ -1,6 +1,6 @@
 # davids-neighbour.com
 
-davids-neighbour.com website using [Astro 5](https://astro.build), MDX, Tailwind CSS (via the `@tailwindcss/vite` plugin), and TypeScript.
+davids-neighbour.com website using Astro 5, MDX, Tailwind CSS, and TypeScript.
 
 ## Overview
 
