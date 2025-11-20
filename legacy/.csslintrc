@@ -1,8 +1,0 @@
-{
-  "exclude-list": [
-    "static/webfonts/verb/compressed/specimen_files/specimen_stylesheet.css",
-    "static/webfonts/verb/condensed/specimen_files/specimen_stylesheet.css",
-    "static/webfonts/verb/excond/specimen_files/specimen_stylesheet.css",
-    "static/webfonts/verb/regular/specimen_files/specimen_stylesheet.css"
-  ]
-}

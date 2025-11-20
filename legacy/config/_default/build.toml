@@ -1,6 +1,0 @@
-################################################################################
-# https://gohugo.io/getting-started/configuration/#configure-build
-################################################################################
-
-useResourceCacheWhen = "never"
-writeStats = true
