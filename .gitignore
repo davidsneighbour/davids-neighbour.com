@@ -1,6 +1,10 @@
 .wireit
 src/packages.legacy
 legacy
+public/favicon.ico
+
+# Release files
+changes.md
 
 # Created by https://www.toptal.com/developers/gitignore/api/astro,node,git,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=astro,node,git,react

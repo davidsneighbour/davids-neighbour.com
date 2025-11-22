@@ -1,0 +1,5 @@
+{
+	"scripts": {
+		"postinstall": "run-p postinstall:*"
+	}
+}

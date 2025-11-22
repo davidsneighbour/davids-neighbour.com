@@ -1,0 +1,22 @@
+{
+	"devDependencies": {
+		"@commitlint/cli": "20.1.0",
+		"@commitlint/config-conventional": "20.0.0",
+		"@davidsneighbour/release-config": "2025.3.8",
+		"@humanwhocodes/social-changelog": "0.4.0",
+		"cz-git": "1.12.0"
+	},
+	"scripts": {
+		"prepare:sharedconfig": "npx tsx src/config/shared-config-create.ts",
+		"release": "wireit",
+		"release:clean": "wireit"
+	},
+	"wireit": {
+		"release": {
+			"command": "commit-and-tag-version --sign -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" -- --no-verify && ./src/scripts/postrelease"
+		},
+		"release:clean": {
+			"command": "rm changes.md release.json"
+		}
+	}
+}

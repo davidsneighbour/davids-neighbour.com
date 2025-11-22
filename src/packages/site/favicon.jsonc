@@ -1,0 +1,9 @@
+{
+	"scripts": {
+		"postinstall:favicons": "node ./src/assets/favicon/regenerate.ts",
+		"build:favicons": "node src/assets/favicon/regenerate.ts"
+	},
+	"dependencies": {
+		"png-to-ico": "3.0.1"
+	}
+}
