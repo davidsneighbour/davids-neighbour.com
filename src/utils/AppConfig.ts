@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'Astro Tailwind Starter',
+  site_name: "David's Neighbour",
   title: "David's Neighbour",
-  description: 'Simple Astro site powered by Tailwind CSS.',
+  description: '',
   locale: 'en',
 };
