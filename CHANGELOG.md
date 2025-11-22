@@ -1,4 +1,11 @@
 # Changelog
+## [2025.1.3](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2025.1.2...v2025.1.3) (2025-11-22)
+
+
+### Build System
+
+* package, build, and release setup ([d6578ac](https://github.com/davidsneighbour/davids-neighbour.com/commit/d6578ac3fd6fc96c296c93f1572a256452a2da7c))
+
 ## [2025.1.2](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2025.1.1...v2025.1.2) (2025-11-22)
 
 ## [2025.1.1](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2025.1.0...v2025.1.1) (2025-11-22)
