@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [2025.1.1](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2025.1.0...v2025.1.1) (2025-11-22)
+
 ## [2025.1.0](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2022.1.9...v2025.1.0) (2025-11-22)
 
 
