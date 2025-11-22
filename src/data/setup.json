@@ -1,0 +1,12 @@
+{
+	"fonts": {
+		"path": "./src/assets/fonts/",
+		"families": [
+			{
+				"name": "Verb",
+				"folder": "regular",
+				"weights": [300, 700]
+			}
+		]
+	}
+}

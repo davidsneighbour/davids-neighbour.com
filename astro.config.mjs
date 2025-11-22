@@ -1,13 +1,25 @@
 import { defineConfig } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
-
 import mdx from '@astrojs/mdx';
 
-export default defineConfig({
-  vite: {
-    plugins: [tailwindcss()]
-  },
+import fonts from './src/config/astro/fonts';
+console.dir(fonts, { depth: null });
 
-  integrations: [mdx()]
+export default defineConfig({
+
+	vite: {
+		plugins: [
+			tailwindcss(),
+		],
+	},
+
+	experimental: {
+		fonts: fonts,
+	},
+
+	integrations: [
+		mdx(),
+	]
+
 });
