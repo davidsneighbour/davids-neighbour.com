@@ -6,12 +6,6 @@
     "astro": "5.16.0",
     "tailwindcss": "4.1.17"
   },
-  "devDependencies": {
-    "@types/node": "24.10.1",
-    "glob": "13.0.0",
-    "typescript": "5.9.3",
-    "wireit": "0.14.12"
-  },
   "scripts": {
     "astro:build": "astro build --verbose",
     "astro:check": "astro check --verbose",

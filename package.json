@@ -1,8 +1,16 @@
 {
   "name": "@davidsneighbour/davids-neighbour.com",
   "description": "website setup and content for davids-neighbour.com",
-  "version": "1.0.0",
+  "version": "2025.0.0",
   "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "glob": "13.0.0",
+    "typescript": "5.9.3",
+    "wireit": "0.14.12",
+    "fixpack": "4.0.0"
+  },
   "dependencies": {
     "@astrojs/check": "0.9.5",
     "@astrojs/mdx": "4.3.12",
@@ -10,48 +18,41 @@
     "astro": "5.16.0",
     "tailwindcss": "4.1.17"
   },
-  "devDependencies": {
-    "@types/node": "24.10.1",
-    "fixpack": "4.0.0",
-    "glob": "13.0.0",
-    "typescript": "5.9.3",
-    "wireit": "0.14.12"
-  },
   "scripts": {
     "astro:build": "astro build --verbose",
     "astro:check": "astro check --verbose",
     "astro:dev": "astro dev --verbose",
     "astro:preview": "astro preview --verbose",
+    "package:compile": "wireit",
+    "package:compile:fixpack": "wireit",
+    "package:compile:install": "wireit",
+    "package:update": "wireit",
     "clean": "wireit",
-    "clean:full": "wireit",
-    "compile:fixpack": "wireit",
-    "compile:package": "wireit",
-    "compile:package:install": "wireit",
-    "compile:package:update": "wireit"
+    "clean:full": "wireit"
   },
   "wireit": {
-    "compile:fixpack": {
-      "command": "fixpack --config ci/.fixpackrc.json || true && fixpack --config ci/.fixpackrc.json || true"
-    },
-    "compile:package": {
-      "command": "npm run compile:package:install",
+    "package:compile": {
+      "command": "npm run package:compile:install",
       "dependencies": [
-        "compile:package:run"
+        "package:compile:run"
       ],
       "files": [
         "./src/packages/**/*.jsonc"
       ]
     },
-    "compile:package:install": {
+    "package:compile:fixpack": {
+      "command": "fixpack --config src/config/ci/.fixpackrc.json || true && fixpack --config src/config/ci/.fixpackrc.json || true"
+    },
+    "package:compile:install": {
       "command": "npm install",
       "dependencies": [
-        "compile:fixpack"
+        "package:compile:fixpack"
       ]
     },
-    "compile:package:run": {
+    "package:compile:run": {
       "command": "node ./src/packages/generate-package.ts"
     },
-    "compile:package:update": {
+    "package:update": {
       "command": "node ./src/packages/update-package.ts"
     },
     "clean": {
@@ -69,6 +70,5 @@
         "clean:netlify"
       ]
     }
-  },
-  "type": "module"
+  }
 }

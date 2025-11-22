@@ -1,30 +1,36 @@
 {
+	// generating package.json file from partials in src/packages/**/*.jsonc
   "devDependencies": {
     "fixpack": "4.0.0"
   },
   "scripts": {
-    "compile:fixpack": "wireit",
-    "compile:package": "wireit",
-    "compile:package:install": "wireit",
-    "compile:package:update": "wireit"
+    "package:compile": "wireit",
+    "package:compile:fixpack": "wireit",
+    "package:compile:install": "wireit",
+		"package:update": "wireit"
   },
   "wireit": {
-    "compile:fixpack": {
-      "command": "fixpack --config ci/.fixpackrc.json || true && fixpack --config ci/.fixpackrc.json || true"
-    },
-    "compile:package": {
-      "command": "npm run compile:package:install",
-      "dependencies": ["compile:package:run"],
+    "package:compile": {
+      "command": "npm run package:compile:install",
+      "dependencies": ["package:compile:run"],
       "files": ["./src/packages/**/*.jsonc"]
     },
-    "compile:package:install": {
-      "command": "npm install",
-      "dependencies": ["compile:fixpack"]
+    "package:compile:fixpack": {
+			// bear with me here ;) running fixpack twice will result in the second 
+			// run returning no error code, because the first run already fixed all it
+			// could, but is returning an error code. complain at the issue tracker 
+			// below, but don't expect a fix any time soon.
+			// @see https://github.com/HenrikJoreteg/fixpack/issues/50
+      "command": "fixpack --config src/config/ci/.fixpackrc.json || true && fixpack --config src/config/ci/.fixpackrc.json || true"
     },
-    "compile:package:run": {
+    "package:compile:install": {
+      "command": "npm install",
+      "dependencies": ["package:compile:fixpack"]
+    },
+    "package:compile:run": {
       "command": "node ./src/packages/generate-package.ts"
     },
-    "compile:package:update": {
+    "package:update": {
       "command": "node ./src/packages/update-package.ts"
     }
   }
