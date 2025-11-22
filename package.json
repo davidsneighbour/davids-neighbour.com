@@ -1,16 +1,8 @@
 {
   "name": "@davidsneighbour/davids-neighbour.com",
   "description": "website setup and content for davids-neighbour.com",
-  "version": "2025.0.0",
+  "version": "2025.1.0",
   "private": true,
-  "type": "module",
-  "devDependencies": {
-    "@types/node": "24.10.1",
-    "glob": "13.0.0",
-    "typescript": "5.9.3",
-    "wireit": "0.14.12",
-    "fixpack": "4.0.0"
-  },
   "dependencies": {
     "@astrojs/check": "0.9.5",
     "@astrojs/mdx": "4.3.12",
@@ -18,19 +10,48 @@
     "astro": "5.16.0",
     "tailwindcss": "4.1.17"
   },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.6",
+    "@commitlint/cli": "20.1.0",
+    "@commitlint/config-conventional": "20.0.0",
+    "@davidsneighbour/release-config": "2025.3.8",
+    "@humanwhocodes/social-changelog": "0.4.0",
+    "@types/node": "24.10.1",
+    "browserslist": "4.28.0",
+    "cz-git": "1.12.0",
+    "fixpack": "4.0.0",
+    "glob": "13.0.0",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "wireit": "0.14.12"
+  },
   "scripts": {
     "astro:build": "astro build --verbose",
     "astro:check": "astro check --verbose",
     "astro:dev": "astro dev --verbose",
     "astro:preview": "astro preview --verbose",
+    "biome:check": "biome check",
+    "biome:format": "biome format",
+    "biome:lint": "biome check --fix",
+    "biome:postinstall": "biome migrate --write",
+    "biome:watch": "biome check --watch",
+    "clean": "wireit",
+    "clean:full": "wireit",
     "package:compile": "wireit",
     "package:compile:fixpack": "wireit",
     "package:compile:install": "wireit",
     "package:update": "wireit",
-    "clean": "wireit",
-    "clean:full": "wireit"
+    "prepare:sharedconfig": "npx tsx src/config/shared-config-create.ts",
+    "release": "wireit",
+    "release:clean": "wireit"
   },
   "wireit": {
+    "release": {
+      "command": "commit-and-tag-version --sign -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" -- --no-verify && ./src/scripts/postrelease"
+    },
+    "release:clean": {
+      "command": "rm changes.md release.json"
+    },
     "package:compile": {
       "command": "npm run package:compile:install",
       "dependencies": [
@@ -70,5 +91,32 @@
         "clean:netlify"
       ]
     }
-  }
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 ie version"
+    ],
+    "production": [
+      "last 1 version",
+      "Chrome >= 112",
+      "Firefox >= 121",
+      "iOS >= 16",
+      "Safari >= 16.4",
+      "Edge >= 112",
+      "not ie > 0",
+      "not ie_mob > 0",
+      "not dead",
+      "not op_mini all",
+      "not op_mob > 0",
+      "not opera > 0",
+      "not ucandroid > 0",
+      "not and_uc > 0",
+      "not and_qq > 0",
+      "not kaios 2.5"
+    ]
+  },
+  "type": "module"
 }
