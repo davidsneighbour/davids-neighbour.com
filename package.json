@@ -8,14 +8,67 @@
     "@astrojs/mdx": "4.3.12",
     "@tailwindcss/vite": "4.1.17",
     "astro": "5.16.0",
-    "tailwindcss": "4.1.17",
-    "typescript": "5.9.3"
+    "tailwindcss": "4.1.17"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "fixpack": "4.0.0",
+    "glob": "13.0.0",
+    "typescript": "5.9.3",
+    "wireit": "0.14.12"
   },
   "scripts": {
     "astro:build": "astro build --verbose",
     "astro:check": "astro check --verbose",
     "astro:dev": "astro dev --verbose",
-    "astro:preview": "astro preview --verbose"
+    "astro:preview": "astro preview --verbose",
+    "clean": "wireit",
+    "clean:full": "wireit",
+    "compile:fixpack": "wireit",
+    "compile:package": "wireit",
+    "compile:package:install": "wireit",
+    "compile:package:update": "wireit"
+  },
+  "wireit": {
+    "compile:fixpack": {
+      "command": "fixpack --config ci/.fixpackrc.json || true && fixpack --config ci/.fixpackrc.json || true"
+    },
+    "compile:package": {
+      "command": "npm run compile:package:install",
+      "dependencies": [
+        "compile:package:run"
+      ],
+      "files": [
+        "./src/packages/**/*.jsonc"
+      ]
+    },
+    "compile:package:install": {
+      "command": "npm install",
+      "dependencies": [
+        "compile:fixpack"
+      ]
+    },
+    "compile:package:run": {
+      "command": "node ./src/packages/generate-package.ts"
+    },
+    "compile:package:update": {
+      "command": "node ./src/packages/update-package.ts"
+    },
+    "clean": {
+      "dependencies": [
+        "clean:astro"
+      ]
+    },
+    "clean:astro": {
+      "command": "rm -rf .astro dist node_modules/.astro"
+    },
+    "clean:full": {
+      "command": "rm -rf node_modules package-lock.json .wireit",
+      "dependencies": [
+        "clean:astro",
+        "clean:netlify"
+      ]
+    }
   },
   "type": "module"
 }
