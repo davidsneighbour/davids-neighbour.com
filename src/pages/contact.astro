@@ -1,28 +1,106 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+
 ---
-<BaseLayout pageTitle="Contact" pageDescription="Get in touch with David's Neighbour.">
-  <h2 class="text-2xl font-bold">Contact</h2>
-  <p class="mt-4">
-    I&apos;d love to hear from you. Whether you have a project in mind, a question about the
-    stack, or you just want to say hello, please reach out using the details below.
-  </p>
-  <ul class="mt-4 space-y-2">
-    <li>
-      <span role="img" aria-label="envelope">✉️</span>
-      <a href="mailto:hello@davids-neighbour.com" class="ml-2">hello@davids-neighbour.com</a>
-    </li>
-    <li>
-      <span role="img" aria-label="speech balloon">💬</span>
-      <a href="https://twitter.com/dneighbour" class="ml-2">@dneighbour on Twitter</a>
-    </li>
-    <li>
-      <span role="img" aria-label="pin">📍</span>
-      Based in the beautiful digital neighbourhood
-    </li>
-  </ul>
-  <p class="mt-6">
-    Prefer something more personal? Drop a line and we can schedule a call to discuss your
-    needs in more detail.
-  </p>
-</BaseLayout>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+      Contact | David&#39;s Neighbour
+    </title>
+    <meta name="description" content="" />
+    <link href="https://davids-neighbour.com/css/theme.css" rel="stylesheet" />
+    <link rel="canonical" href="https://davids-neighbour.com/contact/" />
+    <meta name="description" content="Onlinemarketing Made in Paradise" />
+    <link rel="alternate" type="application/rss+xml" href="https://davids-neighbour.com/contact/index.xml" />
+    <meta name="robots" content="index, follow, archive" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+  </head>
+  <body class="font-sans font-base font-normal leading-snug bg-gray-100 text-gray-800">
+    <div class="flex flex-col h-screen gap-y-4">
+      <main class="p-4 flex-grow container mx-auto">
+        <section class="text-gray-600 body-font relative">
+          <div class="container mx-auto flex sm:flex-nowrap flex-wrap">
+            <div
+              class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden p-10 flex items-end justify-start relative"
+            >
+              <iframe
+                width="100%"
+                height="100%"
+                class="absolute inset-0"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                scrolling="no"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.194813678517!2d99.95610221528483!3d9.578469082776888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3054f762b41352cd%3A0x9cc2bddbde0d389c!2sDavid's%20Neighbour!5e0!3m2!1sen!2sth!4v1628394373876!5m2!1sen!2sth&zoom=7"
+                style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+              <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md w-full">
+                <div class="lg:w-1/2 px-6">
+                  <h2 class="title-font font-semibold text-gray-900 text-sm">David&#39;s Neighbour Part., Ltd.</h2>
+                  <p class="mt-1">
+                    Patrick Kollitsch<br />P.O.Box 135, Post Office Maenam<br />84330 Suratthani, Koh Samui<br
+                    />Thailand
+                  </p>
+                </div>
+                <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                  <h2 class="title-font font-regular text-gray-900 text-sm">WhatsApp</h2><a
+                    class="text-indigo-500"
+                    href="https://wa.me/66878979350?&lang=en">Contact me</a
+                  >
+
+                  <h2 class="title-font font-regular text-gray-900 text-sm">Signal</h2><span class="text-indigo-500"
+                    >davidsneighbour</span
+                  >
+
+                  <h2 class="title-font font-regular text-gray-900 text-sm">Telegram</h2><a
+                    class="text-indigo-500"
+                    href="https://t.me/davidsneighbour">davidsneighbour</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:p-8 mt-8 md:mt-0">
+              <form method="post" action="https://formspree.io/f/xzbogqqa">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+                <p class="leading-relaxed mb-5 text-gray-600">Send me a message</p>
+                <div class="relative mb-4">
+                  <label for="name" class="leading-7 text-sm text-gray-600">Your Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+                <div class="relative mb-4">
+                  <label for="email" class="leading-7 text-sm text-gray-600">Your Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+                <div class="relative mb-4">
+                  <label for="message" class="leading-7 text-sm text-gray-600">Your Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  ></textarea>
+                </div>
+                <button
+                  class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                  >Send Message</button
+                >
+                <p class="text-xs text-gray-500 mt-3">I will try to reply as soon as possible.</p>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
