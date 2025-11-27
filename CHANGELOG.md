@@ -1,4 +1,11 @@
 # Changelog
+## [2025.2.0](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2025.1.3...v2025.2.0) (2025-11-27)
+
+
+### Features
+
+* current state in Astro ([2a28ce9](https://github.com/davidsneighbour/davids-neighbour.com/commit/2a28ce9bd06ac86567879c7296e108a2caed1f3b))
+
 ## [2025.1.3](https://github.com/davidsneighbour/davids-neighbour.com/compare/v2025.1.2...v2025.1.3) (2025-11-22)
 
 
