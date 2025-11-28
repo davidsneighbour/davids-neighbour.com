@@ -130,48 +130,53 @@ const isDev = import.meta.env.DEV;
         </section>
       </main>
     </div>
-    {isDev && (
-      <script>
-        /** Config via URL:
-        //   ?scenario=success|name-missing|email-missing|invalid-email|message-missing|server-500|network
-        //   &preview=1 to render on load
-        //   &toolbar=1 to show mini toolbar
-         */
+    <script>
+      (() => {
         const form = document.querySelector('form[name="contact"]');
         if (!form) {
-          console.error('Dev form tester: form[name="contact"] not found.');
-        } else {
-          const url = new URL(location.href);
-          const scenario = url.searchParams.get('scenario') || 'success';
-          const preview = ['1','true','yes','on'].includes((url.searchParams.get('preview')||'').toLowerCase());
-          const toolbar = ['1','true','yes','on'].includes((url.searchParams.get('toolbar')||'').toLowerCase());
+          // Silent failure if form not present
+          return;
+        }
 
-          const statusEl = form.querySelector('[data-form-status]');
-          const errorEls = new Map(
-            Array.from(form.querySelectorAll('[data-error-for]')).map((el) => [el.getAttribute('data-error-for'), el])
-          );
-          const required = ['name','email','message'];
-          const keywords = {
-            name: ['name'],
-            email: ['email'],
-            message: ['message'],
-          };
+        const isDevEnv = ${isDev ? "true" : "false"};
+        const url = new URL(location.href);
+        const scenario = url.searchParams.get('scenario') || 'success';
+        const preview = ['1','true','yes','on'].includes((url.searchParams.get('preview')||'').toLowerCase());
+        const toolbar = ['1','true','yes','on'].includes((url.searchParams.get('toolbar')||'').toLowerCase());
+        const simulatorEnabled = isDevEnv && (preview || toolbar || url.searchParams.has('scenario'));
 
-          const setStatus = (type, message) => {
+        const statusEl = form.querySelector('[data-form-status]');
+        const submitButton = form.querySelector('button[type="submit"]');
+        const errorEls = new Map(
+          Array.from(form.querySelectorAll('[data-error-for]')).map((el) => [el.getAttribute('data-error-for'), el])
+        );
+        const required = ['name','email','message'];
+        const keywords = {
+          name: ['name'],
+          email: ['email'],
+          message: ['message'],
+        };
+
+        const setStatus = (type, message) => {
+          try {
             if (!statusEl) return;
             statusEl.textContent = message;
             statusEl.classList.remove('hidden','text-red-500','text-green-500');
             statusEl.setAttribute('role', type === 'error' ? 'alert' : 'status');
             statusEl.classList.add(type === 'error' ? 'text-red-500' : 'text-green-500');
-          };
-          const clearStatus = () => {
+          } catch {}
+        };
+        const clearStatus = () => {
+          try {
             if (!statusEl) return;
             statusEl.textContent = '';
             statusEl.classList.add('hidden');
             statusEl.classList.remove('text-red-500','text-green-500');
             statusEl.setAttribute('role','status');
-          };
-          const clearFieldErrors = () => {
+          } catch {}
+        };
+        const clearFieldErrors = () => {
+          try {
             for (const [name, el] of errorEls) {
               if (!name) continue;
               el.textContent = '';
@@ -180,8 +185,10 @@ const isDev = import.meta.env.DEV;
               field?.removeAttribute('aria-invalid');
               field?.classList.remove('outline-red-500','focus:outline-red-500');
             }
-          };
-          const setFieldError = (name, message) => {
+          } catch {}
+        };
+        const setFieldError = (name, message) => {
+          try {
             const field = form.querySelector(`[name="${name}"]`);
             const el = errorEls.get(name);
             if (!field || !el) return;
@@ -189,214 +196,142 @@ const isDev = import.meta.env.DEV;
             el.classList.remove('hidden');
             field.setAttribute('aria-invalid','true');
             field.classList.add('outline-red-500','focus:outline-red-500');
-          };
-          const handleError = (message) => {
-            const msg = message || 'Something went wrong. Please try again later.';
-            setStatus('error', msg);
-            if (!message) { required.forEach(n => setFieldError(n, msg)); return; }
-            const lowered = msg.toLowerCase();
-            let matched = false;
-            for (const [name, keys] of Object.entries(keywords)) {
-              if (keys.some(k => lowered.includes(k))) { setFieldError(name, msg); matched = true; }
-            }
-            if (!matched) required.forEach(n => setFieldError(n, msg));
-          };
-
-          const simulate = (sc) => {
-            switch (sc) {
-              case 'success':        return { ok: true, message: 'Thank you for your message!' };
-              case 'name-missing':   return { ok: false, error: 'Name is required.' };
-              case 'email-missing':  return { ok: false, error: 'Email is required.' };
-              case 'invalid-email':  return { ok: false, error: 'Please enter a valid email address.' };
-              case 'message-missing':return { ok: false, error: 'Message is required.' };
-              case 'server-500':     return { ok: false, status: 500, error: 'Internal Server Error' };
-              case 'network':        throw Object.assign(new Error('Simulated network error'), { isNetworkError: true });
-              default:               return { ok: false, error: `Unknown scenario: ${sc}` };
-            }
-          };
-
-          // Intercept submit in dev to avoid any network traffic.
-          form.addEventListener('submit', async (ev) => {
-            ev.preventDefault();
-            clearStatus(); clearFieldErrors();
-            try {
-              await new Promise(r => setTimeout(r, 250));
-              const result = simulate(scenario);
-              if (result.ok) { setStatus('success', result.message || 'OK'); form.reset(); }
-              else { handleError(result.error || 'Error'); }
-            } catch (e) {
-              handleError('Network error. Please try again in a moment.');
-            }
-          }, { capture: true });
-
-          // Optional toolbar
-          if (toolbar) {
-            const container = form.querySelector('.mx-auto') || form;
-            const bar = document.createElement('div');
-            bar.style.position = 'sticky';
-            bar.style.top = '0';
-            bar.style.zIndex = '50';
-            bar.style.display = 'flex';
-            bar.style.flexWrap = 'wrap';
-            bar.style.gap = '.5rem';
-            bar.style.padding = '.5rem';
-            bar.style.marginBottom = '.75rem';
-            bar.style.background = 'rgba(2,6,23,.8)';
-            bar.style.border = '1px solid rgba(148,163,184,.3)';
-            bar.style.borderRadius = '.5rem';
-            const addBtn = (label, sc) => {
-              const b = document.createElement('button');
-              b.type = 'button'; b.textContent = label;
-              b.style.padding = '.35rem .6rem';
-              b.style.border = '1px solid rgba(148,163,184,.4)';
-              b.style.borderRadius = '.375rem';
-              b.addEventListener('click', () => {
-                clearStatus(); clearFieldErrors();
-                try {
-                  const r = simulate(sc);
-                  r.ok ? setStatus('success', r.message || 'OK') : handleError(r.error || 'Error');
-                } catch { handleError('Network error. Please try again in a moment.'); }
-              });
-              return b;
-            };
-            bar.append(
-              addBtn('Success','success'),
-              addBtn('Name missing','name-missing'),
-              addBtn('Email missing','email-missing'),
-              addBtn('Invalid email','invalid-email'),
-              addBtn('Message missing','message-missing'),
-              addBtn('Server 500','server-500'),
-              addBtn('Network','network'),
-            );
-            const clearBtn = addBtn('Clear','__clear__');
-            clearBtn.addEventListener('click', () => { clearStatus(); clearFieldErrors(); });
-            bar.append(clearBtn);
-            container.prepend(bar);
+          } catch {}
+        };
+        const handleError = (message) => {
+          const msg = message || 'Something went wrong. Please try again later.';
+          setStatus('error', msg);
+          if (!message) { required.forEach(n => setFieldError(n, msg)); return; }
+          const lowered = msg.toLowerCase();
+          let matched = false;
+          for (const [name, keys] of Object.entries(keywords)) {
+            if (keys.some(k => lowered.includes(k))) { setFieldError(name, msg); matched = true; }
           }
+          if (!matched) required.forEach(n => setFieldError(n, msg));
+        };
 
-          // Optional preview on load
-          if (preview) {
-            try {
-              const r = simulate(scenario);
-              r.ok ? setStatus('success', r.message || 'OK') : handleError(r.error || 'Error');
-            } catch { handleError('Network error. Please try again in a moment.'); }
+        const submitRealRequest = async (event) => {
+          event.preventDefault();
+          clearStatus(); clearFieldErrors();
+
+          const formData = new FormData(form);
+          const payload = {
+            name: (formData.get('name') || '').toString().trim(),
+            email: (formData.get('email') || '').toString().trim(),
+            message: (formData.get('message') || '').toString().trim(),
+            honeyPot: (formData.get('fvsdg4') || '').toString().trim(),
+          };
+
+          try {
+            submitButton?.setAttribute('disabled','true');
+            submitButton?.classList.add('opacity-70');
+
+            const response = await fetch(form.action, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+              body: JSON.stringify(payload),
+            });
+
+            let result = {};
+            try { result = await response.json(); } catch {}
+
+            if (response.ok) {
+              setStatus('success', result.message || 'Thank you for your message!');
+              form.reset();
+            } else {
+              const errorMessage = result && (result.error || result.message);
+              handleError(typeof errorMessage === 'string' ? errorMessage : undefined);
+            }
+          } catch {
+            handleError('Network error. Please try again in a moment.');
+          } finally {
+            submitButton?.removeAttribute('disabled');
+            submitButton?.classList.remove('opacity-70');
           }
+        };
+
+        if (!simulatorEnabled) {
+          form.addEventListener('submit', submitRealRequest);
+          return;
         }
-      </script>
-    )}
 
-    {!isDev && (
-      <script>
-        const form = document.querySelector('form[name="contact"]');
-        if (!form) {
-          // Silent in prod
-        } else {
-          const statusEl = form.querySelector('[data-form-status]');
-          const submitButton = form.querySelector('button[type="submit"]');
-          const errorEls = new Map(
-            Array.from(form.querySelectorAll('[data-error-for]')).map((el) => [el.getAttribute('data-error-for'), el])
+        const simulate = (sc) => {
+          switch (sc) {
+            case 'success':        return { ok: true, message: 'Thank you for your message!' };
+            case 'name-missing':   return { ok: false, error: 'Name is required.' };
+            case 'email-missing':  return { ok: false, error: 'Email is required.' };
+            case 'invalid-email':  return { ok: false, error: 'Please enter a valid email address.' };
+            case 'message-missing':return { ok: false, error: 'Message is required.' };
+            case 'server-500':     return { ok: false, status: 500, error: 'Internal Server Error' };
+            case 'network':        throw Object.assign(new Error('Simulated network error'), { isNetworkError: true });
+            default:               return { ok: false, error: `Unknown scenario: ${sc}` };
+          }
+        };
+
+        form.addEventListener('submit', async (ev) => {
+          ev.preventDefault();
+          clearStatus(); clearFieldErrors();
+          try {
+            await new Promise(r => setTimeout(r, 250));
+            const result = simulate(scenario);
+            if (result.ok) { setStatus('success', result.message || 'OK'); form.reset(); }
+            else { handleError(result.error || 'Error'); }
+          } catch (e) {
+            handleError('Network error. Please try again in a moment.');
+          }
+        }, { capture: true });
+
+        if (toolbar) {
+          const container = form.querySelector('.mx-auto') || form;
+          const bar = document.createElement('div');
+          bar.style.position = 'sticky';
+          bar.style.top = '0';
+          bar.style.zIndex = '50';
+          bar.style.display = 'flex';
+          bar.style.flexWrap = 'wrap';
+          bar.style.gap = '.5rem';
+          bar.style.padding = '.5rem';
+          bar.style.marginBottom = '.75rem';
+          bar.style.background = 'rgba(2,6,23,.8)';
+          bar.style.border = '1px solid rgba(148,163,184,.3)';
+          bar.style.borderRadius = '.5rem';
+          const addBtn = (label, sc) => {
+            const b = document.createElement('button');
+            b.type = 'button'; b.textContent = label;
+            b.style.padding = '.35rem .6rem';
+            b.style.border = '1px solid rgba(148,163,184,.4)';
+            b.style.borderRadius = '.375rem';
+            b.addEventListener('click', () => {
+              clearStatus(); clearFieldErrors();
+              try {
+                const r = simulate(sc);
+                r.ok ? setStatus('success', r.message || 'OK') : handleError(r.error || 'Error');
+              } catch { handleError('Network error. Please try again in a moment.'); }
+            });
+            return b;
+          };
+          bar.append(
+            addBtn('Success','success'),
+            addBtn('Name missing','name-missing'),
+            addBtn('Email missing','email-missing'),
+            addBtn('Invalid email','invalid-email'),
+            addBtn('Message missing','message-missing'),
+            addBtn('Server 500','server-500'),
+            addBtn('Network','network'),
           );
-          const required = ['name','email','message'];
-          const keywords = {
-            name: ['name'],
-            email: ['email'],
-            message: ['message'],
-          };
-
-          const setStatus = (type, message) => {
-            try {
-              if (!statusEl) return;
-              statusEl.textContent = message;
-              statusEl.classList.remove('hidden','text-red-500','text-green-500');
-              statusEl.setAttribute('role', type === 'error' ? 'alert' : 'status');
-              statusEl.classList.add(type === 'error' ? 'text-red-500' : 'text-green-500');
-            } catch {}
-          };
-          const clearStatus = () => {
-            try {
-              if (!statusEl) return;
-              statusEl.textContent = '';
-              statusEl.classList.add('hidden');
-              statusEl.classList.remove('text-red-500','text-green-500');
-              statusEl.setAttribute('role','status');
-            } catch {}
-          };
-          const clearFieldErrors = () => {
-            try {
-              for (const [name, el] of errorEls) {
-                if (!name) continue;
-                el.textContent = '';
-                el.classList.add('hidden');
-                const field = form.querySelector(`[name="${name}"]`);
-                field?.removeAttribute('aria-invalid');
-                field?.classList.remove('outline-red-500','focus:outline-red-500');
-              }
-            } catch {}
-          };
-          const setFieldError = (name, message) => {
-            try {
-              const field = form.querySelector(`[name="${name}"]`);
-              const el = errorEls.get(name);
-              if (!field || !el) return;
-              el.textContent = message;
-              el.classList.remove('hidden');
-              field.setAttribute('aria-invalid','true');
-              field.classList.add('outline-red-500','focus:outline-red-500');
-            } catch {}
-          };
-          const handleError = (message) => {
-            const msg = message || 'Something went wrong. Please try again later.';
-            setStatus('error', msg);
-            if (!message) { required.forEach(n => setFieldError(n, msg)); return; }
-            const lowered = msg.toLowerCase();
-            let matched = false;
-            for (const [name, keys] of Object.entries(keywords)) {
-              if (keys.some(k => lowered.includes(k))) { setFieldError(name, msg); matched = true; }
-            }
-            if (!matched) required.forEach(n => setFieldError(n, msg));
-          };
-
-          form.addEventListener('submit', async (event) => {
-            event.preventDefault();
-            clearStatus(); clearFieldErrors();
-
-            const formData = new FormData(form);
-            const payload = {
-              name: (formData.get('name') || '').toString().trim(),
-              email: (formData.get('email') || '').toString().trim(),
-              message: (formData.get('message') || '').toString().trim(),
-              honeyPot: (formData.get('fvsdg4') || '').toString().trim(),
-            };
-
-            try {
-              submitButton?.setAttribute('disabled','true');
-              submitButton?.classList.add('opacity-70');
-
-              const response = await fetch(form.action, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                body: JSON.stringify(payload),
-              });
-
-              let result = {};
-              try { result = await response.json(); } catch {}
-
-              if (response.ok) {
-                setStatus('success', result.message || 'Thank you for your message!');
-                form.reset();
-              } else {
-                const errorMessage = result && (result.error || result.message);
-                handleError(typeof errorMessage === 'string' ? errorMessage : undefined);
-              }
-            } catch {
-              handleError('Network error. Please try again in a moment.');
-            } finally {
-              submitButton?.removeAttribute('disabled');
-              submitButton?.classList.remove('opacity-70');
-            }
-          });
+          const clearBtn = addBtn('Clear','__clear__');
+          clearBtn.addEventListener('click', () => { clearStatus(); clearFieldErrors(); });
+          bar.append(clearBtn);
+          container.prepend(bar);
         }
-      </script>
-    )}
+
+        if (preview) {
+          try {
+            const r = simulate(scenario);
+            r.ok ? setStatus('success', r.message || 'OK') : handleError(r.error || 'Error');
+          } catch { handleError('Network error. Please try again in a moment.'); }
+        }
+      })();
+    </script>
   </body>
 </html>
